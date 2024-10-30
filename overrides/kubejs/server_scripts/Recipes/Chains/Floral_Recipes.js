@@ -395,6 +395,18 @@ ServerEvents.recipes(event => {
 
 
 
+    //Industrial Grade Floral Propagator controller block
+    event.recipes.gtceu.assembler('Industrial_Propagator')
+        .itemInputs(['1x gtceu:hv_machine_hull','4x #gtceu:circuits/hv','2x gtceu:hv_robot_arm','gtceu:hv_electric_pump','1x minecraft:redstone_lamp','2x gtceu:terrasteel_screw'])
+        .inputFluids('gtceu:aether_augmented_sediment 1250')
+        .itemOutputs('1x gtceu:industrial_grade_floral_propagator')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+
+
+
+
 
     // event.recipes.gtceu.('cosmiccore:pearl_cultivation')
     // .notConsumable('nethersdelight:propelpearl')
