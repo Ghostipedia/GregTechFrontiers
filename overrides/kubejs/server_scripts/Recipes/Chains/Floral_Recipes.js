@@ -401,6 +401,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:aether_augmented_sediment 1250')
         .itemOutputs('1x gtceu:industrial_grade_floral_propagator')
         .duration(200)
+        .circuit(1)
         .EUt(GTValues.VA[GTValues.HV])
 
 
