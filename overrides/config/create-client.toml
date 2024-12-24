@@ -31,7 +31,7 @@
 	#Choose the menu row that the Create config button appears on in the main menu
 	#Set to 0 to disable the button altogether
 	#Range: 0 ~ 4
-	mainMenuConfigButtonRow = 2
+	mainMenuConfigButtonRow = 0
 	#.
 	#Offset the Create config button in the main menu by this many pixels on the X axis
 	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
@@ -41,7 +41,7 @@
 	#Choose the menu row that the Create config button appears on in the in-game menu
 	#Set to 0 to disable the button altogether
 	#Range: 0 ~ 5
-	ingameMenuConfigButtonRow = 3
+	ingameMenuConfigButtonRow = 0
 	#.
 	#Offset the Create config button in the in-game menu by this many pixels on the X axis
 	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)

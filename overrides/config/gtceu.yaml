@@ -180,10 +180,6 @@ machines:
   # Default: false
   harmlessActiveTransformers: false
 
-  # Divisor for Recipe Duration per Overclock.
-  # Default: 2.0
-  overclockDivisor: 2.0
-
   # Whether to play machine sounds while machines are active.
   # Default: true
   machineSounds: true
@@ -277,11 +273,6 @@ machines:
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
   # Default: false
   orderedAssemblyLineFluids: true
-
-  # Let Dual Hatch has more ability. (DEPRECATED: does nothing now)
-  # When enabled it, Dual Hatch will can used to assemble line and so on.
-  # Need restart Minecraft to apply.
-  enableMoreDualHatchAbility: false
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
@@ -404,6 +395,11 @@ client:
     # Default: 0
     hudOffsetY: 0
 
+  renderer:
+    # Render fluids in multiblocks that support them?
+    # Default: true
+    renderFluids: true
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage
@@ -481,11 +477,6 @@ gameplay:
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
 
-  # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
-  # WARNING: INCOMPLETE
-  # Default: false
-  enableCompass: false
-
 # Config options for Mod Compatibility
 compat:
   # Config options regarding GTEU compatibility with other energy systems
@@ -533,7 +524,7 @@ compat:
     oreBlockProspectRange: 24
 
     # The map scale at which displayed ores will stop scaling.
-    oreScaleStop: 1.0
+    oreScaleStop: 0.75
 
     # The size, in pixels, of ore icons on the map
     oreIconSize: 32
@@ -543,7 +534,7 @@ compat:
 
     # The color to draw a box around the ore icon with.
     # Accepts either an ARGB hex color prefixed with # or the string 'material' to use the ore's material color
-    borderColor: #00000000
+    borderColor: #FFFF9B93
 
     # Which part of the screen to anchor buttons to
     # Default: "BOTTOM_LEFT"
@@ -556,7 +547,7 @@ compat:
     # - BOTTOM_CENTER
     # - BOTTOM_LEFT
     # - LEFT_CENTER
-    buttonAnchor: TOP_RIGHT
+    buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
     # Default: "HORIZONTAL"
@@ -571,7 +562,7 @@ compat:
 
     # How vertically far away from the anchor to place the buttons
     # Default: 0
-    yOffset: -80
+    yOffset: 0
 
     # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
     # Default: true

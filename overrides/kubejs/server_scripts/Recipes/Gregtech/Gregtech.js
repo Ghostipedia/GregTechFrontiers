@@ -57,6 +57,8 @@ ServerEvents.recipes(event => {
 
 
 
+
+  event.remove({ id: 'gtceu:centrifuge/deuterium_separation' })
   event.remove({ id: 'gtceu:centrifuge/uranium_hexafluoride_separation' })
   event.remove({ output: 'gtceu:firebrick' })
   event.recipes.gtceu.alloy_smelter('firebrick_masonry')

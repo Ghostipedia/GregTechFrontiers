@@ -5,7 +5,7 @@
   "general": {
     "allowFlowingWater": true,
     "allowFlowingLava": true,
-    "storagePerPixel": 1.0,
+    "storagePerPixel": 0.0,
     "enableBed": true,
     "enableAnimationCollision": true,
     "enableCollisionMotion": true,
@@ -92,21 +92,5 @@
       },
       "defaultGrid": 16
     }
-  },
-  "signal": {
-    "overallDurationScale": 1,
-    "andDuration": 0.1,
-    "orDuration": 0.01,
-    "xorDuration": 0.2,
-    "bandDuration": 0.2,
-    "borDuration": 0.02,
-    "bxorDuration": 0.4,
-    "notDuration": 0.01,
-    "bnotDuration": 0.02,
-    "variableDuration": 0.01,
-    "addDuration": 0.5,
-    "subDuration": 0.5,
-    "mulDuration": 0.5,
-    "divDuration": 5
   }
 }

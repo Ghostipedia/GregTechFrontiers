@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
   //   .duration(800)
   //IPBF VERSIONS
   event.recipes.gtceu.industrial_primitive_blast_furnace('chalk_purify_ipbf')
-    .itemInputs('occultism:chalk_white_impure')
+    .itemInputs(['occultism:chalk_white_impure','4x gtceu:calcite_dust'])
     .inputFluids('gtceu:creosote 1000')
     .itemOutputs('occultism:chalk_white')
     .duration(3000)

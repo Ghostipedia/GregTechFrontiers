@@ -3,7 +3,7 @@
     "weather_quality": "FANCY",
     "leaves_quality": "DEFAULT",
     "enable_vignette": true,
-    "use_quad_normals_for_shading": true
+    "use_quad_normals_for_shading": false
   },
   "advanced": {
     "enable_memory_tracing": false,
@@ -19,7 +19,7 @@
     "use_fog_occlusion": false,
     "use_block_face_culling": true,
     "use_compact_vertex_format": true,
-    "use_translucent_face_sorting_v2": true,
+    "use_translucent_face_sorting_v2": false,
     "use_no_error_g_l_context": true
   },
   "notifications": {

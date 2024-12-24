@@ -6,7 +6,7 @@
   "tipRenderWidthPercent": 0.35,
   "defaultTitle": {
     "bold": true,
-    "underlined": true,
+    "underlined": false,
     "color": "yellow",
     "translate": "tipsmod.title.default"
   }

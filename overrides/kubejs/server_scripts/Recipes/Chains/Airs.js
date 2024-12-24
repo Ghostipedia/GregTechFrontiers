@@ -6,6 +6,12 @@ ServerEvents.recipes(event => {
         .circuit(5)
         .dimension('undergarden:undergarden')
         .EUt(GTValues.VA[GTValues.HV]);
+    event.recipes.gtceu.gas_collector('aether_air_collection_gas')
+        .outputFluids('gtceu:aether_air 10000')
+        .duration(200)
+        .circuit(6)
+        .dimension('aether:the_aether')
+        .EUt(GTValues.VA[GTValues.HV]);
     //Undergarden Sludge
     event.recipes.gtceu.vacuum_freezer('undergarden_smog_condensing')
         .inputFluids('gtceu:undergarden_smog 4000')

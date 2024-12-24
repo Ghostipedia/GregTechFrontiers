@@ -24,3 +24,45 @@
 	#Whether custom recipes that allow for the changing of item name color & formatting are enabled
 	Formatting = true
 
+["Infected Bookshelf Settings"]
+	#The minimum spawn delay of Infected Bookshelves in ticks. Default = 150
+	#Range: 1 ~ 10000
+	SpawnDelayMin = 150
+	#The maximum spawn delay of Infected Bookshelves in ticks. Default = 250
+	#Range: 1 ~ 10000
+	SpawnDelayMax = 250
+	#The XP value of spawned orbs. Default = 6
+	#Range: 1 ~ 32767
+	OrbValue = 6
+	#The number of spawns until the bookshelf decays. Default = 100
+	#Range: 1 ~ 10000
+	Spawns = 100
+
+["Enchanted Bookshelf Settings"]
+	#The minimum spawn delay of Enchanted Bookshelves in ticks. Default = 100
+	#Range: 1 ~ 10000
+	SpawnDelayMin = 100
+	#The maximum spawn delay of Enchanted Bookshelves in ticks. Default = 300
+	#Range: 1 ~ 10000
+	SpawnDelayMax = 300
+	#The XP value of spawned orbs. Default = 12
+	#Range: 1 ~ 32767
+	OrbValue = 12
+	#The number of spawns until the bookshelf decays. Default = 200
+	#Range: 1 ~ 10000
+	Range = 200
+
+["Archiver's Bookshelf Settings"]
+	#The minimum spawn delay of Archiver's Bookshelves in ticks. Default = 180
+	#Range: 1 ~ 10000
+	SpawnDelayMin = 180
+	#The maximum spawn delay of Archiver's Bookshelves in ticks. Default = 220
+	#Range: 1 ~ 10000
+	SpawnDelayMax = 220
+	#The XP value of spawned orbs. Default = 6
+	#Range: 1 ~ 32767
+	OrbValue = 6
+	#The number of spawns until the bookshelf decays. Default = 200
+	#Range: 1 ~ 10000
+	Spawns = 200
+

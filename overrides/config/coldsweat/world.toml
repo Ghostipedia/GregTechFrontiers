@@ -40,7 +40,7 @@
 	#Range: 1 ~ 16
 	"Block Range" = 7
 	#When set to true, uses Cold Sweat's temperature system to determine water freezing behavior
-	"Custom Freezing Behavior" = false
+	"Custom Freezing Behavior" = true
 	#When set to true, modifies ice blocks to be harvestable with a pickaxe
 	"Custom Ice Drops" = true
 
@@ -76,7 +76,7 @@
 	"Thermal Source Strength" = 0.75
 	#List of additional blocks that thermal sources can spread through
 	#Use this list if thermal sources aren't spreading through particular blocks that they should
-	"Thermal Source Spread Whitelist" = ["cold_sweat:hearth_bottom", "minecraft:iron_bars", "#minecraft:leaves", "create:encased_fluid_pipe"]
+	"Thermal Source Spread Whitelist" = ["minecraft:iron_bars", "#minecraft:leaves", "create:encased_fluid_pipe"]
 	#List of additional blocks that thermal sources spread through
 	#Use this list if thermal sources are spreading through particular blocks that they shouldn't
 	"Thermal Source Spread Blacklist" = []

@@ -38,6 +38,9 @@ ServerEvents.recipes(event => {
     event.remove({ id:'jei:/moredelight/farmersdelight/cutting/bread_slice' })
     event.remove({ id:'moredelight:farmersdelight/cutting/bread_slice' })
     event.remove({ output:'farmersdelight:stove' })
+    event.shapeless('croptopia:tuna_sandwich', [
+        'croptopia:tuna', 'minecraft:bread'
+      ])
     event.shaped( 'farmersdelight:stove', [
         'IGI',
         'BHB',
@@ -80,7 +83,7 @@ ServerEvents.recipes(event => {
     ], {
         K: '#forge:tools/knives',
         S: '#forge:tools/mallets',
-        P: 'gtceu:wood_plate'
+        P: '#minecraft:wooden_slabs'
     })
     //Nether's Delight
     event.remove({ output:'nethersdelight:blackstone_stove' })

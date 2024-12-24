@@ -53,16 +53,6 @@
 	min_thunder_time = 12000
 
 [[season_properties]]
-	melt_percent = 25.0
-	max_rain_time = 96000
-	min_rain_time = 12000
-	season = "MID_SUMMER"
-	melt_rolls = 1
-	max_thunder_time = 180000
-	biome_temp_adjustment = 0.0
-	min_thunder_time = 12000
-
-[[season_properties]]
 	melt_percent = 0.0
 	max_rain_time = 36000
 	min_rain_time = 12000
@@ -74,19 +64,9 @@
 
 [[season_properties]]
 	melt_percent = 12.5
-	max_rain_time = 180000
-	min_rain_time = 12000
-	season = "EARLY_AUTUMN"
-	melt_rolls = 1
-	max_thunder_time = 180000
-	biome_temp_adjustment = 0.0
-	min_thunder_time = 12000
-
-[[season_properties]]
-	melt_percent = 25.0
 	max_rain_time = 96000
 	min_rain_time = 12000
-	season = "LATE_SUMMER"
+	season = "LATE_SPRING"
 	melt_rolls = 1
 	max_thunder_time = 180000
 	biome_temp_adjustment = 0.0
@@ -103,30 +83,10 @@
 	min_thunder_time = 12000
 
 [[season_properties]]
-	melt_percent = 0.0
-	max_rain_time = 36000
-	min_rain_time = 12000
-	season = "MID_WINTER"
-	melt_rolls = 0
-	max_thunder_time = -1
-	biome_temp_adjustment = -0.8
-	min_thunder_time = -1
-
-[[season_properties]]
-	melt_percent = 8.33
-	max_rain_time = 96000
-	min_rain_time = 12000
-	season = "MID_SPRING"
-	melt_rolls = 1
-	max_thunder_time = 180000
-	biome_temp_adjustment = 0.0
-	min_thunder_time = 12000
-
-[[season_properties]]
 	melt_percent = 12.5
-	max_rain_time = 96000
+	max_rain_time = 180000
 	min_rain_time = 12000
-	season = "LATE_SPRING"
+	season = "EARLY_AUTUMN"
 	melt_rolls = 1
 	max_thunder_time = 180000
 	biome_temp_adjustment = 0.0
@@ -153,6 +113,16 @@
 	min_thunder_time = 12000
 
 [[season_properties]]
+	melt_percent = 8.33
+	max_rain_time = 96000
+	min_rain_time = 12000
+	season = "MID_SPRING"
+	melt_rolls = 1
+	max_thunder_time = 180000
+	biome_temp_adjustment = 0.0
+	min_thunder_time = 12000
+
+[[season_properties]]
 	melt_percent = 0.0
 	max_rain_time = 36000
 	min_rain_time = 12000
@@ -161,4 +131,34 @@
 	max_thunder_time = -1
 	biome_temp_adjustment = -0.8
 	min_thunder_time = -1
+
+[[season_properties]]
+	melt_percent = 0.0
+	max_rain_time = 36000
+	min_rain_time = 12000
+	season = "MID_WINTER"
+	melt_rolls = 0
+	max_thunder_time = -1
+	biome_temp_adjustment = -0.8
+	min_thunder_time = -1
+
+[[season_properties]]
+	melt_percent = 25.0
+	max_rain_time = 96000
+	min_rain_time = 12000
+	season = "MID_SUMMER"
+	melt_rolls = 1
+	max_thunder_time = 180000
+	biome_temp_adjustment = 0.0
+	min_thunder_time = 12000
+
+[[season_properties]]
+	melt_percent = 25.0
+	max_rain_time = 96000
+	min_rain_time = 12000
+	season = "LATE_SUMMER"
+	melt_rolls = 1
+	max_thunder_time = 180000
+	biome_temp_adjustment = 0.0
+	min_thunder_time = 12000
 

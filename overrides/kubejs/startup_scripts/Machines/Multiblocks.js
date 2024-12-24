@@ -14,7 +14,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     //Large Floral Propagator
     event.create('industrial_grade_floral_propagator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        // ["recipeTypes(com.gregtechceu.gtceu.api.recipe.GTRecipeType[])"]([GTRecipeTypes.get('flora_nurturer'), GTRecipeTypes.get('nether_catalyzer')])
         .recipeTypes(["flora_nurturer", "nether_catalyzer"])
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])

@@ -60,7 +60,7 @@
 [Builtin]
 	#Range: 0 ~ 4
 	Difficulty = 2
-	Version = "2.3.10"
+	Version = "2.3.9"
 
 [Misc]
 	#Add TempModifier IDs to this list to disable them

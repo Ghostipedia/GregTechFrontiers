@@ -622,10 +622,10 @@ ServerEvents.recipes(event => {
                 .itemOutputs(`4x ${modID}:${woodType}_boat`)
                 .duration(100)
                 .EUt(4);
-            event.shaped(`2x ${modID}:${woodType}_button`, [
-                'S S',
-                'S S',
-                'PPP '
+            event.shaped(`${modID}:${woodType}_boat`, [
+                'SWS',
+                'SKS',
+                'PPP'
             ],
                 {
                     P: `${modID}:${woodType}_planks`,

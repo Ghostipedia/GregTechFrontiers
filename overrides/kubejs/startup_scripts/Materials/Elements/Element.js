@@ -1,17 +1,67 @@
- GTCEuStartupEvents.registry('gtceu:element', event => {
-    event.create('ether_steel', 27, 177, -1, null, 'Ma₂FeMnNi(Si(Fe₂S₂)₅(Cr₂ZiAbAl)Hg₃)', false) // 
-    event.create('manasteel', 20, 80, -1, null, 'Ma*(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AuAg)', false)
-    event.create('terrasteel', 20, 80, -1, null, 'Ma₂(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AuAg)', false)
-    event.create('runesteel', 20, 80, -1, null, 'FeC*?', false)
-    event.create('zanite', 134, 335, -1, null, 'Zi', false)
-    event.create('ambrosium', 135, 338, -1, null, 'Ab', false)
-    event.create('zano_alumate', 69, 420, -1, null, '(ZiAbAl)', false)
-    event.create('chromium_iii_oxide', 69, 420, -1, null, 'Cr₂O₃', false)
-    event.create('alumina', 69, 420, -1, null, 'Al₂O₃', false)
-    event.create('prism_tungstensteel', 69, 157, -1, null, 'PiFeW', false)
-    event.create('virtue', 0, 450, -1, null, 'ERROR₉₉₉', false)
-    event.create('trichlorosilane', 135, 135, -1, null, 'HCl3Si', false)
-    event.create('hydrogensilesquioxane', 135, 135, -1, null, '[HSiO3/2]₈', false)
-    event.create('desh', 135, 135, -1, null, 'De', false)
-    //subsript (copy and paste) ₂₃₄₅₆₇₈₉₀
- })
+//subsript (copy and paste) ₂₃₄₅₆₇₈₉₀
+GTCEuStartupEvents.registry('gtceu:element', event => {
+   event.create('ether_steel')
+      .protons(27)
+      .neutrons(177)
+      .symbol('Ma₂FeMnNi(Si(Fe₂S₂)₅(Cr₂ZiAbAl)Hg₃)')
+
+   event.create('manasteel')
+      .protons(20)
+      .neutrons(80)
+      .symbol('Ma*(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AuAg)')
+
+   event.create('runesteel')
+      .protons(20)
+      .neutrons(80)
+      .symbol('FeC*?')
+
+   event.create('zanite')
+      .protons(134)
+      .neutrons(335)
+      .symbol('Zi')
+
+   event.create('ambrosium')
+      .protons(135)
+      .neutrons(338)
+      .symbol('Ab')
+
+   event.create('zano_alumate')
+      .protons(69)
+      .neutrons(420)
+      .symbol('(ZiAbAl)')
+
+   event.create('chromium_iii_oxide')
+      .protons(69)
+      .neutrons(420)
+      .symbol('Cr₂O₃')
+
+   event.create('alumina')
+      .protons(69)
+      .neutrons(420)
+      .symbol('Al₂O₃')
+
+   event.create('prism_tungstensteel')
+      .protons(69)
+      .neutrons(157)
+      .symbol('PiFeW')
+
+   event.create('virtue')
+      .protons(0)
+      .neutrons(450)
+      .symbol('ERROR₉₉₉')
+
+   event.create('trichlorosilane')
+      .protons(135)
+      .neutrons(135)
+      .symbol('HCl3Si')
+
+   event.create('hydrogensilesquioxane')
+      .protons(135)
+      .neutrons(135)
+      .symbol('[HSiO3/2]₈')
+
+   event.create('desh')
+      .protons(135)
+      .neutrons(135)
+      .symbol('De')
+})

@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
   )
   // event.remove({ mod: 'integrateddynamics' })
   //Crafting Recipes
-  event.remove({ output: 'integrateddynamics:drying_basin' })
+  // event.remove({ output: 'integrateddynamics:drying_basin' })
   event.remove({ type: 'integrateddynamics:mechanical_squeezer' })
   event.remove({ type: 'integrateddynamics:squeezer' })
 

@@ -7,6 +7,43 @@ _version = 2
 
 	[client.advanced]
 
+		[client.advanced.buffers]
+			#
+			# What method should be used to upload geometry to the GPU? 
+			# 
+			# AUTO: Picks the best option based on the GPU you have. 
+			# 
+			# BUFFER_STORAGE: Default if OpenGL 4.5 is supported. 
+			#     Fast rendering, no stuttering. 
+			# 
+			# SUB_DATA: Backup option for NVIDIA. 
+			#     Fast rendering but may stutter when uploading. 
+			# 
+			# BUFFER_MAPPING: Slow rendering but won't stutter when uploading. 
+			#     Generally the best option for integrated GPUs. 
+			#     Default option for AMD/Intel if OpenGL 4.5 isn't supported. 
+			#     May end up storing buffers in System memory. 
+			#     Fast rendering if in GPU memory, slow if in system memory, 
+			#     but won't stutter when uploading.  
+			# 
+			# DATA: Fast rendering but will stutter when uploading. 
+			#     Backup option for AMD/Intel. 
+			#     Fast rendering but may stutter when uploading. 
+			# 
+			# If you don't see any difference when changing these settings, 
+			# or the world looks corrupted: restart your game.
+			gpuUploadMethod = "AUTO"
+			#
+			# How long should a buffer wait per Megabyte of data uploaded? 
+			# Helpful resource for frame times: https://fpstoms.com 
+			# 
+			# Longer times may reduce stuttering but will make LODs 
+			# transition and load slower. Change this to [0] for no timeout. 
+			# 
+			# NOTE:
+			# Before changing this config, try changing the "GPU Upload method" first.
+			gpuUploadPerMegabyteInMilliseconds = 0
+
 		[client.advanced.lodBuilding]
 			#
 			# How should block data be compressed when creating LOD data? 
@@ -24,6 +61,15 @@ _version = 2
 			# Hidden blocks (IE ores) are ignored.  
 			# Expected Compression Ratio: 0.7
 			worldCompression = "VISUALLY_EQUAL"
+			#
+			# If false LODs will be lit by Minecraft's lighting engine when possible 
+			# and fall back to the DH lighting engine only when necessary. 
+			# 
+			# If true LODs will only be lit using Distant Horizons' lighting engine. 
+			# 
+			# Generally it is best to leave this disabled and should only be enabled 
+			# if there are lighting issues or for debugging.
+			onlyUseDhLightingEngine = false
 			#
 			# A comma separated list of block resource locations that shouldn't be rendered 
 			# if they are in a 0 sky light underground area. 
@@ -107,7 +153,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfLodBuilderThreads = 10
+			numberOfLodBuilderThreads = 1
 			#
 			# Should only be disabled if deadlock occurs and LODs refuse to update. 
 			# This will cause CPU usage to drastically increase for the Lod Builder threads. 
@@ -121,7 +167,7 @@ _version = 2
 			# This can be used to reduce CPU usage if the thread count 
 			# is already set to 1 for the given option, or more finely 
 			# tune CPU performance.
-			runTimeRatioForWorldGenerationThreads = "1.0"
+			runTimeRatioForWorldGenerationThreads = "0.1"
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -129,7 +175,7 @@ _version = 2
 			# This can be used to reduce CPU usage if the thread count 
 			# is already set to 1 for the given option, or more finely 
 			# tune CPU performance.
-			runTimeRatioForLodBuilderThreads = "0.75"
+			runTimeRatioForLodBuilderThreads = "0.1"
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -137,7 +183,7 @@ _version = 2
 			# This can be used to reduce CPU usage if the thread count 
 			# is already set to 1 for the given option, or more finely 
 			# tune CPU performance.
-			runTimeRatioForFileHandlerThreads = "1.0"
+			runTimeRatioForFileHandlerThreads = "0.25"
 			#
 			# If this value is less than 1.0, it will be treated as a percentage 
 			# of time each thread can run before going idle. 
@@ -145,7 +191,7 @@ _version = 2
 			# This can be used to reduce CPU usage if the thread count 
 			# is already set to 1 for the given option, or more finely 
 			# tune CPU performance.
-			runTimeRatioForUpdatePropagatorThreads = "0.75"
+			runTimeRatioForUpdatePropagatorThreads = "0.1"
 			#
 			# How many threads should be used when reading/writing LOD data to/from disk? 
 			# 
@@ -157,7 +203,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfFileHandlerThreads = 5
+			numberOfFileHandlerThreads = 1
 			#
 			# How many threads should be used when applying LOD updates? 
 			# An LOD update is the operation of down-sampling a high detail LOD 
@@ -176,7 +222,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfUpdatePropagatorThreads = 12
+			numberOfUpdatePropagatorThreads = 1
 			#
 			# How many threads should be used when generating LOD 
 			# chunks outside the normal render distance? 
@@ -190,7 +236,7 @@ _version = 2
 			# If the total thread count in Distant Horizon's config is more threads than your CPU has cores, 
 			# CPU performance may suffer if Distant Horizons has a lot to load or generate. 
 			# This can be an issue when first loading into a world, when flying, and/or when generating new terrain.
-			numberOfWorldGenerationThreads = 6
+			numberOfWorldGenerationThreads = 1
 
 		[client.advanced.logging]
 			#
@@ -457,8 +503,7 @@ _version = 2
 				# Disable this if shadows render incorrectly.
 				disableShadowPassFrustumCulling = false
 				#
-				# At what Y value should cave culling start? 
-				# Lower this value if you get walls for areas with 0 light.
+				# At what Y value should cave culling start?
 				caveCullingHeight = 60
 				#
 				# How should LODs be shaded? 

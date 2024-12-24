@@ -204,7 +204,7 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('Disabled: T2 Gaia and Ingot Recipe for Summon will be added when it is time to unlock them!').red())
   })
   event.addAdvanced('integrateddynamics:mechanical_squeezer', (item, advanced, text) => {
-    text.add(2, Text.of('Energy Consumption was set to 0!').green())
+    text.add(1, Text.of('Energy Consumption was set to 0!').green())
     text.add(2, Text.of('Will run without power!').green())
   })
 })

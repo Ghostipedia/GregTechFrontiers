@@ -9,32 +9,36 @@
   "minFoodsToActivate": 0,
   "benefits": [
     {
-      "threshold": 3,
-      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
-    },
-    {
       "threshold": 10,
-      "benefit": "{key:\"cold_sweat:insulated\",type:\"eff\",val:1.0d}"
+      "benefit": {
+        "attribute": "legendarysurvivaloverhaul:heat_resistance",
+        "value": 1
+      }
     },
     {
       "threshold": 20,
-      "benefit": "{key:\"cold_sweat:insulated\",type:\"eff\",val:3.0d}"
+      "benefit": {
+        "attribute": "legendarysurvivaloverhaul:cold_resistance",
+        "value": 1
+      }
     },
     {
       "threshold": 30,
-      "benefit": "{key:\"cold_sweat:insulated\",type:\"eff\",val:5.0d}"
+      "benefit": {
+        "attribute": "minecraft:generic.max_health",
+        "value": 5
+      }
     },
     {
       "threshold": 40,
-      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:7.0d}"
-    },
-    {
-      "threshold": 50,
-      "benefit": "{key:\"cold_sweat:insulated\",type:\"eff\",val:9.0d}"
+      "benefit": {
+        "attribute": "minecraft:generic.max_health",
+        "value": 5
+      }
     }
   ],
   "shouldExcludedCount": true,
-  "complexityStandardNutrition": 5,
+  "complexityStandardNutrition": 8,
   "complexityStandardSaturation": 0.6,
   "complexityBenefitEffectModifier": 0.2,
   "complexityNeutralEffectModifier": 0,
