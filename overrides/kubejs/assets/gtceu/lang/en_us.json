@@ -141,7 +141,8 @@
   "block.gtceu.zpm_fryer": "§cElite Fryer III§r",
   "block.gtceu.uv_fryer": "§3Ultimate Fryer§r",
   "block.gtceu.uhv_fryer": "§4Epic Fryer§r",
-
+  
+  "gtceu.mana_engraver": "Mana Engraver",
   "gtceu.aio.lithopgraphy_processor": "Lithography Processor",
   "block.gtceu.lv_aio_lithography_processor": "Basic AIO Lithography Processor",
   "block.gtceu.mv_aio_lithography_processor": "§bAdvanced AIO Lithography Processor§r",
@@ -308,6 +309,8 @@
   "material.gtceu.cinderwax": "Cinder Wax",
   "material.gtceu.soulresin": "Soul Resin",
   "material.gtceu.industrial_iron": "Industrial Iron",
+  "material.gtceu.runed_steel": "Runed Steel",
+  "material.gtceu.soul_stained_steel": "Soul Stained Alumina",
   
   "material.gtceu.uranium_fuel_salt": "Low Grade Uranium Fuel Salt",
   "material.gtceu.americium_fuel_salt": "Medium Grade Americium Fuel Salt",
@@ -411,7 +414,8 @@
   "material.gtceu.super_critical_steam": "Supercritical Steam",
 
 
-
+  "gtceu.mana_fluidizer": "Mana Fluidizer",
+  "block.gtceu.mana_fluidizer": "Mana Fluidizer",
   "gtceu.mana_simulator": "Mana Simulator",
   "gtceu.large_floral_propagator": "Large Floral Propagator",
   "block.gtceu.large_floral_propagator": "Large Floral Propagator",

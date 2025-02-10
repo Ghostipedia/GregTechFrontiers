@@ -89,11 +89,11 @@ ServerEvents.recipes(event => {
   }
 
 
-
-
-  dryingFluid('gtceu:soulresin_ingot','gtceu:soulresin', 144 ,40)    
-  squeezing('cold_sweat:soul_sprout','gtceu:soulresin', 144)
-  mech_squeeze('cold_sweat:soul_sprout','gtceu:soulresin', 144)
+  //Disabled because.... it'd cause the dring basin to catch on fire
+  // dryingFluid('gtceu:cinderwax_ingot','gtceu:cinderwax', 144 ,40) 
+  // dryingFluid('gtceu:soulresin_ingot','gtceu:soulresin', 144 ,40)    
+  squeezing('legendarysurvivaloverhaul:ice_fern_leaf','gtceu:soulresin', 144)
+  mech_squeeze('legendarysurvivaloverhaul:ice_fern_leaf','gtceu:soulresin', 144)
   squeezing('nethersdelight:propelpearl','gtceu:cinderwax', 144)
   mech_squeeze('nethersdelight:propelpearl','gtceu:cinderwax', 144)
 

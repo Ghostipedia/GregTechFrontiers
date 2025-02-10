@@ -94,7 +94,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .ore()
         .dust()
-        .toolStats(ToolProperty.Builder.of(6.0, 7.0, 768, 3).attackSpeed(0.1).enchantability(18).build())
+        // .toolStats(ToolProperty.Builder.of(6.0, 7.0, 768, 3).attackSpeed(0.1).enchantability(18).build())
         .flags(
             GTMaterialFlags.NO_ORE_SMELTING,
             GTMaterialFlags.NO_SMELTING
@@ -534,6 +534,26 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('trinium_metallic')
         .ore()
         .color(0x7f6c82).iconSet(GTMaterialIconSet.SHINY)
+    event.create('soul_stained_steel')
+        .color(0xdb3dff).secondaryColor(0xe683fc)
+        .ingot()
+        .liquid()
+        .cableProperties(GTValues.V[GTValues.MV], 2, 2, false)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+    event.create('graphene_oxide')
+        .dust()
+        .color(0x292929).secondaryColor(0x353836).iconSet(GTMaterialIconSet.DULL)
 })
 
 GTCEuStartupEvents.materialModification(event => {
@@ -541,6 +561,9 @@ GTCEuStartupEvents.materialModification(event => {
         TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy_block')),
         TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('createdeco:industrial_iron_ingot')),
         TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('create:industrial_iron_block'))
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:block_of_soul_stained_steel'))
+    TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_plating'))
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_ingot'))
 })
 
 

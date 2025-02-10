@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .itemInputs('8x botania:mana_powder')
         .inputFluids('gtceu:air 1000')
         .inputFluids('gtceu:nether_air 1000')
-        .inputFluids('gtceu:ender_air 1000')
+        .inputFluids('gtceu:aether_air 1000')
         .inputFluids('gtceu:tears_of_the_sky 1000')
         .inputFluids('gtceu:potent_mana 500')
         .inputFluids('gtceu:source_oils 500')
@@ -63,7 +63,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x bloodmagic:reagentgrowth')
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
-
     event.recipes.gtceu.assembler(`essence_reactor_controller`)
         .itemInputs(['botania:alfheim_portal', 'gtceu:ev_machine_hull', 'gtceu:terrasteel_frame', '4x gtceu:long_terrasteel_rod', '2x gtceu:micro_processor_computer'])
         .inputFluids('gtceu:potent_mana 1000')

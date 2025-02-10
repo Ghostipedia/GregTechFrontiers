@@ -254,6 +254,25 @@ ServerEvents.recipes(event => {
         .duration(300)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);
+    //CRYSTAL
+
+    event.remove({id: 'gtceu:assembly_line/crystal_mainframe_uv'})
+    event.recipes.gtceu.assembly_line('crystal_mainframe_new')
+        .itemInputs(['2x cosmiccore:trinavine_frame', '6x gtceu:crystal_processor_computer', '16x cosmiccore:aram_chip', '4x gtceu:hpic_chip', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '8x cosmiccore:crystalline_inductor', '16x cosmiccore:crystalline_capacitor', '8x cosmiccore:crystalline_diode'])
+        .itemOutputs('gtceu:crystal_processor_mainframe')
+        .inputFluids(
+            Fluid.of('gtceu:high_grade_solder', 1152),
+        )
+        .stationResearch(b => b
+            .researchStack('gtceu:crystal_processor_computer')
+            .CWUt(32)
+            .EUt(GTValues.VA[GTValues.LuV]))
+        .duration(1750)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+
+
+
 
     //Omnia's
     event.recipes.gtceu.laser_engraver('omnia_lv')

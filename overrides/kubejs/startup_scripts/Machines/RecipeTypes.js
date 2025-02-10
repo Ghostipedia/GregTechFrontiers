@@ -127,6 +127,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(16, 6, 6, 3) //Max Item in, max item out, max fluid in, max fluid out (in slots)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setMaxTooltips(4)
         .setMaxSize($IO.IN, $SoulCap.CAP, 1)
         .setMaxSize($IO.OUT, $SoulCap.CAP, 1)
         .setSound(GTSoundEntries.TURBINE)

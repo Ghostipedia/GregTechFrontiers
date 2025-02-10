@@ -66,20 +66,77 @@ ServerEvents.recipes(event => {
         .duration(20)
     //Rune Etching
     event.recipes.gtceu.mana_engraver('er_water_rune')
-        .itemInputs(['gtceu:livingrock_plate', '2x crabbersdelight:crab_trap', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+        .itemInputs(['gtceu:livingrock_plate', '2x #minecraft:fishes', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
         .inputFluids('gtceu:potent_mana 4000')
         .circuit(1)
         .itemOutputs('8x botania:rune_water')
         .EUt(GTValues.VA[GTValues.EV])
         .duration(300)
-    event.recipes.gtceu.mana_engraver('er_water_rune_lp_boost')
-        .itemInputs(['gtceu:livingrock_plate', '2x crabbersdelight:crab_trap', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+    //TODO; LUV Rune Recipes, leave them out currently as they use content NYI :)
+    // event.recipes.gtceu.mana_engraver('er_water_rune_lp_boost')
+    //     .itemInputs(['gtceu:livingrock_plate', '2x #minecraft:fishes', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+    //     .inputFluids('gtceu:potent_mana 4000')
+    //     .circuit(2)
+    //     .soulInput('50000')
+    //     .itemOutputs('16x botania:rune_water')
+    //     .EUt(GTValues.VA[GTValues.EV])
+    //     .duration(300)
+    //Fire Runes
+    event.recipes.gtceu.mana_engraver('er_fire_rune')
+        .itemInputs(['gtceu:livingrock_plate', '4x minecraft:gunpowder', '2x gtceu:firebrick', 'minecraft:nether_wart_block', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
         .inputFluids('gtceu:potent_mana 4000')
-        .circuit(2)
-        .soulInput('20000')
-        .itemOutputs('16x botania:rune_water')
+        .circuit(1)
+        .itemOutputs('8x botania:rune_fire')
         .EUt(GTValues.VA[GTValues.EV])
         .duration(300)
+    //Air Runes
+    event.recipes.gtceu.mana_engraver('er_air_rune')
+        .itemInputs(['gtceu:livingrock_plate', '4x occultism:awakened_feather', '4x botania:mana_string', '4x botania:manaweave_cloth', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+        .inputFluids('gtceu:potent_mana 4000')
+        .circuit(1)
+        .itemOutputs('8x botania:rune_air')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(300)
+    //Earth Runes
+    event.recipes.gtceu.mana_engraver('er_earth_rune')
+        .itemInputs(['gtceu:livingrock_plate', '4x gtceu:exquisite_coal_gem', '4x malum:tainted_rock', '4x undergarden:veil_mushroom_stem', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+        .inputFluids('gtceu:potent_mana 4000')
+        .circuit(1)
+        .itemOutputs('8x botania:rune_earth')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(300)
+    //Spring Rune
+    event.recipes.gtceu.mana_engraver('er_spring_rune')
+        .itemInputs(['gtceu:livingrock_plate', '4x minecraft:carrot', '4x farmersdelight:onion', '4x integrateddynamics:menril_sapling', '4x botania:rune_fire', '4x botania:rune_water', '2x gtceu:manasteel_plate', 'botania:pixie_dust', '4x croptopia:tea_leaves'])
+        .inputFluids('gtceu:potent_mana 8000')
+        .circuit(1)
+        .itemOutputs('12x botania:rune_spring')
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(300)
+    //Summer Rune
+    event.recipes.gtceu.mana_engraver('er_summer_rune')
+        .itemInputs(['gtceu:livingrock_plate', '4x supplementaries:hourglass', '4x minecraft:slime_block', '4x minecraft:melon', '4x botania:rune_earth', '4x botania:rune_air', '2x gtceu:manasteel_plate', 'botania:pixie_dust'])
+        .inputFluids('gtceu:potent_mana 8000')
+        .circuit(1)
+        .itemOutputs('12x botania:rune_summer')
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(200)
+    //Autumn Rune
+    event.recipes.gtceu.mana_engraver('er_autumn_rune')
+        .itemInputs(['gtceu:livingrock_plate', '4x minecraft:fermented_spider_eye', '4x croptopia:tea_leaves', '12x architects_palette:twisted_leaves', '4x botania:rune_fire', '4x botania:rune_air', '2x gtceu:manasteel_plate', 'botania:pixie_dust'])
+        .inputFluids('gtceu:potent_mana 8000')
+        .circuit(1)
+        .itemOutputs('12x botania:rune_autumn')
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(200)
+    //Winter Rune
+    event.recipes.gtceu.mana_engraver('er_winter_rune')
+        .itemInputs(['gtceu:livingrock_plate', '4x farmersdelight:cake_slice', '4x gtceu:ice_dust', '4x minecraft:snow_block', '4x botania:rune_water', '4x botania:rune_earth', '2x gtceu:manasteel_plate', 'botania:pixie_dust', '4x croptopia:tea_leaves'])
+        .inputFluids('gtceu:potent_mana 8000')
+        .circuit(1)
+        .itemOutputs('12x botania:rune_winter')
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(200)
     //Livingwood
     //Bolt
     event.recipes.gtceu.cutter('gtceu:cutter/cut_livingwood_twig_to_bolt_water')
@@ -176,6 +233,23 @@ ServerEvents.recipes(event => {
         P: 'gtceu:manasteel_plate',
         C: 'minecraft:cobbled_deepslate'
     })
+    //Manaweave cloth
+    event.remove({ id: 'botania:manaweave_cloth' })
+    event.shaped('botania:manaweave_cloth', [
+        'SWS',
+        'WQW',
+        'SWS'
+    ], {
+        S: 'botania:mana_string',
+        W: 'ars_nouveau:magebloom_fiber',
+        Q: 'cosmiccore:rune_conjunction_arklythar'
+    })
+    event.recipes.gtceu.assembler('manaweave_assemble')
+        .itemInputs(['3x botania:mana_string', '3x ars_nouveau:magebloom_fiber', 'cosmiccore:rune_conjunction_arklythar'])
+        .inputFluids('gtceu:crude_source_oils 50')
+        .itemOutputs('4x botania:manaweave_cloth')
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.LV]);
     //Petal Apothecary Mossy, leaving the rest as vanilla recipes. They are gated deep into botania anyways.
     event.remove({ output: 'botania:apothecary_mossy' })
     event.shaped('botania:apothecary_mossy', [
@@ -1676,13 +1750,6 @@ ServerEvents.recipes(event => {
 
     //Elven Portal
     //event.recipes.botania.elven_trade(['output1'], ['input1'])
-
-    event.recipes.gtceu.mana_fluidizer('gtceu:mana_to_mana_fluid')
-        .itemInputs('botania:blacker_lotus')
-        .itemOutputs('minecraft:wither_rose')
-        .outputFluids(Fluid.of('gtceu:potent_mana', 10000))
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.mana_fluidizer('gtceu:mana_fluid_to_mana_charge')
         .itemOutputs('botania:blacker_lotus')
         .itemInputs('minecraft:wither_rose')
@@ -1723,7 +1790,23 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:potent_mana', 50))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
-
+    event.recipes.gtceu.distillery('mana_condensation')
+        .inputFluids('blasmatech:mana 100')
+        .outputFluids('gtceu:potent_mana 10')
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.fluid_heater('mana_evap_1')
+        .inputFluids('gtceu:potent_mana 10')
+        .outputFluids('blasmatech:mana 100')
+        .circuit(3)
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.assembler('terraweave_new')
+        .itemInputs(['4x ars_nouveau:magebloom_fiber', '4x botania:mana_string', '2x gtceu:terrasteel_foil', 'botania:manaweave_cloth'])
+        .itemOutputs('kubejs:terraweave_cloth')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 500))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
 
 })
 

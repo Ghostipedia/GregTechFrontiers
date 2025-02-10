@@ -304,14 +304,14 @@ ServerEvents.recipes(event => {
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
   //Controller
-  event.recipes.gtceu.assembler('ae2:controller_assembly')
-    .itemInputs(['8x gtceu:manasteel_hex_wire', '4x #gtceu:circuits/mv', 'ae2:energy_acceptor'])
+  event.recipes.gtceu.circuit_assembler('ae2:controller_assembly')
+    .itemInputs(['4x gtceu:manasteel_hex_wire', '4x #gtceu:circuits/mv','4x malum:cluster_of_brilliance', 'ae2:energy_acceptor'])
     .itemOutputs('ae2:controller')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
   //ControllerMK2
-  event.recipes.gtceu.assembler('ae2:controller_assembly2')
-    .itemInputs(['gtceu:galvanized_ethersteel_double_wire', '#gtceu:circuits/hv', 'ae2:energy_acceptor'])
+  event.recipes.gtceu.circuit_assembler('ae2:controller_assembly2')
+    .itemInputs(['2x malum:cluster_of_brilliance','gtceu:galvanized_ethersteel_double_wire', '#gtceu:circuits/hv', 'ae2:energy_acceptor'])
     .itemOutputs('ae2:controller')
     .duration(80)
     .EUt(GTValues.VA[GTValues.HV]);

@@ -117,7 +117,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('ferric_alumina') //idfk how to call this shit
         .dust()
         .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
-
+    //Guh
+    event.create('crude_source_oils')
+    .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    .color(0xe642f5)
+    //Nether Bioslurry
+    event.create('nether_bioslurry')
+    .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    .color(0xe642f5)
 
 })
 

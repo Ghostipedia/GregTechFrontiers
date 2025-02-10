@@ -1146,7 +1146,6 @@ ServerEvents.recipes(event => {
 
 
 ServerEvents.recipes(event => {
-  event.recipes.create.filling('botania:manasteel_ingot', [Fluid.of('gtceu:ethanol', 1000), 'gtceu:blue_alloy_ingot'])
   event.recipes.create.filling('gtceu:treated_wood_planks', [Fluid.of('gtceu:creosote', 125), '#minecraft:planks'])
   event.remove({ id: 'gtceu:extractor/extract_double_soulresin_plate'})
 })

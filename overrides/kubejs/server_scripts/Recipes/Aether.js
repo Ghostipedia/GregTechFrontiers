@@ -9,9 +9,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'aether:skyroot_jukebox' })
     event.remove({ id: 'aether:skyroot_gravitite_jukebox' })
     event.remove({ id: 'aether:aether_saddle'})
-    event.recipes.gtceu.assembler(`cosmiccore:plated_aerocloud_assembly`)
-    .itemInputs(['4x gtceu:manasteel_plate', '4x gtceu:blue_alloy_screw', 'deep_aether:sterling_aercloud'])
-    .itemOutputs('cosmiccore:plated_aerocloud')
-    .duration(40)
-    .EUt(GTValues.VA[GTValues.MV]);
+    // event.recipes.gtceu.assembler(`cosmiccore:plated_aerocloud_assembly`)
+    // .itemInputs(['4x gtceu:manasteel_plate', '4x gtceu:blue_alloy_screw', 'deep_aether:sterling_aercloud'])
+    // .itemOutputs('cosmiccore:plated_aerocloud')
+    // .duration(40)
+    // .EUt(GTValues.VA[GTValues.MV]);
   })

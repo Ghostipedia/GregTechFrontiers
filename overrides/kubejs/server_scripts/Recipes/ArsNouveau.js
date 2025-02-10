@@ -1,77 +1,35 @@
 ServerEvents.recipes(event => {
 
-    // event.custom({
-    //     "type": "ars_nouveau:enchanting_apparatus",
-    //     "keepNbtOfReagent": true,
-    //     "output": {
-    //       "item": "ars_nouveau:arcanist_hood"
-    //     },
-    //     "pedestalItems": [
-    //       {
-    //         "item": "ars_nouveau:magebloom_fiber"
-    //       },
-    //       {
-    //         "item": "ars_nouveau:magebloom_fiber"
-    //       },
-    //       {
-    //         "item": "ars_nouveau:magebloom_fiber"
-    //       },
-    //       {
-    //         "item": "ars_nouveau:magebloom_fiber"
-    //       }
-    //     ],
-    //     "reagent": [
-    //       {
-    //         "item": "minecraft:iron_helmet"
-    //       }
-    //     ],
-    //     "sourceCost": 0
-    //   })
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "keepNbtOfReagent": false,
+        "output": {
+          "item": "cosmiccore:rune_conjunction_arklythar"
+        },
+        "pedestalItems": [
+          {
+            "item": "cosmiccore:rune_slate_arklys"
+          },
+          {
+            "item": "cosmiccore:rune_slate_zelothar"
+          },
+          {
+            "item": "ars_nouveau:magebloom_fiber"
+          },
+          {
+            "item": "malum:alchemical_calx"
+          }
+        ],
+        "reagent": [
+          {
+            "item": "occultism:otherstone_tablet"
+          }
+        ],
+        "sourceCost": 2000
+      })
     event.remove({id:'occultism:ritual/craft_stabilizer_tier3'})
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'occultism:spirit_attuned_crystal',
-            'occultism:spirit_attuned_crystal',
-            'occultism:spirit_attuned_crystal',
-            'occultism:spirit_attuned_crystal',
-            "occultism:book_of_binding_bound_afrit",
-            "sophisticatedstorage:gold_chest",
-            "occultism:dimensional_matrix",
-        ], // input items
-	    "occultism:storage_stabilizer_tier2", // reagent
-	    'occultism:storage_stabilizer_tier3', // output
-	    25000, // source cost
-	    // true // keep nbt of reagent, think like a smithing recipe
-	);
     event.remove({id:'ars_ocultas:craft_stabilizer_tier4'})
     event.remove({id:'occultism:ritual/craft_stabilizer_tier4'})
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            'occultism:iesnium_block',
-            'occultism:iesnium_block',
-            'occultism:iesnium_block',
-            'occultism:iesnium_block',
-            "occultism:book_of_binding_bound_marid",
-            "sophisticatedstorage:diamond_chest",
-            "occultism:dimensional_matrix",
-        ], // input items
-	    "occultism:storage_stabilizer_tier3", // reagent
-	    'occultism:storage_stabilizer_tier4', // output
-	    50000, // source cost
-	    // true // keep nbt of reagent, think like a smithing recipe
-	);
-    // event.recipes.ars_nouveau.enchanting_apparatus(
-    //     [
-    //         "ars_nouveau:sourceberry_bush",
-    //         "ars_nouveau:sourceberry_bush",
-    //         "minecraft:sand",
-    //         "minecraft:sand",
-    //     ], // input items
-	//     "minecraft:gunpowder", // reagent
-	//     'bhc:soul_heart_crystal', // output
-	//     1000, // source cost
-	//     // true // keep nbt of reagent, think like a smithing recipe
-	// );
     event.remove({ output: 'ars_nouveau:archwood_chest' })
 
     event.shaped('ars_nouveau:archwood_chest', [

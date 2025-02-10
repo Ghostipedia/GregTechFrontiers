@@ -58,6 +58,7 @@ ServerEvents.recipes(event => {
 
 
 
+  event.remove({ id: 'gtceu:smelting/smelt_dust_blue_alloy_to_ingot' })
   event.remove({ id: 'gtceu:centrifuge/deuterium_separation' })
   event.remove({ id: 'gtceu:centrifuge/uranium_hexafluoride_separation' })
   event.remove({ output: 'gtceu:firebrick' })
@@ -175,10 +176,10 @@ ServerEvents.recipes(event => {
     P: 'gtceu:steel_plate'
   })
   event.recipes.gtceu.assembler('gtceu:treated_wood_dust_shred')
-  .itemInputs(['gtceu:bronze_machine_casing', '4x gtceu:steel_rod', '4x gtceu:steel_plate'])
-  .itemOutputs('2x cosmiccore:steel_plated_bronze_casing')
-  .duration(40)
-  .EUt(16);
+    .itemInputs(['gtceu:bronze_machine_casing', '4x gtceu:steel_rod', '4x gtceu:steel_plate'])
+    .itemOutputs('2x cosmiccore:steel_plated_bronze_casing')
+    .duration(40)
+    .EUt(16);
   event.recipes.gtceu.macerator('gtceu:treated_wood_dust_shred')
     .itemInputs('gtceu:treated_wood_planks')
     .itemOutputs('gtceu:treated_wood_dust')
@@ -244,27 +245,27 @@ ServerEvents.recipes(event => {
   let manawires = ['gtceu:manasteel_single_cable', 'gtceu:manasteel_double_cable', 'gtceu:manasteel_quadruple_cable', 'gtceu:manasteel_octal_cable', 'gtceu:manasteel_hex_cable']
   event.remove({ output: manawires })
   event.recipes.gtceu.spooling_machine('gtceu:manasteel_single_cable_wrapping')
-    .itemInputs(['gtceu:manasteel_single_wire', '2x ars_nouveau:magebloom_fiber'])
+    .itemInputs(['gtceu:manasteel_single_wire', '2x botania:manaweave_cloth'])
     .itemOutputs('gtceu:manasteel_single_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.spooling_machine('gtceu:manasteel_double_cable_wrapping')
-    .itemInputs(['gtceu:manasteel_double_wire', '4x ars_nouveau:magebloom_fiber'])
+    .itemInputs(['gtceu:manasteel_double_wire', '4x botania:manaweave_cloth'])
     .itemOutputs('gtceu:manasteel_double_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.spooling_machine('gtceu:manasteel_quad_cable_wrapping')
-    .itemInputs(['gtceu:manasteel_quadruple_wire', '8x ars_nouveau:magebloom_fiber'])
+    .itemInputs(['gtceu:manasteel_quadruple_wire', '8x botania:manaweave_cloth'])
     .itemOutputs('gtceu:manasteel_quadruple_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.spooling_machine('gtceu:manasteel_octal_cable_wrapping')
-    .itemInputs(['gtceu:manasteel_octal_wire', '16x ars_nouveau:magebloom_fiber'])
+    .itemInputs(['gtceu:manasteel_octal_wire', '16x botania:manaweave_cloth'])
     .itemOutputs('gtceu:manasteel_octal_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.spooling_machine('gtceu:manasteel_hex_cable_wrapping')
-    .itemInputs(['gtceu:manasteel_hex_wire', '32x ars_nouveau:magebloom_fiber'])
+    .itemInputs(['gtceu:manasteel_hex_wire', '32x botania:manaweave_cloth'])
     .itemOutputs('gtceu:manasteel_hex_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -469,10 +470,10 @@ ServerEvents.recipes(event => {
     M: 'gtceu:steel_plate',
     W: '#forge:tools/wrenches'
   })
-  //MV MACHINE HULL AND CASING
+  //MV MACHINE HULL AND COMPONENT
   event.remove({ output: 'gtceu:mv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:mv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:double_aluminium_plate', '4x gtceu:manasteel_plate'])
+    .itemInputs(['4x gtceu:double_aluminium_plate', '4x malum:soul_stained_steel_plating'])
     .itemOutputs('gtceu:mv_machine_casing')
     .circuit(8)
     .duration(40)
@@ -483,11 +484,85 @@ ServerEvents.recipes(event => {
     'AMA'
   ], {
     A: 'gtceu:double_aluminium_plate',
-    M: 'gtceu:manasteel_plate',
+    M: 'malum:soul_stained_steel_plating',
     W: '#forge:tools/wrenches'
   })
-  //HV HULLS AND CASINGS
-  //MV MACHINE HULL AND CASING
+  //['2x gtceu:manasteel_single_cable', 'gtceu:mv_machine_casing', '2x malum:spirit_fabric', 'gtceu:double_aluminium_plate']
+  event.remove({ id: 'gtceu:shaped/mv_machine_hull' })
+  event.remove({ id: 'gtceu:assembler/hull_mv_annealed' })
+  event.remove({ id: 'gtceu:assembler/hull_mv' })
+  event.shaped('gtceu:mv_machine_hull', [
+    'PMP',
+    'WCW',
+    'PSP'
+  ], {
+    P: 'malum:spirit_fabric',
+    M: 'gtceu:double_aluminium_plate',
+    W: 'gtceu:manasteel_single_cable',
+    C: 'gtceu:mv_machine_casing',
+    S: 'gtceu:cupronickel_spring'
+  })
+  event.recipes.gtceu.assembler('gtceu:assembler_hull_mv')
+    .itemInputs(['2x gtceu:manasteel_single_cable', 'gtceu:mv_machine_casing', '2x malum:spirit_fabric'])
+    .inputFluids('gtceu:polyethylene 288')
+    .itemOutputs('gtceu:mv_machine_hull')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  //MOTOR
+  event.remove({ id: 'gtceu:assembler/electric_motor_mv' })
+  event.remove({ id: 'gtceu:shaped/electric_motor_mv' })
+  event.recipes.gtceu.assembler('gtceu:new_mv_motor')
+    .itemInputs(['2x gtceu:copper_single_cable', '2x gtceu:soul_stained_steel_rod', 'gtceu:magnetic_steel_rod', '4x gtceu:cupronickel_double_wire'])
+    .itemOutputs('gtceu:mv_electric_motor')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:mv_electric_motor', [
+    'CWR',
+    'WMW',
+    'RWC'
+  ], {
+    C: 'gtceu:copper_single_cable',
+    R: 'gtceu:soul_stained_steel_rod',
+    M: 'gtceu:magnetic_steel_rod',
+    W: 'gtceu:cupronickel_double_wire'
+  })
+  //PISTON
+  event.remove({ id: 'gtceu:assembler/electric_piston_mv' })
+  event.remove({ id: 'gtceu:shaped/electric_piston_mv' })
+  event.recipes.gtceu.assembler('gtceu:new_mv_piston')
+    .itemInputs(['2x gtceu:copper_single_cable', '2x gtceu:soul_stained_steel_rod', '3x malum:soul_stained_steel_plating', 'gtceu:mv_electric_motor', 'gtceu:small_soul_stained_steel_gear'])
+    .itemOutputs('gtceu:mv_electric_piston')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:mv_electric_piston', [
+    'PPP',
+    'CRR',
+    'CMG'
+  ], {
+    P: 'malum:soul_stained_steel_plating',
+    R: 'gtceu:soul_stained_steel_rod',
+    G: 'gtceu:small_soul_stained_steel_gear',
+    C: 'gtceu:copper_single_cable',
+    M: 'gtceu:mv_electric_motor'
+  })
+  //ROBOARM (TODO)
+  event.recipes.gtceu.assembler('gtceu:new_mv_robot_arm')
+  .itemInputs(['3x gtceu:copper_single_cable', '2x gtceu:soul_stained_steel_rod', '2x gtceu:mv_electric_motor', 'gtceu:mv_electric_piston','#gtceu:circuits/mv'])
+  .itemOutputs('gtceu:mv_robot_arm')
+  .duration(100)
+  .EUt(GTValues.VA[GTValues.LV]);
+event.shaped('gtceu:mv_robot_arm', [
+  'CCC',
+  'RGR',
+  'PMG'
+], {
+  P: 'gtceu:mv_electric_piston',
+  R: 'gtceu:mv_electric_motor',
+  G: 'gtceu:soul_stained_steel_rod',
+  C: 'gtceu:copper_single_cable',
+  M: '#gtceu:circuits/mv'
+})
+  //HV HULLS AND COMPONENTS
   event.remove({ output: 'gtceu:hv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:hv_machine_casing_assembler')
     .itemInputs(['4x gtceu:double_stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate'])
@@ -503,8 +578,26 @@ ServerEvents.recipes(event => {
     A: 'gtceu:double_stainless_steel_plate',
     M: 'gtceu:galvanized_ethersteel_plate',
     W: '#forge:tools/wrenches'
-  }
-  )
+  })
+  event.remove({ id: 'gtceu:shaped/hv_machine_hull' })
+  event.remove({ id: 'gtceu:assembler/hull_hv' })
+  event.shaped('gtceu:hv_machine_hull', [
+    'PMP',
+    'WCW',
+    'PSP'
+  ], {
+    P: 'kubejs:terraweave_cloth',
+    M: 'gtceu:double_aluminium_plate',
+    W: 'gtceu:terrasteel_single_cable',
+    C: 'gtceu:hv_machine_casing',
+    S: 'gtceu:kanthal_spring'
+  })
+  event.recipes.gtceu.assembler('gtceu:assembler_hull_hv')
+    .itemInputs(['2x gtceu:terrasteel_single_cable', 'gtceu:hv_machine_casing', '2x kubejs:terraweave_cloth'])
+    .inputFluids('gtceu:polyethylene 288')
+    .itemOutputs('gtceu:hv_machine_hull')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
   //EV MACHINE HULL AND CASING
   event.remove({ output: 'gtceu:ev_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:ev_machine_casing_assembler')
@@ -593,6 +686,7 @@ ServerEvents.tags('block', event => {
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'gtceu:frostproof_machine_casing')
   event.add('ae2:blacklisted/spatial', 'minecraft:netherite_block')
+  event.add('ae2:blacklisted/storage_bus', 'create:vault')
 })
 
 // ServerEvents.recipes(e => {

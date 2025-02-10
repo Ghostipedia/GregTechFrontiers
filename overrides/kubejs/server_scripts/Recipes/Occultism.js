@@ -25,6 +25,8 @@ yeet('occultism:copper_dust')
 yeet('occultism:silver_dust')
 yeet('occultism:obsidian_dust')
 yeet('occultism:crushed_end_stone')
+yeet('occultism:storage_stabilizer_tier3')
+yeet('occultism:storage_stabilizer_tier4')
 
 yeet('occultism:storage_remote_inert')
 yeet('occultism:storage_remote')
@@ -200,6 +202,18 @@ ServerEvents.recipes(event => {
   event.recipes.occultism.miner(
     Item.of('gtceu:raw_iesnium').withChance(75),
     'occultism:iesnium_pickaxe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('cosmiccore:rune_slate_tenura').withChance(75),
+    'malum:soul_stained_steel_pickaxe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('cosmiccore:rune_slate_valdris').withChance(75),
+    'malum:soul_stained_steel_pickaxe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('malum:cluster_of_brilliance').withChance(75),
+    'malum:soul_stained_steel_pickaxe'
   )
   event.recipes.occultism.ritual(
     '16x gtceu:runed_steel_ingot',

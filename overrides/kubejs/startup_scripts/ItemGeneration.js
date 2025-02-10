@@ -13,6 +13,8 @@ StartupEvents.registry('item', event => {
     event.create('americium_engine')
     event.create('shredded_magebloom')
     event.create('washed_magebloom')
+    event.create('terraweave_cloth').displayName('Terraweave Cloth')
+    event.create('spooled_terraweave').displayName('Spooled Terraweave')
     event.create('t2_rocket_plating')
     event.create('memory_shard').displayName('Memeroy Shards of Mortality')
     event.create('welded_rocket_plating_mk2').displayName('Welded Rocket Plating Mk.2')

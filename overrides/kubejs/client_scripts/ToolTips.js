@@ -145,7 +145,7 @@ ItemEvents.tooltip(event => {
     text.add(7, Text.of('------------------------------------------------------------').aqua())
     text.add(8, Text.of('Overclock Type : Imperfect'))
   })
-  event.addAdvanced('gtceu:celestial_bore', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:vomahine_celestial_laser_bore', (item, advanced, text) => {
     text.add(1, Text.of('Multiblock Classification: Megastructure').aqua().bold())
     text.add(2, Text.of('Stellar Grade Mining Platform').white().bold())
     text.add(3, Text.of('Selectively targets the planet below to extract a bounty of resources.'))
@@ -165,6 +165,29 @@ ItemEvents.tooltip(event => {
       text.add(16, Text.of('Overclock Type : Exotic'))
     } else {
       text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }    
+  })
+  event.addAdvanced('cosmiccore:stellar_iris', (item, advanced, text) => {
+    text.add(1, Text.of('Embodiment of the Soul').aqua().bold())
+    text.add(2, Text.of('A massive structure linking the soul to stellar bodies and unkown perpetuity.'))
+    if (event.isShift()) {
+      text.add(3, Text.of('------------------------------------------------------------').aqua())
+      text.add(4, [Text.of('Star Ballast: ').white(), Text.of('Data Corruption Present').red()])
+      text.add(5, [Text.of('Somatic Uplink: ').white(), Text.of('Required for stellar bodies to form, will prevent a supernova by shattering the soul.').gray()])
+      text.add(6, [Text.of('Cosmic Weave: ').white(), Text.of('Threads Dense Stellar Matter into threads of potential.').gray()])
+      text.add(7, Text.of('------------------------------------------------------------').aqua())
+      text.add(8, Text.of('Stars created within the core will have stats based on the "stellar seed" used').darkGreen())
+      text.add(9, Text.of('Stars will consume hydrogen, helium, nitrogen, and oxygen per tick.').gold())
+      text.add(10, Text.of('Stars and Blackholes will modify production rates and unlock recipes.').yellow())
+      text.add(11, Text.of('------------------------------------------------------------').aqua())
+      text.add(12, Text.of('TODO ; All the Fancy Multi-recipe handler stuff/modules/etc').gold())
+      text.add(13, Text.of('There seems to be more here, observe the GUI to learn more.').white())
+      text.add(14, Text.of('The Iris is bound to the soul(s) of the user(or team), catastrophic shutdown will kill all bound players instantly.').red().italic())
+      text.add(15, Text.of('There may only be one Stellar IRIS per team/player').red().italic())
+      text.add(16, Text.of('------------------------------------------------------------').aqua())
+      text.add(17, Text.of('Overclock Type : ∞'))
+    } else {
+      text.add(3, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
     }    
   })
  
@@ -197,8 +220,11 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
-  event.addAdvanced('ae2:condenser', (item, advanced, text) => {
-    text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
+  event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {
+    text.add(1, Text.of('Notice; Recipes may be incorrect, check EMI!').red())
+  })
+  event.addAdvanced('malum:encyclopedia_esoterica', (item, advanced, text) => {
+    text.add(1, Text.of('Notice; Recipes may be incorrect, check EMI!').red())
   })
   event.addAdvanced('botania:gaia_ingot', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: T2 Gaia and Ingot Recipe for Summon will be added when it is time to unlock them!').red())
