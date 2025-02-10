@@ -12,7 +12,7 @@
     "cpu_render_ahead_limit": 4
   },
   "performance": {
-    "chunk_builder_threads": 10,
+    "chunk_builder_threads": 6,
     "always_defer_chunk_updates_v2": true,
     "animate_only_visible_textures": true,
     "use_entity_culling": true,

@@ -316,6 +316,30 @@
     "heat_resistance": 0.0,
     "cold_resistance": 0.0,
     "thermal_resistance": 10.0
+  },
+  "botania:manaweave_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 5.0,
+    "thermal_resistance": 0.0
+  },
+  "botania:manaweave_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 5.0,
+    "thermal_resistance": 0.0
+  },
+  "botania:manaweave_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 5.0,
+    "thermal_resistance": 0.0
+  },
+  "botania:manaweave_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 5.0,
+    "thermal_resistance": 0.0
   }
   
 }

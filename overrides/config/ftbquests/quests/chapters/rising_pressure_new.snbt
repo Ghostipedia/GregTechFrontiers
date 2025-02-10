@@ -20,6 +20,7 @@
 				""
 				"Start by making &abronze&r, a mixture of tin and copper dust. Remember, you can make dust by using ingots and a Gregtech &eMortar&r!"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "30C980B828A48306"
 			rewards: [
@@ -718,12 +719,9 @@
 				"5B16C4D1A2356E3D"
 			]
 			description: [
-				"This big boy does fluid solidification in steam, allowing you to create firebricks."
+				"This big boy does fluid solidification in steam, allowing you to create firebricks, as well as other Fluid Solidifier recipes!"
 				""
-				"it may also unlock some nice recipes later. Unsure"
-				""
-				""
-				"Note ; WIP desc"
+				"This is the only way you can handle some hotter fluids solidification as well."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lp_steam_liquid_boiler"
@@ -1141,7 +1139,8 @@
 		{
 			dependencies: ["370680B11E59D49C"]
 			description: [
-				"TODO ; Custom Portal Structure"
+				"&6Note; For info on surviving in the nether, check out the \"Surviving the Inferno\" quest&r"
+				""
 				"No idea when I'll get that done so just use a normal portal for now"
 				""
 				"The Nether is full of biology and minerals not found in the overworld. Most notably, you are on the hunt for."
@@ -1336,20 +1335,27 @@
 			description: [
 				"The Nether is quite hot, make sure to insulate your armor."
 				""
-				"If you can afford it the Soulspring Lantern allows you to withstand the nethers heat."
-				"You can refill it with soul sprouts."
+				"If you have silktouch (you've been working on your gear, right...?) you can create 'cold stones' which naturally lower your body temp if they're in your inventory, be careful though, they melt away after being held onto for too long!"
+				""
+				"Some food/drink grant '&bCold Food/Drink&r' this &nlowers&r your body temperature, not by much but every little bit counts!"
+				"Have you found a brewing stand in the overworld? Great! This will make your life easier as you could brew heat resistance potions; or even better, fire resistance."
+				""
+				"Heat Resistance makes you slightly more heat immune, where as fire resisance makes you immune."
+				""
+				"You can insulate your armor with cooling coatings, which will make you more heat resistant."
 				""
 				"You'll also struggle to breathe, maybe it's time to consider a Reinforced Respirator..?"
 				"You can also use a Create Diving Helmet and Backtank."
 				""
 				"Due to limitations with the Create Mod, insulation applied to backtanks naturally vanishes."
-				"Some base level insulation has been added to offset this issue."
+				"EDIT; With the new temperature mod I have not been able to confirm if this is true, let me know!"
 				"Don't add your own, it'll vanish when you place your backtank down to recharge it."
 				"You have been warned."
 			]
 			hide_dependency_lines: true
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "078A87C631741398"
+			min_width: 400
 			shape: "gear"
 			subtitle: "Nether Advice"
 			tasks: [{
@@ -1357,7 +1363,7 @@
 				title: "I know what I'm doing!"
 				type: "checkmark"
 			}]
-			title: "Nether Prep"
+			title: "Surviving the Inferno"
 			x: -9.5d
 			y: -3.5d
 		}
@@ -1522,17 +1528,18 @@
 		{
 			dependencies: ["00B281664EDD41AA"]
 			description: [
-				" Soul Sprouts are native to the nether and are abnormally cold compared to the rest of this hellscape."
+				"Ice Ferns can be found in cold biomes across the overworld. "
 				""
-				"Soul sprouts grow similar to sugarcane but do not always drop from each block."
-				"You can also refill your soul spring lamp with these, just hold them in your mouse cursor and right click the lamp"
+				""
+				""
+				"Trivia; In an older version of frontiers this item used to be a \"Soul Sprout\" Some sugarcane like plant from the nether"
 			]
 			hide_dependency_lines: true
 			id: "36515C42E0E4AFF6"
 			subtitle: "Chilly Flora"
 			tasks: [{
-				id: "718FC0A1F709A3F6"
-				item: "cold_sweat:soul_sprout"
+				id: "3D43502335639D02"
+				item: "legendarysurvivaloverhaul:ice_fern_leaf"
 				type: "item"
 			}]
 			x: -15.0d
@@ -1932,7 +1939,7 @@
 				type: "item"
 			}]
 			x: -18.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6CA050964E1A8658"]
@@ -2169,10 +2176,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"379A4BCB53505229"
-				"6ABAAE95062134B2"
-			]
+			dependencies: ["6ABAAE95062134B2"]
 			description: ["&bSoul Resin&r has more resilient properties than &cSticky Resin&r has, as a result it proves better for your first &acircuit boards&r."]
 			id: "468AFCF2423C2EB4"
 			rewards: [{
@@ -2429,8 +2433,8 @@
 				item: "gtceu:cinderwax_ingot"
 				type: "item"
 			}]
-			x: -13.0d
-			y: 4.5d
+			x: -11.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -2456,7 +2460,10 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["468AFCF2423C2EB4"]
+			dependencies: [
+				"468AFCF2423C2EB4"
+				"379A4BCB53505229"
+			]
 			description: [
 				"&bCinder Wax&r and &bCopper Wire&r allows your shoddy wiring job to not be left fully uninsulated."
 				""
@@ -2488,53 +2495,42 @@
 				item: "gtceu:treated_wood_plate"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 3.5d
+			x: -13.0d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"739AF35CCA609F56"
-				"4A034254997FD7D5"
-			]
+			dependencies: ["30C980B828A48306"]
 			description: [
-				"This Block can store a huge amount of 'stuff'. What stuff? Your stuff!"
+				"Well this is awkward..."
 				""
-				"The number displayed in the core blocks UI is the amount of 'stacks' the multi can store."
 				""
-				"Each Stack is 512 Items. So 512 Cobblestone would take up 1/64 of your storage."
 				""
-				"Due to the Extremely Strong nature of this structure. Some values have been adjusted to make it more of an earlygame storage system"
+				"These existed for a short time, they are now considered deprecated."
 				""
-				"Autocrafting Functionality and Wormhole Functionality have been completely disabled."
-				""
-				"The Storage Capacity of the Structure + It's Upgrade Augments has also been modified"
-				""
-				"Base Stack Storage 128 -> 64"
-				"Storage per \"Stack\" 1024 -> 512"
-				""
-				"T1 Updgrade : 256 -> 64"
-				""
-				"T2 Stabilizer : 512 -> 128"
-				""
-				"T3 Stabilizer : 1024 -> 256"
-				""
-				"T4 Stabilizer : 2048 -> 512 "
-				""
-				"This however, is still quite strong, so the cost of the core and stabilizers will be adapted to be costly."
+				"All recipes have been removed, I would recommend migrating away from them ASAP"
 			]
+			hide_dependency_lines: true
+			icon: "occultism:storage_controller"
 			id: "2F1F0288053F5229"
 			min_width: 400
 			rewards: [{
-				id: "05CEBD7CD082B9F0"
-				item: "cosmiccore:cluster_of_perpetuity"
+				id: "12805EA934AF0624"
+				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
 			subtitle: "Nerfed yet still good."
-			tasks: [{
-				id: "2CB0D82BBE9C3C35"
-				item: "occultism:storage_controller"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2CB0D82BBE9C3C35"
+					item: "occultism:storage_controller"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "15401EF3F84514DA"
+					type: "checkmark"
+				}
+			]
 			x: -14.0d
 			y: 3.5d
 		}
@@ -2544,7 +2540,11 @@
 				"3D906FC110FE69D7"
 			]
 			dependency_requirement: "all_started"
-			description: ["The Divination Rod will highlight Iesnium ore nearby."]
+			description: [
+				"The Divination Rod will highlight Iesnium ore nearby."
+				""
+				"Attune the rod by using shift-rightclick on netherrack"
+			]
 			hide_dependency_lines: true
 			id: "68AAF390B75DAD61"
 			optional: true
@@ -2573,8 +2573,8 @@
 			id: "4BD0110554731D07"
 			subtitle: "Chilly Flora"
 			tasks: [{
-				id: "7035DCB66036E9A8"
-				item: "cold_sweat:soul_sprout"
+				id: "250FAE5F8B05F26F"
+				item: "legendarysurvivaloverhaul:ice_fern_leaf"
 				type: "item"
 			}]
 			x: -14.0d
@@ -2618,6 +2618,7 @@
 			hide_until_deps_visible: true
 			icon: "ars_nouveau:worn_notebook"
 			id: "70F95C537C54938A"
+			shape: "diamond"
 			subtitle: "Story Entry 1 | Description Hidden Until Completed"
 			tasks: [{
 				id: "2E2868406D150CBC"
@@ -2658,6 +2659,29 @@
 			]
 			x: -2.0d
 			y: -7.0d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			description: [
+				"Can spawn in the overworld in geodes."
+				""
+				"If someone knows how to remove this please let me know on discord, lol"
+				""
+				"It has very few usages, this is pretty intentional."
+				""
+				"For what it works with, feel free to use it."
+			]
+			hide_dependency_lines: true
+			id: "4B5B3DDD7F9C6D7C"
+			shape: "gear"
+			subtitle: "It's Quartz, but overworld flavored."
+			tasks: [{
+				id: "0FD23134CFF872C8"
+				item: "malum:natural_quartz"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.5d
 		}
 	]
 	title: "Rising Pressure - [Steam]"

@@ -12,7 +12,7 @@
 	#The amount of slots the storage actuator provides.
 	controllerBaseSlots = 64
 	#The stack size the storage actuator uses.
-	controllerStackSize = 512
+	controllerStackSize = 64
 	#True to use the configured controllerStackSize for all items, instead of the stack sizes provided by item type (such as 16 for ender pearls, 64 for iron ingot). WARNING: Setting this to false may have a negative impact on performance.
 	overrideItemStackSizes = true
 	#True to use the configured controllerStackSize for all items, instead of the stack sizes provided by item type (such as 16 for ender pearls, 64 for iron ingot). WARNING: Setting this to false may have a negative impact on performance.

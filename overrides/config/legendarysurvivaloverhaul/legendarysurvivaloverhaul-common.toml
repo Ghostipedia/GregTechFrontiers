@@ -30,12 +30,20 @@
 		# How much health player will have initially.
 		#Range: 1.0 ~ 10000.0
 		"Initial Player Health" = 20.0
+		# If enabled, use on a filled map will show destination coordinates.
+		"Show Coordinate On Filled Map" = true
 
 # Options related to the player food data
 [food]
 	# Food exhausted every 10 ticks. Increase the base minecraft food exhaustion.
 	#Range: 0.0 ~ 1000.0
 	"Base Food Exhaustion" = 0.03
+	# Food exhausted every 10 ticks while sprinting in addition to the sprinting minecraft food exhaustion.
+	#Range: 0.0 ~ 1000.0
+	"Sprinting Food Exhaustion" = 0.1
+	# Food exhausted on every attack in addition to the minecraft attack food exhaustion.
+	#Range: 0.0 ~ 1000.0
+	"On Attack Food Exhaustion" = 0.1
 
 # Options related to the temperature system
 [temperature]
@@ -54,6 +62,7 @@
 	"Player Sprint Modifier" = 1.5
 	# How much the effects of the player's altitude on temperature are multiplied starting at Y 64.
 	# Each 64 blocks further from Y 64 will reduce player's temperature by this value.
+	# It means that for a value of -5, the body temperature of the player is reduced by 5 for each 64 blocks (the calculus is done linearly).
 	#Range: -1000.0 ~ 1000.0
 	"Altitude Modifier" = -5.0
 
@@ -88,18 +97,23 @@
 		# Enable the wetness mechanic.
 		"Wetness Enabled" = true
 		# How much being wet influences the player's temperature.
+		# It means that for a value of -10, the body temperature of the player is reduced by 10.
 		#Range: -1000.0 ~ 1000.0
 		"Wetness Modifier" = -10.0
-		# How much the wetness decrease when out of water, in case of dynamic wetness.
+		# How much the wetness decrease when out of water.
 		#Range: -1000 ~ 0
 		"Wetness Decrease" = -5
-		# How much the wetness increase when under rain, in case of dynamic wetness.
+		# How much the wetness increase when under rain.
 		#Range: 0 ~ 1000
 		"Wetness Under Rain Increase" = 5
-		# How much the wetness increase when the player is in a fluid, scale by the amount of fluid in the block, in case of dynamic wetness.
+		# How much the wetness increase when the player is in a fluid, scale by the amount of fluid in the block.
 		# The defined value is for a full block of fluid, and goes up to 2 times this value when fully immerge.
 		#Range: 0 ~ 1000
 		"Wetness In Fluid Increase" = 10
+		# How frequently the wetness is modified.
+		# By default, every 10 ticks, the wetness will either increase or decrease, based on the conditions.
+		#Range: 1 ~ 100000
+		"Wetness Tick Timer" = 10
 
 	[temperature.huddling]
 		# How much nearby players increase the ambient temperature by.
@@ -139,9 +153,11 @@
 
 	[temperature.weather]
 		# How much of an effect rain has on temperature.
+		# It means that for a value of -2, the body temperature of the player is reduced by 2.
 		#Range: -1000.0 ~ 1000.0
 		"Rain Temperature Modifier" = -5.0
 		# How much of an effect snow has on temperature.
+		# It means that for a value of -6, the body temperature of the player is reduced by 6.
 		#Range: -1000.0 ~ 1000.0
 		"Snow Temperature Modifier" = -9.0
 
@@ -164,6 +180,7 @@
 		#Range: 1.0 ~ Infinity
 		"Biome Time Multiplier" = 2.75
 		# Staying in the shade or during cloudy weather will reduce player's temperature by this amount based on time of the day (maximum effect at noon, following sinusoidal).
+		# It means that for a value of -6, the body temperature of the player is reduced by 6.
 		# Only effective in hot biomes and during day time!
 		#Range: -1000.0 ~ 1000.0
 		"Shade Time Modifier" = -9.0
@@ -346,6 +363,13 @@
 		"Large Canteen Capacity" = 20
 		# Allow override of purified water stored in canteen with normal water.
 		"Allow Override Purified Water" = true
+		# If enabled, the player can water himself by using the canteen while crouching.
+		# This will increase the player wetness and remove fire.
+		"Self Watering Canteen Enabled" = true
+		# If Self Watering Canteen and Wetness are enabled, defines how much wetness is added to the player.
+		# Set this value to 0 to have no wetness added. By default, the maximum wetness is 400.
+		#Range: 0 ~ 10000
+		"Self Watering Canteen Wetness" = 400
 
 	# Allows drinking from lava. Can be used as bauble.
 	[thirst.nether_chalice]
@@ -364,9 +388,9 @@
 
 		[thirst.integration.origins]
 
-			# Temperature won't increase will on fire
+			# Temperature won't increase while on fire
 			# Immune to wetness
-			#Can drink lava
+			# Can drink lava
 			[thirst.integration.origins.blazeborn]
 				# Amount of hydration recovered when drinking from lava.
 				#Range: 0 ~ 20
@@ -430,7 +454,7 @@
 	# The damageSourceBodyParts.json allows you to define for specific damage source, the damage spread across specified body parts.
 	# The damage distribution can either be ONE_OF or ALL. ALL means the damage are equally divided across all body parts.
 	[health-overhaul.body-damage]
-		# Multiply the damage taken by the player when shot in the head.
+		# Multiply the damage taken by the player when shot in the head without helmet.
 		#Range: 1.0 ~ 1000.0
 		"Headshot Multiplier" = 2.0
 		# How much of the hurt player's damage is assigned to the body parts.
@@ -442,19 +466,70 @@
 		# How much health ratio are recovered from bed sleeping.
 		#Range: 0.0 ~ 1.0
 		"Health Ratio Recovered" = 1.0
+		# How much food is exhausted when a limb regenerates based on the amount of health regenerated.
+		# Each 1 health regenerated, the food is exhausted by this value.
+		#Range: 0.0 ~ 1000.0
+		"Body Healing Food Exhaustion" = 0.1
+		# The hunger bar won't drop below this value while body is healing.
+		# Each hunger icon has a value of 2 in the hunger bar.
+		#Range: 0 ~ 1000
+		"Minimum Food On Body Healing" = 0
 
 		[health-overhaul.body-damage.healing-items]
-			# Item use time is ticks.
-			#Range: 0 ~ 1000
-			"Healing Herbs Use Time" = 20
-			#Range: 0 ~ 1000
-			"Plaster Use Time" = 20
-			#Range: 0 ~ 1000
-			"Bandage Use Time" = 30
-			#Range: 0 ~ 1000
-			"Tonic Use Time" = 50
-			#Range: 0 ~ 1000
-			"Medikit Use Time" = 50
+
+			[health-overhaul.body-damage.healing-items.healing-herbs]
+				# Item use time in ticks.
+				#Range: 0 ~ 1000
+				"Healing Herbs Use Time" = 20
+				# Regeneration effect amplifier.
+				#Range: 0 ~ 10
+				"Healing Herbs Regeneration Amplifier" = 0
+				# Regeneration effect duration in ticks.
+				#Range: 0 ~ 10000
+				"Healing Herbs Regeneration Duration" = 60
+
+			[health-overhaul.body-damage.healing-items.plaster]
+				# Item use time in ticks.
+				#Range: 0 ~ 1000
+				"Plaster Use Time" = 20
+				# Regeneration effect amplifier.
+				#Range: 0 ~ 10
+				"Plaster Regeneration Amplifier" = 0
+				# Regeneration effect duration in ticks.
+				#Range: 0 ~ 10000
+				"Plaster Regeneration Duration" = 120
+
+			[health-overhaul.body-damage.healing-items.bandage]
+				# Item use time in ticks.
+				#Range: 0 ~ 1000
+				"Bandage Use Time" = 30
+				# Regeneration effect amplifier.
+				#Range: 0 ~ 10
+				"Bandage Regeneration Amplifier" = 1
+				# Regeneration effect duration in ticks.
+				#Range: 0 ~ 10000
+				"Bandage Regeneration Duration" = 120
+
+			[health-overhaul.body-damage.healing-items.tonic]
+				# Item use time in ticks.
+				#Range: 0 ~ 1000
+				"Tonic Use Time" = 50
+				# Regeneration effect amplifier.
+				#Range: 0 ~ 10
+				"Tonic Regeneration Amplifier" = 1
+				# Regeneration effect duration in ticks.
+				#Range: 0 ~ 10000
+				"Tonic Regeneration Duration" = 140
+
+			[health-overhaul.body-damage.healing-items.medikit]
+				# Item use time in ticks.
+				#Range: 0 ~ 1000
+				"Medikit Use Time" = 50
+				#Range: 0 ~ 10
+				"Medikit Regeneration Amplifier" = 2
+				# Regeneration effect duration in ticks.
+				#Range: 0 ~ 10000
+				"Medikit Regeneration Duration" = 140
 
 		[health-overhaul.body-damage.body-parts-health]
 			# How a player's body part health is determined. Accepted values are as follows:

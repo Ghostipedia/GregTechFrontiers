@@ -513,6 +513,17 @@ compat:
 
   # Config options regarding GTCEu compatibility with minimap mods
   minimap:
+    # Toggle specific map mod integration on/off (need to restart for this to take effect)
+    toggle:
+      # FTB Chunks integration enabled
+      ftbChunksIntegration: false
+
+      # Journey Map integration enabled
+      journeyMapIntegration: true
+
+      # Xaerox's map integration enabled
+      xaerosMapIntegration: true
+
     # The radius, in blocks, that picking up a surface rock will search for veins in.
     # -1 to disable.
     # Default: 24
@@ -534,7 +545,7 @@ compat:
 
     # The color to draw a box around the ore icon with.
     # Accepts either an ARGB hex color prefixed with # or the string 'material' to use the ore's material color
-    borderColor: #FFFF9B93
+    borderColor: 'material'
 
     # Which part of the screen to anchor buttons to
     # Default: "BOTTOM_LEFT"

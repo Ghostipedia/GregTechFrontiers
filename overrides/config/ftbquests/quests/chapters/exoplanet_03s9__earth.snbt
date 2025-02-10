@@ -137,7 +137,15 @@
 				""
 				"Potions &6completely nullify&r any negatives applied by heat/cold"
 			]
-			icon: "cold_sweat:thermometer"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						temperature: 36.2f
+					}
+				}
+				id: "legendarysurvivaloverhaul:thermometer"
+			}
 			id: "423EB7A96CB261A3"
 			rewards: [{
 				id: "0343745A0E5CD43E"
@@ -548,16 +556,27 @@
 			description: [
 				"Don't like constantly freezing and overheating in your own base?"
 				""
-				"Make a hearth and give it some warm/cold blocks and fluids, it'll keep you nice and comfortable."
+				"Make a boilers or ice boxes and give it some warm/cold blocks and fluids, it'll keep you nice and comfortable."
+				""
+				"Unlike Coldsweat, these blocks don't make you more resistant to temperature, they just help modify your local enviroment."
+				""
+				"A small price to pay, For not crashing every other game load :')"
 			]
 			id: "536D3BFD33A78DBF"
 			optional: true
 			subtitle: "Keeping Places Livable"
-			tasks: [{
-				id: "668651F95B53D12F"
-				item: "cold_sweat:hearth"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0A4E6B73A3070E6E"
+					item: "legendarysurvivaloverhaul:cooler"
+					type: "item"
+				}
+				{
+					id: "25ECF621490C048B"
+					item: "legendarysurvivaloverhaul:heater"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: 3.5d
 		}
@@ -858,6 +877,17 @@
 			title: "Changelogs / Updates"
 			x: 2.5d
 			y: -5.5d
+		}
+		{
+			icon: "gtceu:lv_alloy_smelter"
+			id: "1DF33FF70395C34B"
+			subtitle: "GT Machines"
+			tasks: [{
+				id: "197E2ACB77707CD1"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 4.5d
 		}
 	]
 	subtitle: ["It all starts here"]

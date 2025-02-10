@@ -580,24 +580,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["635C885360A8A8A9"]
-			hide_dependency_lines: true
-			id: "632091FC1E5DC0EC"
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				id: "79C00DE3CB66798A"
-				item: "gtceu:luv_assembler"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"632091FC1E5DC0EC"
-				"47318FA4836A00AE"
-			]
+			dependencies: ["33EAB75E7D2CAFDA"]
 			id: "4D0330D421EDD5B1"
 			tasks: [{
 				id: "79699BBDA184D1EF"
@@ -628,17 +611,6 @@
 			}]
 			x: -1.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["33EAB75E7D2CAFDA"]
-			id: "47318FA4836A00AE"
-			tasks: [{
-				id: "49BAA6035E56727B"
-				item: "cosmiccore:trinavine_plate"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -6.0d
 		}
 		{
 			dependencies: ["32EC05BCE9911025"]

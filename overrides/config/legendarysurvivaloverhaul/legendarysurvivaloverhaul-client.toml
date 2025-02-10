@@ -54,9 +54,11 @@
 	"Body Damage Indicator X Offset" = 0
 	#Range: -10000 ~ 10000
 	"Body Damage Indicator Y Offset" = 0
-	# If true, the body damage indicator will always be rendered
-	# By default, the body damage indicator disappears when no wounded body limbs.
-	"Body Damage indicator Always Rendered" = false
+	# Limb health threshold below which the body damage indicator is rendered.
+	# If set to 1.1, the body damage indicator is always rendered.
+	# If set to 1.0, the body damage indicator is rendered as soon as a limb is wounded.
+	#Range: 0.0 ~ 1.1
+	"Body Damage Indicator Limb Health Threshold" = 1.0
 
 [season-cards]
 	# The X and Y offset of the season cards. Set both to 0 for no offset.
@@ -79,12 +81,26 @@
 	"Season Cards Fade Out In Ticks" = 20
 
 [thirst]
-	# If enabled, show the hydration values in the item tooltip.
-	"Show Hydration Tooltip" = true
-	# If enabled, show the hydration and the saturation values on the same line in the tooltip.
-	"Merge Hydration And Saturation Tooltip" = true
 	# Whether the Thirst Saturation is displayed or not.
 	"Render the thirst saturation" = true
 	# If enabled, player's vision will become blurry when running low on hydration.
 	"Low Thirst Effect" = true
+
+	[thirst.tooltip]
+		# If enabled, show the hydration values in the item tooltip.
+		"Show Hydration Tooltip" = true
+		# If enabled, show the hydration and the saturation values on the same line in the tooltip.
+		"Merge Hydration And Saturation Tooltip" = true
+
+	[thirst.hydration-bar]
+		# If enabled, the hydration bar will be displayed.
+		"Show Hydration Bar" = true
+		# If enabled, a preview on hydration bar will be displayed if player holds a drink item.
+		"Show Drink Preview" = true
+		# How much the hydration bar is moved to the right.
+		#Range: -10000 ~ 10000
+		"Hydration Bar Offset X" = 0
+		# How much the hydration bar is moved to the bottom.
+		#Range: -10000 ~ 10000
+		"Hydration Bar Offset Y" = 0
 

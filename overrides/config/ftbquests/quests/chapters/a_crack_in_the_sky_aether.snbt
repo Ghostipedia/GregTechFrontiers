@@ -11,54 +11,16 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["5F0FB7A2F012B47E"]
 			description: [
+				"This Quest Chapter covers all the information I’ve gathered from the Aether."
 				""
-				""
-				"This earth seems to have some barrier from letting me get to the lofty clouds above."
-				""
-				"I will investigate a way to break through this barrier. The best option is a stable gateway."
-				"However I do not have the materials."
-				""
-				"I demand an audience with the powers throughout this Universe."
-				"Conflict is all I have left and I'll fight my way out of here. "
-				""
-				"Yet another &ctrial&r is ahead. I need to be prepared."
-			]
-			id: "7E9BA1EC4CA7EEE8"
-			shape: "hexagon"
-			size: 2.5d
-			subtitle: "You can't keep me here forever"
-			tasks: [{
-				id: "5B12CDF9FDCAC92A"
-				item: {
-					Count: 1
-					id: "gateways:gate_pearl"
-					tag: {
-						gateway: "gateways:trial_of_the_skies"
-					}
-				}
-				type: "item"
-			}]
-			title: "A Way up"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7E9BA1EC4CA7EEE8"]
-			description: [
-				"The Aether, a hostile paradise above the surface of this earth."
-				"I should take care, as falling from this height down to earth would be potentially fatal."
-				""
-				"To Traverse the islands, I should consider making a &aGlider&r. Long Jumping and swiftly gliding should help me move around."
-				""
-				"It will most likely be &bVERY COLD&r. as well."
+				"Some of it might not prove useful until later, so check this quest page if you feel lost."
 			]
 			icon: "aether:aether_portal_frame"
 			id: "57A955955309A292"
 			shape: "hexagon"
 			size: 1.0d
-			subtitle: "An asteroid belt close to home. [LVL 10 - 40]"
+			subtitle: "Cold Ammonia Skylands"
 			tasks: [
 				{
 					dimension: "aether:the_aether"
@@ -76,7 +38,7 @@
 			]
 			title: "Exploration Expedition 1"
 			x: 0.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -86,8 +48,8 @@
 				item: "gtceu:zanite_gem"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -97,8 +59,8 @@
 				item: "gtceu:ambrosium_gem"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -109,8 +71,8 @@
 				item: "gtceu:raw_barite"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -125,32 +87,8 @@
 				type: "item"
 			}]
 			title: "Aether Air Distillation"
-			x: 2.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["57A955955309A292"]
-			icon: "ftbquests:barrier"
-			id: "63FD7396CD8ACA36"
-			subtitle: "NYI - More Content Coming HV!"
-			tasks: [{
-				id: "5D53D2C529BF1121"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["63FD7396CD8ACA36"]
-			icon: "ftbquests:barrier"
-			id: "67EC5AF9BC37E368"
-			subtitle: "NYI - More Content Coming HV! "
-			tasks: [{
-				id: "3944DDE073E9B291"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -2.0d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -160,8 +98,8 @@
 				item: "gtceu:raw_bauxite"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -178,7 +116,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2501BE8FAD0FD89B"]
@@ -194,8 +132,8 @@
 				item: "aether:silver_dungeon_key"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -6.5d
+			x: 0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["50401BF5E3938AE9"]
@@ -211,8 +149,8 @@
 				item: "aether:gold_dungeon_key"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -8.5d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["696EA94AB22229DA"]
@@ -231,10 +169,9 @@
 			}]
 			title: "To the deepest depths"
 			x: 0.0d
-			y: -11.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["7E9BA1EC4CA7EEE8"]
 			description: [
 				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
 				"Expect Frequent Revisions to things, not anything hugely breaking though."
@@ -247,8 +184,8 @@
 				title: "In Development!"
 				type: "custom"
 			}]
-			x: 1.5d
-			y: -1.0d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["467DD8A59876EDFE"]
@@ -261,8 +198,8 @@
 				item: "gtceu:hv_gas_collector"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.0d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1DDC620CBE8B3653"]
@@ -289,8 +226,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.5d
-			y: -2.0d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["22495EC28729468F"]
@@ -301,8 +238,8 @@
 				item: "gtceu:tears_of_the_sky_bucket"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -3.0d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["22495EC28729468F"]
@@ -313,8 +250,8 @@
 				item: "gtceu:ammonia_rich_aerocloud_solution_bucket"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -2.0d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["22495EC28729468F"]
@@ -325,8 +262,8 @@
 				item: "gtceu:thundering_aerocloud_solution_bucket"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["436731F4DEA413B4"]
@@ -336,8 +273,20 @@
 				item: "aether:ambrosium_shard"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.0d
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			description: ["Come back once you're in LUV, there is some useful processing materials you can now extract from Zanite and a few more ores."]
+			id: "07BA728E5C0C43FA"
+			subtitle: "LUV Proggress Checkpoint"
+			tasks: [{
+				id: "043C780622CF1645"
+				item: "cosmiccore:chromatic_flotation_plant"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	title: "A Crack in the Sky..."

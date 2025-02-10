@@ -24,6 +24,7 @@
 				""
 				"Welcome to LV, the Main goal set out before you is to reach the aether."
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "12EBF67C386AA4B6"
 			shape: "hexagon"
@@ -87,6 +88,7 @@
 			]
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "312D7D3B0F02DB69"
+			min_width: 450
 			shape: "gear"
 			size: 2.0d
 			subtitle: "&4READ THIS OR EXPLODE"

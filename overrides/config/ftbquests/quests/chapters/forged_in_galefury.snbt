@@ -17,6 +17,7 @@
 				"You have a winding road ahead of you, make sure to visit the &aAether&r!"
 				"And remember, don't plug &bMV&r Power into &7LV&r machines unless you like things exploding!"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "466C20EACAEF3394"
 			shape: "hexagon"
@@ -765,7 +766,11 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["08683B015FBC10F2"]
+			dependencies: [
+				"08683B015FBC10F2"
+				"466C20EACAEF3394"
+			]
+			hide_dependency_lines: true
 			id: "2B844CDAF9BD63C4"
 			shape: "hexagon"
 			size: 2.5d
@@ -1052,20 +1057,15 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"18E59533B89D6005"
-				"325D1D73A1414437"
-			]
+			dependencies: ["18E59533B89D6005"]
 			description: [
-				"Digitally Calculating Floral Behaviors to produce raw, undiluted mana. 10x more robust than what's found in mana pools (Potent Mana : Mana is 1:10)"
+				"The Mana simulator has been moved to HV tier requiring EV power to encourage the use of botania."
 				""
-				"I would forego making an actual mana setup and use these guys."
-				""
-				"&o&7Huh, I guess this really is a tech mod after all...&r"
+				"Friendly reminder you can pipe mana!"
 			]
 			icon: "gtceu:mana_simulator"
 			id: "22EF1AEF0213682D"
-			shape: "hexagon"
+			shape: "gear"
 			subtitle: "Basic Mana Simulation"
 			tasks: [
 				{
@@ -1085,8 +1085,9 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 5.5d
+			title: "What Happened to the Mana simulator!?"
+			x: 9.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5B43AF700AA037C4"]
@@ -1164,40 +1165,34 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
-			dependencies: [
-				"18E59533B89D6005"
-				"22EF1AEF0213682D"
-			]
-			description: [
-				"Mechanical flowers are augmented with manasteel and circuitry to withstand the demanding environments of Mana Simulators."
-				""
-				"&o&7From my observations, these mechanical florae are arguably more efficient than their biological counterparts... I should invest heavily in these.&r"
-			]
+			dependencies: ["18E59533B89D6005"]
+			description: ["These flowers use runes in their recipes, but they are much better than your current hydragieas or however it's spelt i need to look at the spelling wah wah"]
+			icon: "botania:spectrolus"
 			id: "55FEFCA7B9B0A473"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Magictech Plantlife"
+			subtitle: "Mmmmm plant"
 			tasks: [{
-				id: "0FF799E7FDEE89BF"
+				id: "3F857A61D14C7841"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:mechanical_rafflowsia)item(kubejs:mechanical_entropinnyum)item(kubejs:mechanical_thermalily)item(kubejs:mechanical_rosa_arcana)item(kubejs:mechanical_munchdew)item(kubejs:mechanical_kekimurus))"
+						"ftbfiltersystem:filter": "or(item(botania:dandelifeon)item(botania:rafflowsia)item(botania:shulk_me_not)item(botania:thermalily)item(botania:rosa_arcana)item(botania:munchdew)item(botania:entropinnyum)item(botania:kekimurus)item(botania:gourmaryllis)item(botania:narslimmus)item(botania:spectrolus))"
 					}
 				}
-				title: "Any Mechanical Flower"
+				title: "Any Rune Containing Flower"
 				type: "item"
 			}]
-			title: "Mechanical Botany!"
+			title: "Better Flowers!"
 			x: 10.0d
 			y: 5.5d
 		}
 		{
-			dependencies: ["55FEFCA7B9B0A473"]
+			dependencies: ["073167015AC853E9"]
 			description: [
 				"Potent mana allows for the gregification of many botania materials, allowing ease of automation."
 				"You can finally dismantle your cheesy FPS shredding Endoflame setup now..."
@@ -1350,13 +1345,13 @@
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
-			description: ["&eSoul sprouts&r blossom in the nether in the presence of crying ghasts, there must be a way to get some useful products out of them.."]
+			description: ["Ice Ferns steeped in water make it quite salty, i'm unsure as to why but it may be part of their cooling effect."]
 			hide_dependency_lines: true
 			id: "78EA8FE634ECDC35"
 			subtitle: "Salty Chill"
 			tasks: [{
-				id: "006AA62DDE47D3AC"
-				item: "cold_sweat:soul_sprout"
+				id: "59BEDBAF1EA2C8B7"
+				item: "legendarysurvivaloverhaul:ice_fern_leaf"
 				type: "item"
 			}]
 			x: 12.5d
@@ -1582,43 +1577,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["55FEFCA7B9B0A473"]
-			description: [
-				"The subtly of mechanical flora rings a bell within the depths of my mind."
-				"Why aren't their fields of metallic flowers catalyzing and terraforming this empty world? This place must be under the jurisdiction of an Angel. It's Weird not to see a Virtue govern this stellar body or the skies above."
-				""
-				"{@pagebreak}"
-				"I need to jot down what I remember before my memories fade once again, or worse, someone realizes I'm remembering things I shouldn't."
-				""
-				"In the Avarice of Humanity, there are three bodies of authority."
-				""
-				"{@pagebreak}"
-				"&lThe Overseers&r: I only ever knew them by name, but they live in the original universe with the ability to manipulate time and even the multiverse itself. - Their rulings are absolute, and anyone found breaking them will be punished without mercy. However, they are far from gods written in fictional past writings. They are nothing but humans with unfathomable power, and you might as well consider them one."
-				""
-				"{@pagebreak}"
-				"&lThe Scripture&r: While the Overseers stuff their mouths and indulge in their desires at a galactic scale, they tend to lack the omnipresence to observe entire contained universes. They created \"The Scripture\". Scriptures are vast computational arrays hanging outside the flow of standard time that can influence a whole universe if they choose to. Their purpose is to observe and flag errant behavior by default."
-				""
-				"{@pagebreak}"
-				"&lThe Virtues&r: Something I wish never to meet—the Sword of the Scriptures. Virtues enact the wills of the Scriptures while staying within the universe's allowed rules of causality. They are terrifying, and I've seen entire planets turned to rubble by them on the news. They are one entity armies hellbent on following orders. "
-			]
-			hide_details_until_startable: true
-			hide_text_until_complete: true
-			hide_until_deps_visible: true
-			icon: "botania:gaia_head"
-			id: "192F5200CDB94397"
-			shape: "gear"
-			size: 1.5d
-			subtitle: "&r&l&cStory"
-			tasks: [{
-				id: "3685BADE31EAED87"
-				title: "Read Logs - Click to reveal"
-				type: "checkmark"
-			}]
-			title: "&f&lHigher Beings - Your Executioners"
-			x: 8.75d
-			y: 4.5d
-		}
-		{
 			dependencies: ["466C20EACAEF3394"]
 			description: [
 				"QB Descriptions / Layout is TBD and Not going to be finalized until 1.0.0."
@@ -1634,6 +1592,58 @@
 			}]
 			x: -1.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["2B844CDAF9BD63C4"]
+			description: [
+				"Endoflames are currently disabled, they may return in the future with unique mechanics."
+				""
+				"this is your only option pre-runic altar"
+			]
+			id: "250CDA3928BA5113"
+			subtitle: "Only Source of Mana"
+			tasks: [{
+				id: "101A73173D5907D8"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["55FEFCA7B9B0A473"]
+			id: "073167015AC853E9"
+			tasks: [{
+				id: "0A3C1E6B759CFEAF"
+				item: "gtceu:mv_distillery"
+				type: "item"
+			}]
+			x: 8.75d
+			y: 5.5d
+		}
+		{
+			dependencies: ["250CDA3928BA5113"]
+			description: [
+				"Frontiers reworks how you move mana around."
+				""
+				"You can now pipe mana from mana pools, flowers (place them ontop the pipe) and mana spreaders. "
+				""
+				"'liquid mana' is needed for some recipes, so feel free to store your mana in drums and supertanks!"
+				""
+				"This is notably done to cut down on the performance hit botania spreaders/sparks/pools tend to have. Create and GT pipes will both work!"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
+			icon: "create:fluid_pipe"
+			id: "6026748633F07B1A"
+			shape: "gear"
+			subtitle: "Mana in Motion"
+			tasks: [{
+				id: "5D9C2EE433D7303F"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: -2.5d
 		}
 	]
 	title: "Forged in Galefury [MV]"

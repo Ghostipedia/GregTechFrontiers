@@ -10,31 +10,19 @@
   "benefits": [
     {
       "threshold": 10,
-      "benefit": {
-        "attribute": "legendarysurvivaloverhaul:heat_resistance",
-        "value": 1
-      }
+      "benefit": "{key:\"legendarysurvivaloverhaul:heat_resistance\",op:0,type:\"att\",val:1.0d}"
     },
     {
       "threshold": 20,
-      "benefit": {
-        "attribute": "legendarysurvivaloverhaul:cold_resistance",
-        "value": 1
-      }
+      "benefit": "{key:\"legendarysurvivaloverhaul:cold_resistance\",op:0,type:\"att\",val:1.0d}"
     },
     {
       "threshold": 30,
-      "benefit": {
-        "attribute": "minecraft:generic.max_health",
-        "value": 5
-      }
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:5.0d}"
     },
     {
       "threshold": 40,
-      "benefit": {
-        "attribute": "minecraft:generic.max_health",
-        "value": 5
-      }
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:5.0d}"
     }
   ],
   "shouldExcludedCount": true,

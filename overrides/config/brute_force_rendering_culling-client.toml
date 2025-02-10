@@ -8,13 +8,13 @@
 	"delay frame" = 1
 
 ["Cull entity"]
-	enabled = true
+	enabled = false
 
 ["Cull block entity"]
-	enabled = true
+	enabled = false
 
 ["Cull chunk"]
-	enabled = true
+	enabled = false
 
 ["Async chunk rebuild"]
 	enabled = true

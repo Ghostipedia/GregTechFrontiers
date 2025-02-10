@@ -1,0 +1,1412 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 275
+	default_quest_shape: ""
+	filename: "turn_on_the_lights__dev"
+	group: "43A79D0106662C02"
+	icon: {
+		Count: 1
+		id: "minecraft:light"
+		tag: {
+			BlockStateTag: {
+				level: "1"
+			}
+		}
+	}
+	id: "587D4E7488759F63"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["14988E390F2CD204"]
+			description: [
+				"Welcome to the age of &7Low Voltage!&r"
+				""
+				"Here you will be creating your first sources of energy, creating new machines, and automating new technologies."
+				""
+				"It may feel overwhelming to you at first, but take it at a pace that feels comfortable."
+				"I would recommend you start to batch craft things; for those not familiar, this is the process of making many of the same item versus just what you need."
+				""
+				"This will make things like &ecircuits&r and &amotors&r less annoying in the long run."
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "2AA8C5151457CB01"
+			min_width: 350
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Electricity not Included!"
+			tasks: [{
+				id: "685ED3715032DF9D"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "&eTurn on the Lights!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			description: [
+				"One prevalent issue starting LV is being unsure of what machines to create, as there is a wide variety."
+				""
+				"The quests here serve to help subtly guide you towards good machines and help you visualize what you'll get by crafting each to a rough degree."
+			]
+			icon: "gtceu:rhodium_gear"
+			id: "65FD54A6C650C3B1"
+			shape: "gear"
+			subtitle: "But what to make..."
+			tasks: [{
+				id: "3177ACE9548BFC30"
+				type: "checkmark"
+			}]
+			title: "So Many Machines!"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6692AF4C3F2CB86E"]
+			id: "67F2843C43454C64"
+			tasks: [{
+				id: "17F013AE1585AF6E"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"65FD54A6C650C3B1"
+				"2AA8C5151457CB01"
+			]
+			dependency_requirement: "one_completed"
+			icon: "createdeco:decal_right"
+			id: "6692AF4C3F2CB86E"
+			subtitle: "Things from steam, smaller, faster and better!"
+			tasks: [{
+				id: "01AA01C34F926547"
+				item: "createdeco:decal_right"
+				type: "item"
+			}]
+			title: "Machines you've made!"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"65FD54A6C650C3B1"
+				"2AA8C5151457CB01"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You can make these in any order!"
+				"These quests are here to provide you some beneficial info on the function of each machine."
+			]
+			icon: "createdeco:decal_left"
+			id: "6A04EC638948D1D4"
+			subtitle: "Some new Additions"
+			tasks: [{
+				id: "0D6E00F9AA1A1BC8"
+				item: "createdeco:decal_left"
+				type: "item"
+			}]
+			title: "New Machines"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			id: "5B3088AFA253378C"
+			tasks: [{
+				id: "409916668D0F1D65"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6692AF4C3F2CB86E"]
+			id: "23C87C324BFC64C0"
+			tasks: [{
+				id: "0542BC8A1C1ED042"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6692AF4C3F2CB86E"]
+			id: "286D3E97FFD11860"
+			tasks: [{
+				id: "4DD7CEC44025201B"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["025F72B3CCEFB60B"]
+			id: "1EBDF20678C330EB"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "26D34C7B4D3FC4CB"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			id: "025F72B3CCEFB60B"
+			size: 1.25d
+			subtitle: "This machine spools things"
+			tasks: [{
+				id: "7C29F363EF312542"
+				item: "gtceu:lv_spooling_machine"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EBDF20678C330EB"
+				"4D06F7D2790974AF"
+			]
+			id: "2ABCB641104E43EC"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "07BC91C05CB26302"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["025F72B3CCEFB60B"]
+			id: "48E998D03D56099C"
+			tasks: [{
+				id: "4215065A2FB21C83"
+				item: "gtceu:lv_voltage_coil"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48E998D03D56099C"]
+			id: "4D06F7D2790974AF"
+			tasks: [{
+				id: "4710F4119B2354B4"
+				item: "gtceu:lv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48E998D03D56099C"]
+			id: "5ABF9E529AEDFB8E"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "02A14FE590E47CC0"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			description: [
+				"&7This quest desc is a WIP with 90% of them in LV.&r"
+				""
+				"GregTech Energy (&bEU&r) is split into two features \"&aAmps&r\" and \"&eVolts&r\""
+				""
+				"&eVoltage&r is the capacity one \"&aAmp&r\" can contain per package of energy."
+				""
+				"When producing EU, all that matters to you is your EU/t, which is calculated by"
+				""
+				"(&bEU&r = &eV&r * &aA&r)  "
+				"ex, (&b128Eu/t&r = &e32&r * &a4&r) "
+				""
+				"&l&4NEVER. MIX. VOLTAGES.&r Plugging a higher base voltage into lower-tiered machines will cause an explosion."
+				"Example&r : Do not plug a cable carrying &nMV&r &eVoltage&r (&e128 EU per amp&r) into an &nLV&r machine (&e32 EU per amp&r) this will end &cpoorly.&r "
+				""
+				"{@pagebreak}"
+				""
+				"&aAmperage&r (\"&aAmps&r\") is a limit to how much energy a cable can carry."
+				"Drawing more than the maximum amps a cable can support will cause it to melt shortly after or start fires. This is &4Also bad&r"
+				""
+				"If it isn't evident at first, Max &eAmps&r on Wires multiplied by the &avoltage tier&r is the Max &bEU/t&r a cable can support."
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "406A1949FA81968C"
+			min_width: 450
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&4READ THIS OR EXPLODE"
+			tasks: [{
+				id: "6634D2264AF1B5FD"
+				title: "I understand... I think..."
+				type: "checkmark"
+			}]
+			title: "POWER SYSTEM WARNINGS"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A04EC638948D1D4"]
+			id: "095BAC09633F34CF"
+			tasks: [{
+				id: "130B021FF6C6A1F1"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A04EC638948D1D4"]
+			id: "07BBA5C211143D67"
+			tasks: [{
+				id: "6E82B84C64BC3E63"
+				item: "gtceu:lv_sifter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A04EC638948D1D4"]
+			description: [
+				"The &eCentrifuge&r allows you to separate compounds into their base components."
+				""
+				"It’s especially useful for getting &aglue&r, which makes your circuit boards even cheaper!"
+				""
+				"Do not huff the glue."
+				"No."
+				"PUT THE CELL DOWN!"
+			]
+			id: "61AC1570F49FF3DA"
+			min_width: 350
+			rewards: [{
+				id: "69E560D012B74A87"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Round and round we go"
+			tasks: [{
+				id: "128BDF9E80C1A6D9"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A04EC638948D1D4"]
+			description: [
+				"The &aPolarizer&r lets you create &emagnetic rods&r using EU instead of wasting so much redstone."
+				"As you progress, you’ll need higher-tier polarizers!"
+			]
+			id: "6CCAB0FF4A5E6CBD"
+			subtitle: "Better Magnetic Rods"
+			tasks: [{
+				id: "6659ED9B6D09BCEB"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A04EC638948D1D4"]
+			id: "2C0C30D3C4FEB1CA"
+			tasks: [{
+				id: "2215D205E42A7811"
+				item: "gtceu:lv_canner"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A04EC638948D1D4"]
+			id: "6662011CCE399391"
+			tasks: [{
+				id: "782676564C087652"
+				item: "gtceu:lv_chemical_bath"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A04EC638948D1D4"]
+			id: "1FA44E93D85C2671"
+			tasks: [{
+				id: "21DEC5E6CB14D5A6"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["406A1949FA81968C"]
+			description: [
+				"Steam is arguably the worst method of generating power due to its low EU density per millibucket."
+				""
+				"You’ll want to move away from steam power as soon as possible. You can continue using it if you really want to, but it’s not recommended."
+				""
+				"Unfortunately, it is the only option at first that makes sense."
+			]
+			id: "2DC12827E0DB45CC"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Your first source of power!"
+			tasks: [{
+				id: "14D4ECB207626FBF"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2ABCB641104E43EC"
+				"316E8CF96721486D"
+			]
+			id: "29C938ED07AD78F8"
+			tasks: [{
+				id: "2218FD7F01DE0BD3"
+				item: "gtceu:arsenic_trioxide_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["29C938ED07AD78F8"]
+			id: "69A50B020C30CEDB"
+			tasks: [{
+				id: "01E78220CC3DD1AD"
+				item: "gtceu:arsenic_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			dependency_requirement: "one_started"
+			hide_dependency_lines: true
+			id: "316E8CF96721486D"
+			shape: "pentagon"
+			tasks: [{
+				id: "3BC687568CCC538A"
+				item: "gtceu:cobaltite_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			hide_until_deps_visible: true
+			id: "3E91CFE103BA1ED0"
+			tasks: [{
+				id: "1219F6E73058B9AE"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E91CFE103BA1ED0"]
+			id: "35253C6E3085FAB3"
+			tasks: [{
+				id: "4AAE0EA521ADAF2F"
+				item: "gtceu:gallium_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"35253C6E3085FAB3"
+				"69A50B020C30CEDB"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "16B4765B7DF64E34"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				id: "45DF3EC2F6B326BF"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["16B4765B7DF64E34"]
+			id: "56C2326FD8A7A2EC"
+			tasks: [{
+				id: "4ABC0AF2A315C215"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"30931DB418B3BEFC"
+				"346DD543EE6D1C27"
+			]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "5D5C773CC6B64168"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0DB73985E5E40731"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+				{
+					id: "3A6B3B521E919505"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"56C2326FD8A7A2EC"
+				"00111BD9D1C2F047"
+			]
+			id: "30931DB418B3BEFC"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1523E7A21FBD16EF"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			title: "Your First MV Circuit"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["20BAD3C102E72EA1"]
+			description: ["You will need an EBF to smelt this metal! Return to this quest once you have built an EBF"]
+			id: "346DD543EE6D1C27"
+			subtitle: "EBF Only"
+			tasks: [
+				{
+					id: "6ACDBC3F50FF95E3"
+					item: "gtceu:blue_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "4247CD7131A3FEBB"
+					item: "gtceu:blue_alloy_dust"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2DC12827E0DB45CC"]
+			description: [
+				"The two main generators you’ll use after ditching steam are &eGas Turbines&r and &eCombustion Generators&r."
+				""
+				"Both have their benefits and drawbacks. I’ll list them below:"
+				""
+				"&l&aGas Turbines&r"
+				""
+				"Cheaper on raw materials but requires 2 circuits per generator."
+				""
+				"&l&aCombustion Generators&r"
+				""
+				"Cheaper on circuits but requires more raw materials."
+				""
+				"Look at the fuels each one uses and decide which setup you’ll enjoy building!"
+				"I’ve listed some common starting points for both attached to this quest."
+			]
+			icon: "createdeco:decal_electrical"
+			id: "3DFF24F1BAF0B341"
+			min_width: 300
+			shape: "gear"
+			subtitle: "Getting serious!"
+			tasks: [{
+				id: "40AAD69EEBEBE652"
+				type: "checkmark"
+			}]
+			title: "Better Power Sources"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DFF24F1BAF0B341"]
+			id: "10EA8761CF143417"
+			subtitle: "Oil Spoils"
+			tasks: [{
+				id: "2A40FD0FC8C25A91"
+				item: "gtceu:oil_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3DFF24F1BAF0B341"]
+			description: [
+				"Benzene can be a reliable fuel source early on if you’re willing to invest in it."
+				""
+				"You can produce it by extracting &acharcoal&r into &awood tar&r and then distilling the tar into &abenzene&r."
+				""
+				"For now, you’ll need to automate some &ecoke ovens&r for charcoal, but later on, you can upgrade to the pyrolyse oven, which is substantially more efficient!"
+			]
+			id: "4D7E9F896A899416"
+			min_width: 300
+			rewards: [{
+				id: "426CB03B979D9830"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Wood Good"
+			tasks: [{
+				id: "369884EF9359A9F4"
+				item: "gtceu:benzene_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4D7E9F896A899416"]
+			id: "79E804B5F418DA5A"
+			tasks: [{
+				id: "5500856A80FA525D"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["10EA8761CF143417"]
+			id: "5FF1EFC2DF308C64"
+			tasks: [{
+				id: "19916AA22B701D75"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			description: [
+				"The Mixer is useful for combining dusts you’ve been mixing by hand, as well as helping you mix fluids and items together."
+				""
+				"You’ll need this for Blue Alloy as well, if you haven't built an EBF yet this is your notice to go work towards one."
+			]
+			id: "20BAD3C102E72EA1"
+			subtitle: "Will it blend?"
+			tasks: [{
+				id: "331FA25B4B6CE894"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5D5C773CC6B64168"]
+			id: "1E6330F3215B0832"
+			tasks: [{
+				id: "036718513CF6FD9B"
+				item: "ars_nouveau:magebloom_crop"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1E6330F3215B0832"]
+			id: "59BBC29F29B58DE7"
+			tasks: [{
+				id: "634DE0C5C4371FC9"
+				item: "ars_nouveau:magebloom_fiber"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			description: [
+				"Stress units are useful for powering create contraptions."
+				""
+				""
+				"You can create Steam Engines to create huge amounts of SU."
+				"It's been told there are ancient ruins that hold other sources of SU, if you wish to hunt them down."
+			]
+			id: "7769523BB907D543"
+			subtitle: "Your Source of SU"
+			tasks: [{
+				id: "2CF85BA284006C9D"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7769523BB907D543"]
+			id: "14A3403205AC0A2C"
+			shape: "gear"
+			subtitle: "Hotter!"
+			tasks: [{
+				id: "0564D7286132A2CE"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7769523BB907D543"]
+			id: "31FACE62E27454B1"
+			shape: "gear"
+			subtitle: "Cheap Blaze Burner"
+			tasks: [{
+				id: "00D1FD5D2C354DAC"
+				item: "createlowheated:basic_burner"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7769523BB907D543"]
+			description: [
+				"Create contraptions for simple farms are one of the few ways you can automate crops/trees early on."
+				""
+				"If you need crops the GT way, check out the floral propagator"
+				"Later on you have access to the aboral growth chamber too."
+			]
+			id: "4179916981F6E7DA"
+			subtitle: "Options for early farming"
+			tasks: [
+				{
+					id: "76F8C5F2FA253522"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "70D40CA402B84A2F"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7769523BB907D543"]
+			id: "0B8EA436E7011DEC"
+			tasks: [{
+				id: "7906AE30DCA6346A"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"59BBC29F29B58DE7"
+				"5D5C773CC6B64168"
+				"64C8ADF954FAB4CE"
+			]
+			description: [
+				"I need a way to imbue larger volumes of raw mana into devices without them melting, exploding, or shattering."
+				""
+				"Runes, as a fundamental force, are a perfect source for this! While rudimentary, I can bind two runes into a pair by taking a part from each."
+				""
+				"The new slate produced—I’ve coined them Conjunctions—represents a binding of two rough ideas."
+				""
+				"I’ve poured what magical resins I have onto them, and I can feel a faint sense of longing or other vague emotions. I wonder if their interference with the local ether tugs on my mind."
+			]
+			id: "731671C69CDC758F"
+			rewards: [{
+				id: "5FE421A9A2A5FCA5"
+				item: "cosmiccore:cluster_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Mana Resonance"
+			tasks: [{
+				id: "64CD8349BFD9A98D"
+				item: "cosmiccore:rune_conjunction_arklythar"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2ABCB641104E43EC"]
+			id: "7D66D356E68ABD4C"
+			shape: "hexagon"
+			tasks: [{
+				id: "0C0819EC0393F53D"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4029EE9B8DEA0DFA"
+				"1E6330F3215B0832"
+			]
+			id: "70BAD81D816E94AC"
+			tasks: [{
+				id: "628228B34328D384"
+				item: "gtceu:crude_source_oils_bucket"
+				type: "item"
+			}]
+			title: "Crude Source Oil Extract"
+			x: -6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["20BAD3C102E72EA1"]
+			description: [
+				"A crude mixture of biomass and nether stone"
+				""
+				"There's a few ways to produce netherrack dust, check them out!"
+			]
+			id: "0EC4D47B333D61D7"
+			subtitle: "Nether Fertilizer"
+			tasks: [{
+				id: "4C5A07558A81A8B6"
+				item: "gtceu:nether_sediment_sludge_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0EC4D47B333D61D7"]
+			description: [
+				"These curious \"plants\" seem to be a fungus colony that excretes a solid similar to the plaque on my teeth... but it also glows."
+				""
+				"This place scares me."
+			]
+			id: "6D2C212D4312F3A3"
+			subtitle: "Rocks but not."
+			tasks: [{
+				id: "0246E56203D8C795"
+				item: "cosmiccore:blackstone_pustule"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0EC4D47B333D61D7"]
+			description: [
+				"&aOverloaded pearls&r are the fruits of &ePropellplants&r, that have engourged on an surplus of nether sediments."
+				""
+				"Handle with care, they are volatile!"
+			]
+			id: "3ABBC800E5AB71B7"
+			subtitle: "Slightly explosive"
+			tasks: [{
+				id: "704E7E3FE1664599"
+				item: "cosmiccore:overloaded_pearls"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6D2C212D4312F3A3"
+				"3ABBC800E5AB71B7"
+			]
+			id: "4029EE9B8DEA0DFA"
+			tasks: [{
+				id: "2F4976D385B9074F"
+				item: "gtceu:nether_bioslurry_bucket"
+				type: "item"
+			}]
+			title: "Nether Bioslurry"
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"731671C69CDC758F"
+				"70BAD81D816E94AC"
+				"59BBC29F29B58DE7"
+			]
+			description: [
+				"Weaving threads around this rune conjunction and dousing it in a crude magic solution causes the mana to bond into a stronger cloth known as Manaweave."
+				""
+				"This new cloth should be sufficient for wrapping cables imbued with higher volumes of mana."
+				"If not, I expect a fire or small explosion spraying volatile acids all over the place."
+			]
+			id: "74BC6C51B6BCA358"
+			subtitle: "Woven slate fabrics"
+			tasks: [{
+				id: "10CCF34CEEBBCF7E"
+				item: "botania:manaweave_cloth"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["74BC6C51B6BCA358"]
+			id: "7DF6C7E855FF9CD9"
+			tasks: [{
+				id: "08F72FB5D2542841"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"30931DB418B3BEFC"
+				"3BAB558425960651"
+			]
+			id: "2E5CA2D2615A9D44"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4AAC608E2CFCF837"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"3BAB558425960651"
+				"5C6575216349AB84"
+				"333BADC53E165610"
+			]
+			id: "1187EE2E425DD12B"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "436B38FFAABB3B62"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			title: "&fAlmost Ready for MV"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"2E5CA2D2615A9D44"
+				"30931DB418B3BEFC"
+				"49DF852D965051B6"
+			]
+			description: [
+				"There are a handful of AE2 recipes you can do in LV, although they are pretty expensive."
+				""
+				"I would suggest migrating over to AE2 over time, as it is worth it to have access to everything across your base."
+			]
+			id: "4F7C125D9EE9BC3F"
+			shape: "square"
+			size: 1.25d
+			subtitle: "ME Controllers at last!"
+			tasks: [{
+				id: "2D7309A56AF03792"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["74BC6C51B6BCA358"]
+			id: "04172DA1817DD94C"
+			shape: "gear"
+			tasks: [{
+				id: "01AB1428DB54A479"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"744F5FFF77CE29E5"
+				"1D72F5120A79E124"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You’ll need either Sodium Persulfate or Iron III Chloride to produce Phenolic Circuit Boards."
+				""
+				"Since you’re already here, my guess is you’ve made at least one of them."
+			]
+			id: "00111BD9D1C2F047"
+			subtitle: "A little tricky"
+			tasks: [{
+				id: "5680B05A086E8462"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			hide_dependency_lines: true
+			id: "1D72F5120A79E124"
+			shape: "square"
+			tasks: [{
+				id: "25FB886CE5A8A278"
+				item: "gtceu:iron_iii_chloride_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2AA8C5151457CB01"]
+			hide_dependency_lines: true
+			id: "744F5FFF77CE29E5"
+			shape: "square"
+			tasks: [{
+				id: "34696C9D7A0FA91A"
+				item: "gtceu:sodium_persulfate_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2ABCB641104E43EC"]
+			id: "1E2024C4083F2E46"
+			tasks: [{
+				id: "1684074E134AB7FE"
+				item: "gtceu:rose_gold_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E2024C4083F2E46"]
+			id: "623E9E16422D7D82"
+			shape: "gear"
+			tasks: [{
+				id: "3E2C110BDFE82F05"
+				item: "sophisticatedstorage:basic_to_gold_tier_upgrade"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E2024C4083F2E46"]
+			id: "5A3505D36A318205"
+			shape: "gear"
+			tasks: [{
+				id: "5441458EC50C9261"
+				item: "sophisticatedbackpacks:gold_backpack"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["07BBA5C211143D67"]
+			id: "5B4C6D8FAA0C7A9F"
+			tasks: [{
+				id: "009AA434A009E4D8"
+				item: "gtceu:flawless_certus_quartz_gem"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"310A5BD05D1C60AB"
+				"5DB465F3C5F5171A"
+				"040A441E24915620"
+			]
+			description: ["Providing better pickaxes to the dimensional mineshafts yield brilliance, useful for AE2 controllers"]
+			id: "49DF852D965051B6"
+			subtitle: "Dimensional Mines, again"
+			tasks: [{
+				id: "65B7D311CABF2A92"
+				item: "malum:cluster_of_brilliance"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7D66D356E68ABD4C"]
+			id: "310A5BD05D1C60AB"
+			tasks: [{
+				id: "35EFBD38BDE26595"
+				item: {
+					Count: 1
+					id: "malum:crude_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["310A5BD05D1C60AB"]
+			id: "5DB465F3C5F5171A"
+			tasks: [{
+				id: "556019163C22C69D"
+				item: "malum:earthen_spirit"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5DB465F3C5F5171A"]
+			id: "040A441E24915620"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6C3159429AC979FB"
+				item: "malum:spirit_altar"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["040A441E24915620"]
+			id: "5C6575216349AB84"
+			tasks: [{
+				id: "7CE50A342290EDEE"
+				item: "malum:spirit_fabric"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"7DF6C7E855FF9CD9"
+				"74BC6C51B6BCA358"
+			]
+			description: [
+				"My Idea worked! Spooling Manaweave around Manasteel vastly improves the materials performance."
+				""
+				"These are the best cables you can make in LV."
+				"When wrapped, they become superconductors, losing 0 EU per block."
+				""
+				"Needed for MV Hulls, consider using some for your EBF too!"
+			]
+			id: "3BAB558425960651"
+			subtitle: "Better Cables"
+			tasks: [
+				{
+					id: "5D7C9047AC39F685"
+					item: "gtceu:manasteel_double_cable"
+					type: "item"
+				}
+				{
+					id: "797DF485ECF8539B"
+					item: { Count: 2, id: "gtceu:manasteel_single_cable" }
+					type: "item"
+				}
+			]
+			title: "Manasteel Cables"
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"69032BA5838613C8"
+				"1187EE2E425DD12B"
+			]
+			icon: "aether:aether_portal_frame"
+			id: "09A62C4DA9DBF45A"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "To Climb Higher"
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "2889CAB47DDB1247"
+				title: "Travel to the Aether"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["333BADC53E165610"]
+			id: "69032BA5838613C8"
+			tasks: [{
+				id: "1899ABE899A89B56"
+				item: "cosmiccore:plated_aerocloud"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1187EE2E425DD12B"]
+			icon: "createdeco:decal_up"
+			id: "738518B9A3484AC1"
+			shape: "hexagon"
+			tasks: [{
+				id: "528EFF5DB59725A9"
+				type: "checkmark"
+			}]
+			title: "To MV!"
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["040A441E24915620"]
+			description: [
+				"Trivia: The ID for everything \"Soul Stained Alumina\" is actually soul_stained_steel. There are two reasons for this:"
+				""
+				"  1. The material from Malum was originally called \"Soulstained Steel,\" but since the recipe now uses aluminum, it no longer makes sense to keep the name."
+				""
+				"  2.  The GT Material is named the same because the change to \"Aluminum\" as the base material came too late in the dev cycle to update everything. Keeping the name also makes debugging easier, as everything remains searchable with similar or identical names."
+				""
+				"If your ingots say \"Soulstained Steel\", verify that your resource pack order has KubeJS at the top!"
+			]
+			id: "01E8872C0129F82F"
+			tasks: [{
+				id: "4EE15D581057F976"
+				item: "malum:soul_stained_steel_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["01E8872C0129F82F"]
+			id: "333BADC53E165610"
+			tasks: [{
+				id: "4CC2967ACECDDD26"
+				item: "malum:soul_stained_steel_plating"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3ABBC800E5AB71B7"]
+			description: ["&eEthanol&r extraction from &aOverloaded pearls&r was removed; you will have to produce power via other GT production means (benzene/oil/steam, etc)."]
+			id: "31B8BBDFEFB33FA3"
+			min_width: 200
+			shape: "gear"
+			subtitle: "Why isn't my power working!?"
+			tasks: [{
+				id: "68C326EB35D67278"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			description: [
+				"Yeah, This is the new LV Age."
+				""
+				"The recipes are here, the descriptions are not, lmao"
+			]
+			id: "14692B6B9EEE3212"
+			subtitle: "A WORK IN PROGRESS!"
+			tasks: [{
+				id: "01568DEFD720028F"
+				type: "custom"
+			}]
+			title: "HEY YOU"
+			x: -10.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["09A62C4DA9DBF45A"]
+			description: [
+				"Something was here, but I can't remember."
+				""
+				"I am not allowed to remember, be it an outside force or my own biology something tugs against my mind as I ponder."
+				"While my understanding of the soul is basic, I can sense latent damage to my own vessel and my attempts to fortify it for nether travel were not sufficient."
+				""
+				"I should look into a method that can gentle heal the scars dug deep into my own being."
+				"The best place to look is up into the skylands known as the Aether."
+				""
+				"These headaches must be cured."
+			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "207407600B778363"
+			shape: "diamond"
+			subtitle: "Story Entry 2 | Description Hidden Until Completed"
+			tasks: [
+				{
+					id: "0E99AF58A2A806A3"
+					title: "Reveal a Memory"
+					type: "checkmark"
+				}
+				{
+					id: "14CF531866BA1FAD"
+					item: "cosmiccore:large_shard_of_perpetuity"
+					type: "item"
+				}
+			]
+			title: "Consistent Headaches"
+			x: -2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5DB465F3C5F5171A"]
+			hide_dependency_lines: true
+			id: "64C8ADF954FAB4CE"
+			tasks: [{
+				id: "093E193468A66490"
+				item: "malum:spirit_altar"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 5.732142857142854d
+		}
+		{
+			dependencies: ["1FA44E93D85C2671"]
+			id: "7D15EC16C717C621"
+			tasks: [{
+				id: "0D7A3C20D37D4822"
+				item: "gtceu:rubber_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6692AF4C3F2CB86E"]
+			id: "55B82C5A68261286"
+			tasks: [{
+				id: "67634A1CE7BBF610"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"286D3E97FFD11860"
+				"7D15EC16C717C621"
+			]
+			id: "430D8ABB94DF8D05"
+			tasks: [{
+				id: "79410440AEC91B29"
+				item: "gtceu:tin_single_cable"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7D085A647AEC2485"
+				"55B82C5A68261286"
+				"7D15EC16C717C621"
+			]
+			dependency_requirement: "one_completed"
+			id: "68E76B041CEBD925"
+			tasks: [{
+				id: "1C78AB1E5C6A2A9D"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Just like with the nether, there is a variety of equipment you can utilize to survive in the aether."
+				""
+				"- Armor that grants 'Cold Resistance', notably Manaweave armor and 'Heat Coating' will help."
+				""
+				"- Hot blocks like campfire/magmablocks/lava can help keep you warm in a emergency"
+				""
+				"- \"Heating Stone\" (NYI) will heat you up as long as it is warm (durability)"
+				""
+				"- Consumables that grant 'Hot Food/Drink' or Cold Resistance potions"
+				"TODO; Ice Resistance Potions"
+				""
+				"The Aether is also thin on air so keep that in mind"
+			]
+			id: "21201907F9CE98F8"
+			subtitle: "Aether Survival Guide"
+			tasks: [{
+				id: "63135E981746CCE8"
+				title: "Surviving the upper atmosphere"
+				type: "checkmark"
+			}]
+			title: "Surviving the Frost"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["310A5BD05D1C60AB"]
+			id: "0F0AF809E26D9065"
+			tasks: [{
+				id: "3360E612512DBDF0"
+				item: "malum:encyclopedia_arcana"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+	]
+	title: "Turn on the Lights - [DEV]"
+}

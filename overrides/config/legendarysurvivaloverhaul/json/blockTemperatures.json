@@ -206,5 +206,33 @@
       },
       "temperature": 0.0
     }
+  ],
+  "gtceu:coke_oven": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 40.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:industrial_primitive_blast_furnace": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 75.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
   ]
 }

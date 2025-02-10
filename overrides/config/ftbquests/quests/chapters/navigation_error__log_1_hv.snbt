@@ -23,6 +23,7 @@
 				""
 				"blah blah, Ghostipedia is full of soup."
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "1E72D62913EEB4EE"
 			shape: "hexagon"

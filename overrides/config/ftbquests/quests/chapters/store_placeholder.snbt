@@ -483,6 +483,48 @@
 			x: -4.0d
 			y: 1.5d
 		}
+		{
+			icon: "legendarysurvivaloverhaul:ice_fern_leaf"
+			id: "68069806D0200CEF"
+			rewards: [{
+				count: 4
+				id: "4798D85166B9977B"
+				item: "legendarysurvivaloverhaul:ice_fern_seeds"
+				type: "item"
+			}]
+			subtitle: "&fCooling you down"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "4D4623C7570B1822"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			title: "Shope : Ice Fern Seed"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			icon: "legendarysurvivaloverhaul:sun_fern_leaf"
+			id: "1726749CD8452830"
+			rewards: [{
+				count: 4
+				id: "51F118AC6BEDD5BD"
+				item: "legendarysurvivaloverhaul:sun_fern_seeds"
+				type: "item"
+			}]
+			subtitle: "&fA quick ignition"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "593A5F311E2AEB0B"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			title: "Shope : Fire Charge"
+			x: -2.5d
+			y: 3.0d
+		}
 	]
 	title: "Store (placeholder)"
 }
