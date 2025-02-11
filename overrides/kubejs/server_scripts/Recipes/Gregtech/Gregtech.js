@@ -30,6 +30,7 @@ yeet('gtceu:neodymium_praseodymium_dust')
 yeet('gtceu:tiny_magnetic_neodymium_praseodymium_dust')
 yeet('gtceu:small_magnetic_neodymium_praseodymium_dust')
 yeet('gtceu:magnetic_neodymium_praseodymium_dust')
+yeet('botania:endoflame')
 yeet(/gtceu:(.*)butchery_knife$/)
 
 ServerEvents.recipes(event => {
@@ -131,7 +132,7 @@ ServerEvents.recipes(event => {
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV])
   event.recipes.gtceu.mixer('fireclay_dust_mixing')
-    .itemInputs(['2x supplementaries:ash', 'gtceu:brick_dust', 'gtceu:clay_dust'])
+    .itemInputs(['2x #forge:dusts/ash', 'gtceu:brick_dust', 'gtceu:clay_dust'])
     .inputFluids('minecraft:water 500')
     .itemOutputs('4x cosmiccore:fireclay_ball')
     .duration(200)

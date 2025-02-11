@@ -439,13 +439,24 @@
   "block.gtceu.large_lithographic_processor": "§3Large Lithographic Processor",
   "gtceu.industrial_primitive_blast_furnace": "Industrial Primitive Blast Furnace",
 
-  "gtceu:cyanex_272": "Cyanex-272",
-  "gtceu:tert_butanol": "Tert-butanol",
-  "gtceu:isobutene": "Isobutene",
-  "gtceu:ammonium_fluoride": "Ammonium Fluoride",
-  "gtceu:sodium_hypophosphite": "Sodium Hypophosphite",
-  "gtceu:tert_butylhydroperoxide": "Tert-butylhydroperoxide",
-  "gtceu:244_trimethyl_1_pentene": "2,4,4-trimethyl-1-pentene",
-  "gtceu:244_trimethyl_2_pentene": "2,4,4-trimethyl-2-pentene",
-  "gtceu:ferric_alumina": "Ferric Alumina"
+  "material.gtceu.cyanex_272": "Cyanex-272",
+  "material.gtceu.tert_butanol": "Tert-butanol",
+  "material.gtceu.isobutene": "Isobutene",
+  "material.gtceu.ammonium_fluoride": "Ammonium Fluoride",
+  "material.gtceu.sodium_hypophosphite": "Sodium Hypophosphite",
+  "material.gtceu.tert_butylhydroperoxide": "Tert-butylhydroperoxide",
+  "material.gtceu.244_trimethyl_1_pentene": "2,4,4-trimethyl-1-pentene",
+  "material.gtceu.244_trimethyl_2_pentene": "2,4,4-trimethyl-2-pentene",
+  "material.gtceu.ferric_alumina": "Ferric Alumina",
+
+  "material.gtceu.polystyrene": "Polystyrene",
+  "material.gtceu.polystyrene_sulfonate": "Polystyrene Sulfonate",
+  "material.gtceu.three_four_ethylenedioxythiophene": "3,4-Ethylenedioxythiophene (EDOT)",
+  "material.gtceu.sulfur_dichloride": "Sulfur Dichloride",
+  "material.gtceu.ethylene_glycol": "Etylene Glycol",
+  "material.gtceu.diacetyl": "Diacetyl",
+  "material.gtceu.butanediol": "Butanediol",
+  "material.gtceu.ethylene_oxide": "Ethylene Oxide",
+  "material.gtceu.pedot_pss": "PEDOT:PSS"
+  
 }
