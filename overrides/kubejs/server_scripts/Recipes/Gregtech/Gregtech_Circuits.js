@@ -9,6 +9,21 @@ ServerEvents.recipes(event => {
         'gtceu:copper_single_wire',
         'gtceu:steel_single_wire'
     )
+    event.replaceInput(
+        { output: 'gtceu:hp_steam_solar_boiler' },
+        'gtceu:steel_brick_casing',
+        'gtceu:lp_steam_solar_boiler'
+    )
+    event.replaceInput(
+        { output: 'gtceu:hp_steam_solid_boiler' },
+        'minecraft:furnace',
+        'gtceu:lp_steam_solid_boiler'
+    )
+    event.replaceInput(
+        { output: 'gtceu:hp_steam_liquid_boiler' },
+        'gtceu:steel_brick_casing',
+        'gtceu:lp_steam_liquid_boiler'
+    )
     event.remove({ id: 'gtceu:shaped/vacuum_tube' })
     event.shaped('gtceu:vacuum_tube', [
         'CDC',

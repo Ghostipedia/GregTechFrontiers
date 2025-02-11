@@ -21,7 +21,7 @@
                 builder
                     .langValue(GTValues.VLVH[tier] + " Laminator")
                     .recipeType('laminator')
-                    .workableTieredHullRenderer('gtceu:block/machines/laminator')
+                    .workableTieredHullRenderer('gtceu:block/machines/flora_nurturer')
             )
             event.create('aio_lithography_processor', 'simple')
             .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV)
@@ -56,7 +56,7 @@
                     .workableTieredHullRenderer('gtceu:block/machines/flora_nurturer')
             )
             event.create('meteor_recipe_dummy', 'simple')
-            .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV)
+            .tiers(GTValues.MAX)
             .definition((tier, builder) =>
                 builder
                     .langValue(GTValues.VLVH[tier] + " Flora Nurturer")

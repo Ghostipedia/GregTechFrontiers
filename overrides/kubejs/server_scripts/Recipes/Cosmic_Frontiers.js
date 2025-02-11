@@ -22,7 +22,8 @@ ServerEvents.tags('item', event => {
        event.add('curios:head', 'kubejs:nano_respirator')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
-
+       event.add('frontiers:peanut', 'croptopia:peanut')
+       event.add('frontiers:peanut', 'vintagedelight:peanut_crop')
 })
 //Generator Removal - WILL RETURN WITH UH, """BETTER""" CREATE FUNCTIONALITY
 // yeet('gtceu:lv_combustion')
@@ -319,11 +320,6 @@ ServerEvents.recipes(event => {
               .chancedOutput(Item.of('nethersdelight:propelpearl', 3), 5000, 500)
               .duration(160)
               .EUt(16);
-       event.recipes.gtceu.nether_catalyzer('cosmiccore:pearl_catalyzing')
-              .itemInputs('cosmiccore:overloaded_pearls')
-              .outputFluids(Fluid.of('gtceu:ethanol', 250))
-              .duration(120)
-              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.flora_nurturer('cosmiccore:magebloom_cultivation')
               .notConsumable('ars_nouveau:magebloom_crop')
               .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 100))
@@ -534,6 +530,104 @@ ServerEvents.recipes(event => {
               P: 'gtceu:platinum_quadruple_wire'
 
        })
+       event.remove({ type: 'architects_palette:warping' })
+       event.recipes.gtceu.nether_catalyzer('nebulite')
+              .itemInputs('minecraft:diorite')
+              .itemOutputs('architects_palette:nebulite')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:entrails')
+              .itemInputs('architects_palette:rotten_flesh_block')
+              .itemOutputs('architects_palette:entrails')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:esoterrack')
+              .itemInputs('minecraft:andesite')
+              .itemOutputs('architects_palette:esoterrack')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:hadaline_lamp')
+              .itemInputs('architects_palette:abyssaline_lamp')
+              .itemOutputs('architects_palette:hadaline_lamp')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:twisted_leaves')
+              .itemInputs('#minecraft:leaves')
+              .itemOutputs('architects_palette:twisted_leaves')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:twisted_sapling')
+              .itemInputs('#minecraft:saplings')
+              .itemOutputs('architects_palette:twisted_sapling')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:moonshale')
+              .itemInputs('minecraft:stone')
+              .itemOutputs('architects_palette:moonshale')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:moonshale_bricks')
+              .itemInputs('minecraft:stone_bricks')
+              .itemOutputs('architects_palette:moonshale_bricks')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:craterstone')
+              .itemInputs('minecraft:cobblestone')
+              .itemOutputs('architects_palette:craterstone')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:hadaline_tiles')
+              .itemInputs('architects_palette:abyssaline_tiles')
+              .itemOutputs('architects_palette:hadaline_tiles')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:warpstone')
+              .itemInputs('minecraft:clay')
+              .itemOutputs('architects_palette:warpstone')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:hadaline')
+              .itemInputs('architects_palette:abyssaline')
+              .itemOutputs('architects_palette:hadaline')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:twisted_log')
+              .itemInputs('#minecraft:logs')
+              .itemOutputs('architects_palette:twisted_log')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:onyx')
+              .itemInputs('minecraft:granite')
+              .itemOutputs('architects_palette:onyx')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:moonstone')
+              .itemInputs('architects_palette:sunstone')
+              .itemOutputs('architects_palette:moonstone')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:hadaline_plating')
+              .itemInputs('architects_palette:abyssaline_plating')
+              .itemOutputs('architects_palette:hadaline_plating')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:chiseled_hadaline_bricks')
+              .itemInputs('architects_palette:chiseled_abyssaline_bricks')
+              .itemOutputs('architects_palette:chiseled_hadaline_bricks')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:hadaline_bricks')
+              .itemInputs('architects_palette:abyssaline_bricks')
+              .itemOutputs('architects_palette:hadaline_bricks')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.nether_catalyzer('architects_palette:hadaline_pillar')
+              .itemInputs('architects_palette:abyssaline_pillar')
+              .itemOutputs('architects_palette:hadaline_pillar')
+              .duration(10)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+
+
 
 
        //TODO - Mechanical Flower Recipes
