@@ -15,7 +15,7 @@ let yeet = (itemName) => {
 //Butchery knife recipe removal (I swear if this doesn't work I may swear at people)
 ServerEvents.recipes(event => {
     GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
-      event.remove({  id: `gtceu:shaped/${id.name}_butchery_knife`})
+      event.remove({  id: `gtceu:shaped/butchery_knife_${id.name}`})
     })
   })
 //Delightful Knives getting yeeted
