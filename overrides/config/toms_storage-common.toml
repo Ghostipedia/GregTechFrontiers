@@ -7,4 +7,8 @@
 importantInfo = true
 #List of multiblock inventory blocks
 multiblockInv = [""]
+#List of mod ids whose blocks is ignored by the inventory connector
+blockedMods = [""]
+#List of block ids ignored by the inventory connector
+blockedBlocks = [""]
 

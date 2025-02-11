@@ -238,8 +238,6 @@
 	sconce = true
 	sconce_lever = true
 	pancake = true
-	netherite_door = true
-	netherite_trapdoor = true
 	checker_block = true
 	raked_gravel = true
 	feather_block = true
@@ -311,7 +309,7 @@
 	[building.pedestal]
 		enabled = true
 		#If enabled end crystals placed on a pedestals will provide an enchantment power bonus equivalent to 3 bookshelves
-		#Range: 0 ~ 100
+		#Range: 0.0 ~ 100.0
 		crystal_enchanting = 3
 
 	[building.ash]
@@ -382,6 +380,10 @@
 		#Bouncing angle of slanted awnings
 		#Range: 0.0 ~ 90.0
 		angle = 69.44395478041653
+
+	[building.netherite_doors]
+		door = true
+		trapdoor = true
 
 [tools]
 	candy = true
@@ -662,4 +664,8 @@
 		#Chance that a slime mob will apply slimed effect on successful attack. Multiplied by the slime size
 		#Range: 0.0 ~ 1.0
 		chance_per_slime_size = 0.15
+
+	[tweaks.dragon_banner_pattern]
+		#Adds dragon banner pattern made from dragon head
+		enabled = true
 

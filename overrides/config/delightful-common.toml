@@ -69,6 +69,9 @@
 	warden_knife = true
 	zanite_knife = true
 	zinc_knife = true
+	aluminum_knife = true
+	pearlescent_knife = true
+	resonarium_knife = true
 
 ["Pie Overhauls"]
 	blueberry_pie_slice = true
@@ -77,6 +80,7 @@
 	pumpkin_pie_slice = true
 	salmonberry_pie_slice = true
 	source_berry_pie_slice = true
+	chorus_pie_slice = true
 
 ["Registry & Recipes"]
 	acorn = true
@@ -165,4 +169,9 @@
 	source_berry_ice_cream = true
 	source_berry_ice_cream_block = true
 	source_berry_milkshake = true
+	baklava = true
+	baklava_slice = true
+	chorus_muffin = true
+	venison_stew = true
+	venison_stew_cup = true
 

@@ -226,7 +226,525 @@
       "properties": {
         "server_tick": "true"
       },
+      "temperature": 30.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_liquid_boiler": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 30.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_miner": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 30.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_alloy_smelter": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_furnace": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_forge_hammer": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_compressor": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_macerator": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_extractor": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_solar_boiler": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_rock_crusher": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_solid_boiler": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:lp_steam_wiremill": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_alloy_smelter": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_rock_crusher": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_miner": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_furnace": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_forge_hammer": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_compressor": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_macerator": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_extractor": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_solar_boiler": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_liquid_boiler": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_solid_boiler": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_wiremill": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:hp_steam_bender": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 18.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:cupronickel_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 50.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:kanthal_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
       "temperature": 75.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "gtceu:nichrome_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 80.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:prismatic_tungstensteel_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 85.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:resonant_virtue_meld_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 90.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:naquadric_superalloy_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 95.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:reinforced_trinavine_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 100.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:psionic_galvorn_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 125.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:living_igniclad_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 150.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:programable_matter_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 200.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:shimmering_neutronium_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 250.0
+    },
+    {
+      "properties": {
+        "server_tick": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "cosmiccore:causal_fabric_coil_block": [
+    {
+      "properties": {
+        "server_tick": "true"
+      },
+      "temperature": 1000.0
     },
     {
       "properties": {

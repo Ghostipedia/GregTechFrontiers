@@ -503,7 +503,8 @@ _version = 2
 				# Disable this if shadows render incorrectly.
 				disableShadowPassFrustumCulling = false
 				#
-				# At what Y value should cave culling start?
+				# At what Y value should cave culling start? 
+				# Lower this value if you get walls for areas with 0 light.
 				caveCullingHeight = 60
 				#
 				# How should LODs be shaded? 
