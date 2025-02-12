@@ -14,6 +14,8 @@ let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstor
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', DONOTEXIST)
   event.add('c:hidden_from_recipe_viewers', DONOTEXIST)
+  event.add('minecraft:bamboo_logs', 'minecraft:stripped_bamboo_block')
+  event.add('minecraft:bamboo_logs', 'minecraft:bamboo_block')
 })
 
 ServerEvents.recipes(event => {
@@ -58,6 +60,8 @@ ServerEvents.recipes(event => {
     'spruce',
     'dark_oak',
     'acacia',
+    'cherry',
+    'bamboo'
   ]
 
   basicWoodType.forEach(woodType => {
@@ -256,7 +260,7 @@ ServerEvents.recipes(event => {
   })
   /* METHODS & UTILS */
 
-  const woodTypes = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'crimson', 'warped'];
+  const woodTypes = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'crimson', 'warped', 'cherry', 'bamboo'];
 
   let woodBarrel = (woodType) => {
 
