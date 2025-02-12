@@ -52,7 +52,7 @@
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "344AEE2879AD24D1"
 			size: 2.0d
-			subtitle: "Balancing is a fuck"
+			subtitle: "Balancing is a problem"
 			tasks: [{
 				id: "148E1FB1590C0FAB"
 				title: "Hey Read Me!"
@@ -60,28 +60,6 @@
 			}]
 			x: 0.0d
 			y: 0.0d
-		}
-		{
-			can_repeat: true
-			icon: "cold_sweat:chameleon_spawn_egg"
-			id: "5B2D483D13119B2C"
-			optional: true
-			rewards: [{
-				id: "59A38DCE9CF67834"
-				item: "cold_sweat:chameleon_spawn_egg"
-				type: "item"
-			}]
-			subtitle: "&fBetter Insulation"
-			tasks: [{
-				consume_items: true
-				count: 4L
-				id: "42016E1E95A5F0BE"
-				item: "cosmiccore:large_shard_of_perpetuity"
-				type: "item"
-			}]
-			title: "Shop : Chameleon Spawn Egg"
-			x: -2.5d
-			y: -1.5d
 		}
 		{
 			can_repeat: true

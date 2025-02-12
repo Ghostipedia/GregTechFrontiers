@@ -3,7 +3,8 @@
     "invertStickToGrid": false,
     "maxSavedActions": 32,
     "useALTForEverything": false,
-    "useAltWhenFlying": true
+    "useAltWhenFlying": true,
+    "lowResolutionBoxCount": 2000
   },
   "rendering": {
     "renderingThreadCount": 6,

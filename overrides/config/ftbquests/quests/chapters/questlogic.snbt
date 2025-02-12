@@ -123,6 +123,16 @@
 			x: 0.0d
 			y: 1.0d
 		}
+		{
+			id: "7B77F3153085E884"
+			tasks: [{
+				id: "3B6B1C74F1B95C32"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
 	]
 	title: "&4Dev - QuestLogic"
 }

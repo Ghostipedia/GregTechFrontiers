@@ -11,7 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["5FFA303333C489F7"]
+			dependencies: ["738518B9A3484AC1"]
 			description: [
 				"Welcome to MV, Your Goals are to Produce &bEthersteel&r and &bHV Circuits&r."
 				"You have a winding road ahead of you, make sure to visit the &aAether&r!"
@@ -766,10 +766,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"08683B015FBC10F2"
-				"466C20EACAEF3394"
-			]
+			dependencies: ["466C20EACAEF3394"]
 			hide_dependency_lines: true
 			id: "2B844CDAF9BD63C4"
 			shape: "hexagon"

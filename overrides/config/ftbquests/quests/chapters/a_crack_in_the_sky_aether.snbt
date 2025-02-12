@@ -11,31 +11,25 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["09A62C4DA9DBF45A"]
 			description: [
 				"This Quest Chapter covers all the information I’ve gathered from the Aether."
 				""
 				"Some of it might not prove useful until later, so check this quest page if you feel lost."
 			]
+			hide_until_deps_complete: true
 			icon: "aether:aether_portal_frame"
 			id: "57A955955309A292"
 			shape: "hexagon"
 			size: 1.0d
 			subtitle: "Cold Ammonia Skylands"
-			tasks: [
-				{
-					dimension: "aether:the_aether"
-					icon: "aether:aether_portal_frame"
-					id: "3AE1D75234A2A2F4"
-					title: "Visit the Aether"
-					type: "dimension"
-				}
-				{
-					count: 14L
-					id: "12260E5ADC3A52B9"
-					item: "cosmiccore:plated_aerocloud"
-					type: "item"
-				}
-			]
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "3AE1D75234A2A2F4"
+				title: "Visit the Aether"
+				type: "dimension"
+			}]
 			title: "Exploration Expedition 1"
 			x: 0.0d
 			y: -1.0d
@@ -172,6 +166,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["57A955955309A292"]
 			description: [
 				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
 				"Expect Frequent Revisions to things, not anything hugely breaking though."
@@ -277,6 +272,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["57A955955309A292"]
 			description: ["Come back once you're in LUV, there is some useful processing materials you can now extract from Zanite and a few more ores."]
 			id: "07BA728E5C0C43FA"
 			subtitle: "LUV Proggress Checkpoint"

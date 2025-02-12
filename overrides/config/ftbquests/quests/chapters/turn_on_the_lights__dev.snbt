@@ -14,7 +14,7 @@
 		}
 	}
 	id: "587D4E7488759F63"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -85,9 +85,8 @@
 			id: "6692AF4C3F2CB86E"
 			subtitle: "Things from steam, smaller, faster and better!"
 			tasks: [{
-				id: "01AA01C34F926547"
-				item: "createdeco:decal_right"
-				type: "item"
+				id: "13B573034B3BDDCA"
+				type: "checkmark"
 			}]
 			title: "Machines you've made!"
 			x: 1.0d
@@ -107,9 +106,8 @@
 			id: "6A04EC638948D1D4"
 			subtitle: "Some new Additions"
 			tasks: [{
-				id: "0D6E00F9AA1A1BC8"
-				item: "createdeco:decal_left"
-				type: "item"
+				id: "101908513F0274DE"
+				type: "checkmark"
 			}]
 			title: "New Machines"
 			x: -1.0d
@@ -516,8 +514,12 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["20BAD3C102E72EA1"]
+			dependencies: [
+				"20BAD3C102E72EA1"
+				"7B77F3153085E884"
+			]
 			description: ["You will need an EBF to smelt this metal! Return to this quest once you have built an EBF"]
+			hide_until_deps_complete: true
 			id: "346DD543EE6D1C27"
 			subtitle: "EBF Only"
 			tasks: [
@@ -1255,11 +1257,16 @@
 			y: 5.0d
 		}
 		{
+			dependencies: [
+				"14988E390F2CD204"
+				"2AA8C5151457CB01"
+			]
 			description: [
 				"Yeah, This is the new LV Age."
 				""
 				"The recipes are here, the descriptions are not, lmao"
 			]
+			hide_dependency_lines: true
 			id: "14692B6B9EEE3212"
 			subtitle: "A WORK IN PROGRESS!"
 			tasks: [{
@@ -1371,6 +1378,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["09A62C4DA9DBF45A"]
 			description: [
 				"Just like with the nether, there is a variety of equipment you can utilize to survive in the aether."
 				""

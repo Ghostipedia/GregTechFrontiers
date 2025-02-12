@@ -11,7 +11,8 @@
     "enableCollisionMotion": true,
     "dyeVolume": 2.0,
     "maxAllowedDensity": 2048,
-    "maxDoorDistance": 512
+    "maxDoorDistance": 512,
+    "messageStructureLength": 4098
   },
   "build": {
     "default": {
@@ -92,5 +93,21 @@
       },
       "defaultGrid": 16
     }
+  },
+  "signal": {
+    "overallDurationScale": 1,
+    "andDuration": 0.1,
+    "orDuration": 0.01,
+    "xorDuration": 0.2,
+    "bandDuration": 0.2,
+    "borDuration": 0.02,
+    "bxorDuration": 0.4,
+    "notDuration": 0.01,
+    "bnotDuration": 0.02,
+    "variableDuration": 0.01,
+    "addDuration": 0.5,
+    "subDuration": 0.5,
+    "mulDuration": 0.5,
+    "divDuration": 5
   }
 }

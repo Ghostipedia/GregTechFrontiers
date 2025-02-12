@@ -588,13 +588,13 @@
   "gtceu:cupronickel_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 50.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -602,13 +602,13 @@
   "gtceu:kanthal_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 75.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -616,13 +616,13 @@
   "gtceu:nichrome_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 80.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -630,13 +630,13 @@
   "cosmiccore:prismatic_tungstensteel_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 85.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -644,13 +644,13 @@
   "cosmiccore:resonant_virtue_meld_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 90.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -658,13 +658,13 @@
   "cosmiccore:naquadric_superalloy_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 95.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -672,13 +672,13 @@
   "cosmiccore:reinforced_trinavine_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 100.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -686,13 +686,13 @@
   "cosmiccore:psionic_galvorn_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 125.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -700,13 +700,13 @@
   "cosmiccore:living_igniclad_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 150.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -714,13 +714,13 @@
   "cosmiccore:programable_matter_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 200.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -728,13 +728,13 @@
   "cosmiccore:shimmering_neutronium_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 250.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
     }
@@ -742,15 +742,127 @@
   "cosmiccore:causal_fabric_coil_block": [
     {
       "properties": {
-        "server_tick": "true"
+        "active": "true"
       },
       "temperature": 1000.0
     },
     {
       "properties": {
-        "server_tick": "false"
+        "active": "false"
       },
       "temperature": 0.0
+    }
+  ],
+  "ironfurnaces:iron_furnace": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    }
+  ],
+  "ironfurnaces:gold_furnace": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    }
+  ],
+  "ironfurnaces:diamond_furnace": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    }
+  ],
+  "ironfurnaces:emerald_furnace": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    }
+  ],
+  "ironfurnaces:obsidian_furnace": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    }
+  ],
+  "ironfurnaces:netherite_furnace": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    }
+  ],
+  "ironfurnaces:copper_furnace": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    }
+  ],
+  "ironfurnaces:silver_furnace": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
     }
   ]
 }

@@ -39,3 +39,6 @@ net.minecraft.client.gui.screens.packs.PackSelectionScreen {
 net.minecraft.client.gui.screens.TitleScreen {
 }
 
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
