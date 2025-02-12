@@ -41,6 +41,10 @@ ServerEvents.tags('item', event => {
 // yeet('gtceu:lv_steam_turbine')
 // yeet('gtceu:steam_large_turbine')
 yeet('gtceu:rtm_alloy_coil_block')
+yeet('gtceu:hssg_coil_block')
+yeet('gtceu:naquadah_coil_block')
+yeet('gtceu:trinium_coil_block')
+yeet('gtceu:tritanium_coil_block')
 yeet('vintagedelight:ghost_charcoal')
 
 ServerEvents.recipes(event => {
