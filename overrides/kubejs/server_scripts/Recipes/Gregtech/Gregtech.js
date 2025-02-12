@@ -54,15 +54,34 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:psi_superconductor_beta_hex_wire', type: 'gtceu:wiremill' })
   // event.remove({ type: 'gtceu:fusion_reactor' })
   event.remove({ type: 'gtceu:plasma_turbine' })
-
-
-
-
-
   event.remove({ id: 'gtceu:smelting/smelt_dust_blue_alloy_to_ingot' })
   event.remove({ id: 'gtceu:centrifuge/deuterium_separation' })
   event.remove({ id: 'gtceu:centrifuge/uranium_hexafluoride_separation' })
+  event.remove({ id: 'ae2:network/cables/smart_fluix' })
   event.remove({ output: 'gtceu:firebrick' })
+
+  event.replaceInput(
+    { output: 'gtceu:hp_steam_solar_boiler' },
+    'gtceu:steel_brick_casing',
+    'gtceu:lp_steam_solar_boiler'
+  )
+  event.replaceInput(
+    { output: 'gtceu:hp_steam_solid_boiler' },
+    'minecraft:furnace',
+    'gtceu:lp_steam_solid_boiler'
+  )
+  event.replaceInput(
+    { output: 'gtceu:hp_steam_liquid_boiler' },
+    'gtceu:steel_brick_casing',
+    'gtceu:lp_steam_liquid_boiler'
+  )
+  event.replaceInput(
+    { output: 'gtceu:alloy_blast_smelter' },
+    'gtceu:tantalum_carbide_plate',
+    'gtceu:titanium_carbide_plate'
+  )
+
+
   event.recipes.gtceu.alloy_smelter('firebrick_masonry')
     .itemInputs('gtceu:compressed_fireclay')
     .itemInputs('gtceu:coal_dust')
@@ -95,13 +114,6 @@ ServerEvents.recipes(event => {
     .itemOutputs('create:andesite_alloy')
     .duration(100)
     .EUt(8);
-  event.recipes.gtceu.assembler('prisma_tungstensteel_coil')
-    .itemInputs(['8x cosmiccore:prismatic_tungstensteel_double_wire', '8x gtceu:platinum_foil'])
-    .itemOutputs('cosmiccore:prismatic_tungstensteel_coil_block')
-    .inputFluids('gtceu:nichrome 144')
-    .duration(500)
-    .EUt(GTValues.VA[GTValues.EV]);
-
   event.recipes.gtceu.macerator('gtceu:nether_brick_dust_shred')
     .itemInputs('minecraft:nether_bricks')
     .itemOutputs('gtceu:nether_brick_dust_dust')
@@ -548,21 +560,21 @@ ServerEvents.recipes(event => {
   })
   //ROBOARM (TODO)
   event.recipes.gtceu.assembler('gtceu:new_mv_robot_arm')
-  .itemInputs(['3x gtceu:copper_single_cable', '2x gtceu:soul_stained_steel_rod', '2x gtceu:mv_electric_motor', 'gtceu:mv_electric_piston','#gtceu:circuits/mv'])
-  .itemOutputs('gtceu:mv_robot_arm')
-  .duration(100)
-  .EUt(GTValues.VA[GTValues.LV]);
-event.shaped('gtceu:mv_robot_arm', [
-  'CCC',
-  'RGR',
-  'PMG'
-], {
-  P: 'gtceu:mv_electric_piston',
-  R: 'gtceu:mv_electric_motor',
-  G: 'gtceu:soul_stained_steel_rod',
-  C: 'gtceu:copper_single_cable',
-  M: '#gtceu:circuits/mv'
-})
+    .itemInputs(['3x gtceu:copper_single_cable', '2x gtceu:soul_stained_steel_rod', '2x gtceu:mv_electric_motor', 'gtceu:mv_electric_piston', '#gtceu:circuits/mv'])
+    .itemOutputs('gtceu:mv_robot_arm')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:mv_robot_arm', [
+    'CCC',
+    'RGR',
+    'PMG'
+  ], {
+    P: 'gtceu:mv_electric_piston',
+    R: 'gtceu:mv_electric_motor',
+    G: 'gtceu:soul_stained_steel_rod',
+    C: 'gtceu:copper_single_cable',
+    M: '#gtceu:circuits/mv'
+  })
   //HV HULLS AND COMPONENTS
   event.remove({ output: 'gtceu:hv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:hv_machine_casing_assembler')
@@ -1052,5 +1064,80 @@ ServerEvents.recipes(event => {
     W: 'gtceu:uranium_triplatinum_quadruple_wire',
     F: 'gtceu:ev_alloy_smelter'
   })
+  //Coils-new
+  event.remove({ id: 'gtceu:assembler/coil_cupronickel' })
+  event.recipes.gtceu.spooling_machine('coil_cupronickel')
+    .itemInputs(['8x gtceu:cupronickel_double_wire', '8x gtceu:bronze_foil'])
+    .inputFluids('gtceu:tin_alloy 144')
+    .itemOutputs('gtceu:cupronickel_coil_block')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.remove({ id: 'gtceu:assembler/coil_kanthal' })
+  event.recipes.gtceu.spooling_machine('coil_kanthal')
+    .itemInputs(['8x gtceu:kanthal_double_wire', '8x gtceu:aluminium_foil'])
+    .inputFluids('gtceu:cupronickel 144')
+    .itemOutputs('gtceu:kanthal_coil_block')
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.MV]);
+  event.remove({ id: 'gtceu:assembler/coil_nichrome' })
+  event.recipes.gtceu.spooling_machine('coil_nichrome')
+    .itemInputs(['8x gtceu:nichrome_double_wire', '8x gtceu:galvanized_ethersteel_foil'])
+    .inputFluids('gtceu:kanthal 144')
+    .itemOutputs('gtceu:nichrome_coil_block')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.spooling_machine('prisma_tungstensteel_coil')
+    .itemInputs(['8x cosmiccore:prismatic_tungstensteel_double_wire', '8x gtceu:platinum_foil'])
+    .itemOutputs('cosmiccore:prismatic_tungstensteel_coil_block')
+    .inputFluids('gtceu:nichrome 144')
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.EV]);
+  //VOLTAGE COILS
+  event.remove({ id: 'gtceu:assembler/voltage_coil_ulv' })
+  event.remove({ id: 'gtceu:assembler/voltage_coil_lv' })
+  event.remove({ id: 'gtceu:assembler/voltage_coil_mv' })
+  event.remove({ id: 'gtceu:assembler/voltage_coil_hv' })
+  event.remove({ id: 'gtceu:assembler/voltage_coil_ev' })
+  event.remove({ id: 'gtceu:assembler/voltage_coil_iv' })
+  event.remove({ id: 'gtceu:assembler/voltage_coil_luv' })
+  event.remove({ id: 'gtceu:assembler/voltage_coil_zpm' })
+  event.remove({ id: 'gtceu:assembler/voltage_coil_uv' })
+
+  event.recipes.gtceu.spooling_machine('voltage_coil_ulv')
+    .itemInputs(['gtceu:magnetic_iron_rod', '16x gtceu:fine_lead_wire'])
+    .itemOutputs('gtceu:ulv_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.ULV] / 2);
+
+  event.recipes.gtceu.spooling_machine('voltage_coil_lv')
+    .itemInputs(['gtceu:magnetic_iron_rod', '16x gtceu:fine_steel_wire'])
+    .itemOutputs('gtceu:lv_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.LV] / 2);
+
+  event.recipes.gtceu.spooling_machine('voltage_coil_mv')
+    .itemInputs(['gtceu:magnetic_steel_rod', '16x gtceu:fine_aluminium_wire'])
+    .itemOutputs('gtceu:mv_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.MV] / 2);
+
+  event.recipes.gtceu.spooling_machine('voltage_coil_hv')
+    .itemInputs(['gtceu:magnetic_steel_rod', '16x gtceu:fine_black_steel_wire'])
+    .itemOutputs('gtceu:hv_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.HV] / 2);
+
+  event.recipes.gtceu.spooling_machine('voltage_coil_ev')
+    .itemInputs(['gtceu:magnetic_neodymium_rod', '16x gtceu:fine_platinum_wire'])
+    .itemOutputs('gtceu:ev_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.EV] / 2);
+
+  event.recipes.gtceu.spooling_machine('voltage_coil_iv')
+    .itemInputs(['gtceu:magnetic_neodymium_praseodymium_rod', '16x gtceu:fine_iridium_wire'])
+    .itemOutputs('gtceu:iv_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.IV] / 2);
+
 })
 
