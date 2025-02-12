@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
     //Soul Sprout
     event.recipes.gtceu.flora_nurturer('soul_cultivation')
         .notConsumable('legendarysurvivaloverhaul:ice_fern_leaf')
-        .notConsumable('minecraft:soul_sand')
+        .notConsumable('minecraft:moss_block')
         .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
         .itemOutputs('legendarysurvivaloverhaul:ice_fern_leaf')
         .chancedOutput(Item.of('legendarysurvivaloverhaul:ice_fern_leaf', 1), 2500, 500)
@@ -304,7 +304,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV] / 2);
     event.recipes.gtceu.flora_nurturer('soul_cultivation_nutrient_sol')
         .notConsumable('legendarysurvivaloverhaul:ice_fern_leaf')
-        .notConsumable('minecraft:soul_sand')
+        .notConsumable('minecraft:moss_block')
         .inputFluids('gtceu:nutrient_solution 50')
         .itemOutputs('16x legendarysurvivaloverhaul:ice_fern_leaf')
         .duration(160)
