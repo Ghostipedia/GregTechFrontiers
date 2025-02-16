@@ -303,7 +303,6 @@
 				{
 					id: "67C6E41CD807EF68"
 					item: "gtceu:impure_enriched_naquadah_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -324,7 +323,6 @@
 				{
 					id: "3A1B6E6D2CA6B0F3"
 					item: "gtceu:impure_naquadria_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -345,7 +343,6 @@
 				{
 					id: "5A435CE2366F6BFB"
 					item: "gtceu:enriched_naquadah_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -366,7 +363,6 @@
 				{
 					id: "69F568817C91631C"
 					item: "gtceu:naquadria_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -387,7 +383,6 @@
 				{
 					id: "51033A10CCFA32B0"
 					item: "gtceu:acidic_naquadria_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -408,7 +403,6 @@
 				{
 					id: "76E631A2E303B755"
 					item: "gtceu:acidic_enriched_naquadah_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -440,13 +434,11 @@
 				{
 					id: "068EBD0D76FB2B1E"
 					item: "gtceu:enriched_naquadah_waste_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "446014380D16BE09"
 					item: "gtceu:naquadria_waste_bucket"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -663,7 +655,6 @@
 				{
 					id: "0F348D52A661624C"
 					item: "gtceu:ammonia_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -684,7 +675,6 @@
 				{
 					id: "1BBE5B9967DA565A"
 					item: "gtceu:dichlorobenzidine_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -705,7 +695,6 @@
 				{
 					id: "603ECFFD2E57747D"
 					item: "gtceu:phthalic_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -727,7 +716,6 @@
 				{
 					id: "49E65610DC6976DB"
 					item: "gtceu:phenol_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -751,7 +739,6 @@
 				{
 					id: "78A0E024143121D2"
 					item: "gtceu:diaminobenzidine_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -775,7 +762,6 @@
 				{
 					id: "3829A99D87D5A154"
 					item: "gtceu:diphenyl_isophthalate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -927,7 +913,6 @@
 				{
 					id: "70542BCF4E3C7F94"
 					item: "gtceu:resh_neutron_plasma_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -948,7 +933,6 @@
 				{
 					id: "3D5771A62138EA36"
 					item: "gtceu:alef_neutron_plasma_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -969,7 +953,6 @@
 				{
 					id: "087B7E20DB143F6D"
 					item: "gtceu:pey_neutron_plasma_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -990,7 +973,6 @@
 				{
 					id: "60BA5D2CEE43C0EC"
 					item: "gtceu:ayin_neutron_plasma_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{

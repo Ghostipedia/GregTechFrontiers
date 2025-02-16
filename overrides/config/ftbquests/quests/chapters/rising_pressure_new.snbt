@@ -1282,7 +1282,7 @@
 				item: "occultism:chalk_gold_impure"
 				type: "item"
 			}]
-			x: -11.5d
+			x: -12.0d
 			y: 2.0d
 		}
 		{
@@ -1622,7 +1622,7 @@
 				item: "gtceu:ancient_debris_dust"
 				type: "item"
 			}]
-			x: -11.5d
+			x: -12.0d
 			y: 0.0d
 		}
 		{
@@ -1648,66 +1648,6 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["388B1504B658C4AA"]
-			description: [
-				"&9Toms Simple Storage Networks&r: You can view all your containers from one inventory screen."
-				"Useful for all that microcrafting you're doing."
-				""
-				"The bare minimum setup requires just the &eStorage Terminal&r, but if you craft an &6Inventory Connector&r, it will read the contents of all adjacent chests. This allows you to link an entire chest wall to your Storage Terminal."
-				""
-				""
-				"You can get more creative with &eInventory Cables&r and other blocks that &bstore items&r. Feel free to experiment with those, most notably the &aConnectors&r From &6Sophisticated Storage&r and the &aDimensional Storage Core&r from &6Occultism&r."
-			]
-			icon: "toms_storage:ts.storage_terminal"
-			id: "71197839C7869165"
-			min_width: 285
-			optional: true
-			rewards: [{
-				count: 4
-				id: "545B2142A0C041FD"
-				item: "cosmiccore:large_shard_of_perpetuity"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "Some Central Storage? Yes Please!"
-			tasks: [
-				{
-					id: "7D0AC14E367A66E2"
-					item: "toms_storage:ts.inventory_connector"
-					type: "item"
-				}
-				{
-					id: "788E64DE390CED25"
-					item: "toms_storage:ts.storage_terminal"
-					type: "item"
-				}
-			]
-			x: -12.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"71197839C7869165"
-				"4A034254997FD7D5"
-			]
-			description: [
-				"it's just the terminal from before, but crafty.."
-				""
-				"you might need another if you don't want to sacrifice this one for a storage actuator"
-			]
-			id: "39DBE43A587C029E"
-			optional: true
-			shape: "hexagon"
-			subtitle: "I got lazy with the desc."
-			tasks: [{
-				id: "1FB3D36445106666"
-				item: "toms_storage:ts.crafting_terminal"
-				type: "item"
-			}]
-			x: -14.0d
 			y: 0.0d
 		}
 		{
@@ -2523,7 +2463,6 @@
 				{
 					id: "2CB0D82BBE9C3C35"
 					item: "occultism:storage_controller"
-					optional_task: true
 					type: "item"
 				}
 				{

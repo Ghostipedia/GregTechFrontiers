@@ -17,12 +17,16 @@
 	quests: [
 		{
 			description: [
-				"This Chapter (If you can see it) means you have Edit mode enabled in the questbook."
+				"This Chapter (If you can see it) means you have Edit mode enabled in the questbook OR you clicked on a quest that relies on one of these quest gates."
+				""
 				""
 				"Hi It's Ghost, this chapter here is for questbook logic/quests that would make other pages look messy. This isn't an actual quest chapter but moreso a place for logicgates to be placed."
 				""
 				""
-				"Now Turn off Edit mode and get to playing :P"
+				"&4BE CAREFUL, SOME QUEST LOGIC GATES WILL PERTAIN TO HEAVY SPOILERS IN THE STORY OF FRONTIERS! YOU HAVE BEEN WARNED&r"
+				""
+				""
+				"You can have a cookie for breaking out of bounds or intentionally getting here with edit mode."
 			]
 			id: "6022F9D216B741CD"
 			shape: "gear"
@@ -32,6 +36,7 @@
 				title: "Wtf is this?"
 				type: "custom"
 			}]
+			title: "What is This!?"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -132,6 +137,82 @@
 			}]
 			x: -1.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["5DB465F3C5F5171A"]
+			hide_dependency_lines: true
+			id: "3C9EB6B3762A6573"
+			secret: true
+			tasks: [{
+				id: "7CEDA296C6364128"
+				item: "malum:spirit_altar"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			id: "639606F130EFC88B"
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 159750F7321A983A"
+					elevate_perms: true
+					id: "6569E36E69C60D8C"
+					silent: true
+					team_reward: true
+					title: "Chromium Dust SKIP"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 308F457E26E57039"
+					elevate_perms: true
+					id: "2F6CF04BA237624C"
+					silent: true
+					team_reward: true
+					title: "DICHROMATE SKIP"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 1C64908E1A380A95"
+					elevate_perms: true
+					id: "706DD1A8B9CD64B3"
+					silent: true
+					team_reward: true
+					title: "SECOND BUCKET"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 0D2BAB45D2503E60"
+					elevate_perms: true
+					id: "0F707EF0CB95382C"
+					silent: true
+					team_reward: true
+					title: "DUST 1"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 2C615AE7B76CE145"
+					elevate_perms: true
+					id: "653BC66106B2D1B9"
+					silent: true
+					team_reward: true
+					title: "CHROMITE"
+					type: "command"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "2082FA9E25A76A39"
+				item: { Count: 16, id: "gtceu:chromium_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
 		}
 	]
 	title: "&4Dev - QuestLogic"

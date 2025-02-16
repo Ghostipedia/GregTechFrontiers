@@ -590,7 +590,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 50.0
+      "temperature": 30.0
     },
     {
       "properties": {
@@ -604,7 +604,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 75.0
+      "temperature": 45.0
     },
     {
       "properties": {
@@ -618,7 +618,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 80.0
+      "temperature": 55.0
     },
     {
       "properties": {
@@ -632,7 +632,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 85.0
+      "temperature": 65.0
     },
     {
       "properties": {
@@ -646,7 +646,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 90.0
+      "temperature": 80.0
     },
     {
       "properties": {

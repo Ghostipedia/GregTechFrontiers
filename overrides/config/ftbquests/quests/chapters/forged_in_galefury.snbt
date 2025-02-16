@@ -390,7 +390,6 @@
 		}
 		{
 			dependencies: [
-				"0DB94D5D36DDB48E"
 				"31AFAD2FD1E20E11"
 				"63583107A604973F"
 			]
@@ -407,6 +406,7 @@
 			dependencies: [
 				"0282FBA66372D27F"
 				"0043370513B224E8"
+				"0DB94D5D36DDB48E"
 			]
 			id: "4573B786F0ED6565"
 			tasks: [{
@@ -437,7 +437,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["63583107A604973F"]
@@ -642,30 +642,12 @@
 		}
 		{
 			dependencies: ["4D9425267F0C2AB4"]
-			icon: {
-				Count: 1
-				id: "gtceu:fluid_cell"
-				tag: {
-					Fluid: {
-						Amount: 1000
-						FluidName: "gtceu:sulfur_trioxide"
-					}
-				}
-			}
+			icon: "gtceu:sulfur_trioxide_bucket"
 			id: "310BA3D469D11050"
 			tasks: [
 				{
 					id: "769F4415F2B3F770"
-					item: {
-						Count: 1
-						id: "gtceu:fluid_cell"
-						tag: {
-							Fluid: {
-								Amount: 1000
-								FluidName: "gtceu:sulfur_trioxide"
-							}
-						}
-					}
+					item: "gtceu:sulfur_trioxide_bucket"
 					type: "item"
 				}
 				{
@@ -680,30 +662,12 @@
 		{
 			dependencies: ["466C20EACAEF3394"]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1
-				id: "gtceu:fluid_cell"
-				tag: {
-					Fluid: {
-						Amount: 1000
-						FluidName: "gtceu:sulfur_dioxide"
-					}
-				}
-			}
+			icon: "gtceu:sulfur_dioxide_bucket"
 			id: "4D9425267F0C2AB4"
 			tasks: [
 				{
 					id: "112CFAF0DA51C1C2"
-					item: {
-						Count: 1
-						id: "gtceu:fluid_cell"
-						tag: {
-							Fluid: {
-								Amount: 1000
-								FluidName: "gtceu:sulfur_dioxide"
-							}
-						}
-					}
+					item: "gtceu:sulfur_dioxide_bucket"
 					type: "item"
 				}
 				{
@@ -718,30 +682,12 @@
 		{
 			dependencies: ["310BA3D469D11050"]
 			dependency_requirement: "one_completed"
-			icon: {
-				Count: 1
-				id: "gtceu:fluid_cell"
-				tag: {
-					Fluid: {
-						Amount: 1000
-						FluidName: "gtceu:sulfuric_acid"
-					}
-				}
-			}
+			icon: "gtceu:sulfuric_acid_bucket"
 			id: "7A7FF903F9600094"
 			tasks: [
 				{
 					id: "4ADC335F03D8C17C"
-					item: {
-						Count: 1
-						id: "gtceu:fluid_cell"
-						tag: {
-							Fluid: {
-								Amount: 1000
-								FluidName: "gtceu:sulfuric_acid"
-							}
-						}
-					}
+					item: "gtceu:sulfuric_acid_bucket"
 					type: "item"
 				}
 				{
@@ -907,7 +853,7 @@
 				"2B844CDAF9BD63C4"
 				"325D1D73A1414437"
 			]
-			description: ["You'll need the Runic Altar Later on for more powerful Magitech, but for now it helps you unlock the mana s imulator."]
+			description: ["You'll need the Runic Altar Later on for more powerful Magitech, for now helps you make runes needed for better mana generation"]
 			id: "18E59533B89D6005"
 			shape: "hexagon"
 			size: 2.0d
@@ -1041,6 +987,7 @@
 		}
 		{
 			dependencies: ["235A2AE1AC57A5E3"]
+			description: ["You can craft or find these, up to you."]
 			id: "325D1D73A1414437"
 			shape: "hexagon"
 			size: 1.0d
@@ -1094,7 +1041,6 @@
 				{
 					id: "223094C8A43FE68B"
 					item: "gtceu:raw_mana_crystal_slurry_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1115,7 +1061,6 @@
 				{
 					id: "366C720AC1665255"
 					item: "gtceu:prepared_terrasteel_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1140,7 +1085,6 @@
 				{
 					id: "17FE1AB4257178EF"
 					item: "gtceu:unstable_terrasteel_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1275,7 +1219,7 @@
 				}
 			]
 			x: 1.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1498,6 +1442,8 @@
 		{
 			dependencies: ["466C20EACAEF3394"]
 			description: [
+				"&lIf you'd like to auto-complete this chain, hold 16 Chromium Inots&r"
+				""
 				"Welcome to your first significant chemical setup, &bChromium&r."
 				""
 				"This chain aims to teach you basic automation skills like recycling and looping intermediate products. While also giving you time to get adjusted to AE2. "
@@ -1508,6 +1454,7 @@
 			]
 			hide_dependency_lines: true
 			id: "159750F7321A983A"
+			min_width: 350
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "The path to Chrome"

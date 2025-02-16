@@ -30,13 +30,21 @@
 				type: "item"
 			}]
 			subtitle: "&fBreathing Easier"
-			tasks: [{
-				consume_items: true
-				count: 64L
-				id: "606C9F0C2D3B0986"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "606C9F0C2D3B0986"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					elapsedTime: 4800L
+					gameTime: "game"
+					id: "054DBDAF13C95774"
+					type: "questsadditions:time"
+				}
+			]
 			title: "Shop : Flask of Gills"
 			x: -2.5d
 			y: 0.0d
@@ -110,6 +118,12 @@
 					id: "48D4937B7512B6A7"
 					item: { Count: 32, id: "cosmiccore:shard_of_perpetuity" }
 					type: "item"
+				}
+				{
+					elapsedTime: 600L
+					gameTime: "game"
+					id: "484BB3622F35D50D"
+					type: "questsadditions:time"
 				}
 			]
 			title: "Shop : Silk Touch"
@@ -350,13 +364,22 @@
 				type: "item"
 			}]
 			subtitle: "&fHoney Please!"
-			tasks: [{
-				consume_items: true
-				count: 32L
-				id: "1817049F5E9467ED"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 32L
+					id: "1817049F5E9467ED"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 60L
+					gameTime: "game"
+					id: "79A6A3B9A929EF5B"
+					type: "questsadditions:time"
+				}
+			]
 			title: "Shop : A Box of Bees"
 			x: -4.0d
 			y: 0.0d
@@ -373,13 +396,22 @@
 				type: "random"
 			}]
 			subtitle: "&fCool Tunes"
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "23554CA7E1D276E3"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "23554CA7E1D276E3"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 300L
+					gameTime: "game"
+					id: "602F834C5FF23097"
+					type: "questsadditions:time"
+				}
+			]
 			title: "Shop Roll : Music Disk"
 			x: -4.0d
 			y: -1.5d
@@ -396,12 +428,22 @@
 				type: "item"
 			}]
 			subtitle: "&fIf you're having trouble!"
-			tasks: [{
-				consume_items: true
-				id: "04CA22D5DA13D5D6"
-				item: "cosmiccore:large_shard_of_perpetuity"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "04CA22D5DA13D5D6"
+					item: "cosmiccore:large_shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 3600L
+					gameTime: "game"
+					id: "393F4D90A5D6C7AC"
+					type: "questsadditions:time"
+				}
+			]
 			x: -2.5d
 			y: -3.0d
 		}
@@ -429,13 +471,21 @@
 					type: "random"
 				}
 			]
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "678F0A4C7C8D4ED6"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "678F0A4C7C8D4ED6"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 300L
+					id: "648E8B4904B9B063"
+					type: "questsadditions:time"
+				}
+			]
 			title: "Shop Roll : Vanilla Saplings"
 			x: -2.5d
 			y: 1.5d
@@ -450,13 +500,21 @@
 				type: "item"
 			}]
 			subtitle: "&fA quick ignition"
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "20F47DB04CA74EAA"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "20F47DB04CA74EAA"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 60L
+					id: "208AB4401A4C323A"
+					type: "questsadditions:time"
+				}
+			]
 			title: "Shope : Fire Charge"
 			x: -4.0d
 			y: 1.5d
@@ -471,13 +529,22 @@
 				type: "item"
 			}]
 			subtitle: "&fCooling you down"
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "4D4623C7570B1822"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "4D4623C7570B1822"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 300L
+					gameTime: "game"
+					id: "73FEEACCFC891F3B"
+					type: "questsadditions:time"
+				}
+			]
 			title: "Shope : Ice Fern Seed"
 			x: -4.0d
 			y: 3.0d
@@ -492,15 +559,277 @@
 				type: "item"
 			}]
 			subtitle: "&fA quick ignition"
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "593A5F311E2AEB0B"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "593A5F311E2AEB0B"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					elapsedTime: 300L
+					gameTime: "game"
+					id: "758F00919E73C98F"
+					type: "questsadditions:time"
+				}
+			]
 			title: "Shope : Fire Charge"
 			x: -2.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			icon: "undergarden:gronglet"
+			id: "6A7BCD7889599C51"
+			rewards: [{
+				id: "781BF5D8766B01AD"
+				item: "undergarden:gronglet"
+				type: "item"
+			}]
+			subtitle: "A Little Friend :)"
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "40E3AD0B4D694F0F"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 300L
+					gameTime: "game"
+					id: "51ACC6422F2480D8"
+					type: "questsadditions:time"
+				}
+			]
+			title: "Shop : Gronglet"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"You'll notice the timer task in each quest doesn't start completed and  by proxy shops need to warm up before you can use them."
+				""
+				"I can't really do anything about that, apologies for now!"
+			]
+			id: "6B9CFDEC789CAE40"
+			subtitle: "A Note about shop quests"
+			tasks: [{
+				id: "0A67CD7EEE28D657"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: "botania:cosmetic_anaglyph_glasses"
+			id: "03E2664F7314F18D"
+			optional: true
+			rewards: [{
+				icon: "botania:cosmetic_anaglyph_glasses"
+				id: "0721DE6BAC101BC4"
+				table_id: 8641090701183774599L
+				title: "Random Botania Cosmetic"
+				type: "random"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "1BC5E45CA95D9AD9"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 300L
+					id: "09ECAF6FB8C91626"
+					type: "questsadditions:time"
+				}
+			]
+			title: "Shop Roll : Botania Cosmetics"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: "farmersdelight:chicken_sandwich"
+			id: "291017CD8B98263C"
+			optional: true
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Open: 0b
+								SelectedSlot: 0b
+								Size: 6
+							}
+						}
+						id: "supplementaries:lunch_basket"
+					}
+					id: "7F9A1F693DBE2217"
+					table_id: 748972662919414220L
+					title: "Lunch is here! ->"
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					exclude_from_claim_all: true
+					id: "489249F997908046"
+					table_id: 748972662919414220L
+					title: "Six Random"
+					type: "loot"
+				}
+				{
+					auto: "enabled"
+					exclude_from_claim_all: true
+					id: "7980DA0DC43DA88F"
+					table_id: 748972662919414220L
+					title: "Food Items"
+					type: "loot"
+				}
+				{
+					auto: "enabled"
+					exclude_from_claim_all: true
+					id: "4E5FD5579620A21E"
+					table_id: 748972662919414220L
+					title: "To Keep"
+					type: "loot"
+				}
+				{
+					auto: "enabled"
+					exclude_from_claim_all: true
+					id: "1B25194D20FAEE52"
+					table_id: 748972662919414220L
+					title: "Your Belly"
+					type: "loot"
+				}
+				{
+					auto: "enabled"
+					exclude_from_claim_all: true
+					id: "4FA3F47B70C9F758"
+					table_id: 748972662919414220L
+					title: "Full!"
+					type: "loot"
+				}
+				{
+					auto: "enabled"
+					exclude_from_claim_all: true
+					id: "7E2DAC110F084B2D"
+					table_id: 748972662919414220L
+					title: "Enjoy!"
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "0CD11472850E231D"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 1200L
+					id: "4FF7CA1184247406"
+					type: "questsadditions:time"
+				}
+			]
+			title: "Shop Roll : Light Lunch"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: "gtceu:tin_single_cable"
+			id: "71AE135D9582E87B"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "6E4CB4195E3E8274"
+				item: "gtceu:tin_single_cable"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 16L
+					id: "56A896F6337A0881"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 900L
+					id: "2F11EEC6C80EBC9A"
+					type: "questsadditions:time"
+				}
+			]
+			title: "Shop : Tin Cable"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:experience_bottle"
+			id: "3C2C2146C005CABB"
+			optional: true
+			rewards: [{
+				id: "1B90E5D5EC802DFF"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "64D6CFFE72734CEC"
+					item: { Count: 64, id: "cosmiccore:shard_of_perpetuity" }
+					type: "item"
+				}
+				{
+					elapsedTime: 6000L
+					id: "5AE789556ED229FA"
+					type: "questsadditions:time"
+				}
+			]
+			title: "Shop : 15 Levels"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:experience_bottle"
+			id: "655B426FC4EC143E"
+			optional: true
+			rewards: [{
+				id: "35AA0121D77BD385"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "2C9FFAAE871784DE"
+					item: "cosmiccore:large_shard_of_perpetuity"
+					type: "item"
+				}
+				{
+					elapsedTime: 6000L
+					id: "3F0988B611937D47"
+					type: "questsadditions:time"
+				}
+			]
+			title: "Shop : 30 Levels"
+			x: 0.5d
 			y: 3.0d
 		}
 	]
