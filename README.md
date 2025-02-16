@@ -17,6 +17,7 @@
 ## What are you getting yourself into?
 
  Gonna be honest I suck at writing descriptions. Who would have guessed. So like yeah.
+ Want to contribute, check out here! (LINK SOON)
 
 Go progress through 15 Voltage Tiers of Gregtech and 17 Technology Ages, with the goal of seeing your plots of revenge through. 
 This pack come 1.0.0 will feature a fully written narrative you can enjoy within the confines of the questbook, even changing the ending of the pack based on your choices.
