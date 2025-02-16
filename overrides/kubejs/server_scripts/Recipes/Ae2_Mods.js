@@ -97,6 +97,7 @@ let denseCoverHidding = ['ae2:black_covered_dense_cable', 'ae2:red_covered_dense
 let quartzCableHidding = ['ae2:black_glass_cable', 'ae2:red_glass_cable', 'ae2:green_glass_cable', 'ae2:brown_glass_cable', 'ae2:blue_glass_cable', 'ae2:purple_glass_cable', 'ae2:cyan_glass_cable', 'ae2:light_gray_glass_cable', 'ae2:gray_glass_cable', 'ae2:pink_glass_cable', 'ae2:lime_glass_cable', 'ae2:yellow_glass_cable', 'ae2:light_blue_glass_cable', 'ae2:magenta_glass_cable', 'ae2:orange_glass_cable', 'ae2:white_glass_cable']
 let coveredCableHidding = ['ae2:black_covered_cable', 'ae2:red_covered_cable', 'ae2:green_covered_cable', 'ae2:brown_covered_cable', 'ae2:blue_covered_cable', 'ae2:purple_covered_cable', 'ae2:cyan_covered_cable', 'ae2:light_gray_covered_cable', 'ae2:gray_covered_cable', 'ae2:pink_covered_cable', 'ae2:lime_covered_cable', 'ae2:yellow_covered_cable', 'ae2:light_blue_covered_cable', 'ae2:magenta_covered_cable', 'ae2:orange_covered_cable', 'ae2:white_covered_cable']
 let processors = ['ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor', 'megacells:accumulation_processor']
+let matrix = ['expatternprovider:assembler_matrix_frame', 'expatternprovider:assembler_matrix_wall', 'expatternprovider:assembler_matrix_pattern', 'expatternprovider:assembler_matrix_crafter', 'expatternprovider:assembler_matrix_speed', 'expatternprovider:assembler_matrix_glass']
 ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:fluix_glass_cable' })
   event.remove({ input: 'ae2:fluix_glass_cable' })
@@ -104,7 +105,8 @@ ServerEvents.recipes(event => {
   event.remove({ input: 'ae2:fluix_crystal' })
   event.remove({ output: 'ae2:fluix_dust' })
   event.remove({ input: 'ae2:fluix_dust' })
-
+  event.remove({ output: matrix })
+  event.remove({ input: matrix })
   event.remove({ output: miscRemovals })
   event.remove({ input: miscRemovals })
   event.remove({ output: processors })
@@ -127,6 +129,8 @@ ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', coveredCableHidding)
   event.add('c:hidden_from_recipe_viewers', coveredCableHidding)
 
+  event.add('forge:viewers/hidden_from_recipe', matrix)
+  event.add('c:hidden_from_recipe_viewers', matrix)
   // event.add('forge:viewers/hidden_from_recipe', denseCoverHidding)
   // event.add('c:hidden_from_recipe_viewers', denseCoverHidding)
 })
@@ -219,7 +223,18 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:quartz_glass')
     .duration(100)
     .EUt(GTValues.VA[GTValues.MV]);
-
+  event.recipes.gtceu.assembler('megacells:mega_item_cell_housing')
+    .itemInputs(['3x gtceu:naquadah_alloy_plate', '2x gtceu:fusion_glass', '2x gtceu:hssg_single_cable', '4x ae2:formation_core', '4x ae2:annihilation_core'])
+    .inputFluids('gtceu:polybenzimidazole 576')
+    .itemOutputs('megacells:mega_item_cell_housing')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.assembler('megacells:mega_fluid_cell_housing')
+    .itemInputs(['3x gtceu:trinium_plate', '2x gtceu:fusion_glass', '2x gtceu:hssg_single_cable', '4x ae2:formation_core', '4x ae2:annihilation_core'])
+    .inputFluids('gtceu:polybenzimidazole 576')
+    .itemOutputs('megacells:mega_fluid_cell_housing')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LuV]);
   event.remove({ output: 'ae2:charged_certus_quartz_crystal' })
   event.remove({ input: 'ae2:charged_certus_quartz_crystal' })
   event.recipes.gtceu.polarizer('ae2:fuck_it_we_ball')
@@ -305,13 +320,13 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
   //Controller
   event.recipes.gtceu.circuit_assembler('ae2:controller_assembly')
-    .itemInputs(['4x gtceu:manasteel_hex_wire', '4x #gtceu:circuits/mv','4x malum:cluster_of_brilliance', 'ae2:energy_acceptor'])
+    .itemInputs(['4x gtceu:manasteel_hex_wire', '4x #gtceu:circuits/mv', '4x malum:cluster_of_brilliance', 'ae2:energy_acceptor'])
     .itemOutputs('ae2:controller')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
   //ControllerMK2
   event.recipes.gtceu.circuit_assembler('ae2:controller_assembly2')
-    .itemInputs(['2x malum:cluster_of_brilliance','gtceu:galvanized_ethersteel_double_wire', '#gtceu:circuits/hv', 'ae2:energy_acceptor'])
+    .itemInputs(['2x malum:cluster_of_brilliance', 'gtceu:galvanized_ethersteel_double_wire', '#gtceu:circuits/hv', 'ae2:energy_acceptor'])
     .itemOutputs('ae2:controller')
     .duration(80)
     .EUt(GTValues.VA[GTValues.HV]);
@@ -322,14 +337,14 @@ ServerEvents.recipes(event => {
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('expatternprovider:ex_drive_assembly')
-    .itemInputs(['2x ae2:drive','8x cosmiccore:prismatic_tungstensteel_plate', '16x ae2:fluix_smart_dense_cable', '4x #gtceu:circuits/ev', 'gtceu:titanium_frame'])
+    .itemInputs(['2x ae2:drive', '8x cosmiccore:prismatic_tungstensteel_plate', '16x ae2:fluix_smart_dense_cable', '4x #gtceu:circuits/ev', 'gtceu:titanium_frame'])
     .inputFluids('gtceu:soldering_alloy 576')
     .circuit(1)
     .itemOutputs('expatternprovider:ex_drive')
     .duration(200)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('expatternprovider:drive_upgrade_assembly')
-    .itemInputs(['1x ae2:drive','8x cosmiccore:prismatic_tungstensteel_plate', '16x ae2:fluix_smart_dense_cable', '4x #gtceu:circuits/ev', 'gtceu:titanium_frame'])
+    .itemInputs(['1x ae2:drive', '8x cosmiccore:prismatic_tungstensteel_plate', '16x ae2:fluix_smart_dense_cable', '4x #gtceu:circuits/ev', 'gtceu:titanium_frame'])
     .inputFluids('gtceu:soldering_alloy 576')
     .circuit(2)
     .itemOutputs('expatternprovider:drive_upgrade')
@@ -378,7 +393,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('16x ae2:annihilation_core')
     .duration(160)
     .EUt(GTValues.VA[GTValues.IV]);
-    event.recipes.gtceu.assembler('ae2:annihilation_assemblymk4')
+  event.recipes.gtceu.assembler('ae2:annihilation_assemblymk4')
     .itemInputs(['32x #forge:flawless_gems/certus_quartz', '4x gtceu:computer_monitor_cover', '#gtceu:circuits/luv'])
     .itemOutputs('32x ae2:annihilation_core')
     .duration(160)
@@ -848,7 +863,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('expatternprovider:threshold_level_emitter')
     .duration(100)
     .EUt(GTValues.VA[GTValues.HV])
-  
+
   //merequesters
   event.recipes.gtceu.assembler(`merequester:requester`)
     .itemInputs('gtceu:ev_machine_hull')
@@ -867,7 +882,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('merequester:requester_terminal')
     .duration(200)
     .EUt(GTValues.VA[GTValues.EV])
- 
+
   //advanced memory card
   event.recipes.gtceu.assembler(`betterp2p:advanced_memory_card_assembly`)
     .itemInputs('ae2:memory_card')

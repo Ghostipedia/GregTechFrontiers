@@ -158,6 +158,26 @@ ServerEvents.recipes(event => {
               S: 'gtceu:clean_machine_casing',
               P: 'gtceu:palladium_plate'
        })
+       event.shaped('gtceu:industrial_stoneworks', [
+              'PCP',
+              'WSW',
+              'PCP',
+       ], {
+              C: '#gtceu:circuits/iv',
+              W: 'gtceu:tungsten_grinding_head',
+              S: 'gtceu:iv_rock_crusher',
+              P: 'gtceu:titanium_carbide_plate'
+       })
+       event.shaped('gtceu:industrial_grade_floral_propagator', [
+              'PCP',
+              'WSW',
+              'PCP',
+       ], {
+              C: '#gtceu:circuits/ev',
+              W: 'gtceu:white_lamp',
+              S: 'gtceu:ev_flora_nurturer',
+              P: 'gtceu:palladium_plate'
+       })
        event.shaped('kubejs:reinforced_respirator', [
               ' R ',
               'RFR',
@@ -267,7 +287,7 @@ ServerEvents.recipes(event => {
               .itemInputs('cosmiccore:blackstone_pustule')
               .itemOutputs('3x biomesoplenty:blackstone_bulb')
               .chancedOutput(Item.of('biomesoplenty:blackstone_bulb', 1), 5000, 500)
-              .duration(160)
+              .duration(100)
               .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.cutter('stone_slab_to_pressureplate')
               .itemInputs('minecraft:stone_slab')
@@ -293,6 +313,12 @@ ServerEvents.recipes(event => {
               .outputFluids('gtceu:crude_source_oils 1000')
               .duration(120)
               .EUt(GTValues.VA[GTValues.LV])
+       event.remove({ id: 'gtceu:macerator/macerate_netherrack' })
+       event.recipes.gtceu.macerator('cosmicfrontiers:macerate_netherrack')
+              .itemInputs('minecraft:netherrack')
+              .itemOutputs('gtceu:netherrack_dust')
+              .duration(60)
+              .EUt(2)
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing')
               .itemInputs(['4x biomesoplenty:blackstone_bulb', '5x gtceu:netherrack_dust', '4x minecraft:crimson_fungus'])
               .inputFluids('biomesoplenty:blood 1000')
@@ -301,7 +327,7 @@ ServerEvents.recipes(event => {
               .circuit(1)
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing_good')
-              .itemInputs(['4x biomesoplenty:blackstone_bulb', '5x gtceu:netherrack_dust', '2x minecraft:crimson_fungus'])
+              .itemInputs(['2x biomesoplenty:blackstone_bulb', '3x gtceu:netherrack_dust', '2x minecraft:crimson_fungus'])
               .inputFluids('gtceu:nether_sediment_sludge 1000')
               .inputFluids('minecraft:water 1000')
               .outputFluids('gtceu:nether_sediment_sludge 2000')
@@ -310,7 +336,7 @@ ServerEvents.recipes(event => {
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.flora_nurturer('cosmiccore:pearl_cultivation')
               .notConsumable('nethersdelight:propelpearl')
-              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 750))
+              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 250))
               .itemOutputs('2x cosmiccore:overloaded_pearls')
               .itemOutputs('2x nethersdelight:propelpearl')
               .chancedOutput(Item.of('nethersdelight:propelpearl', 1), 5000, 500)
@@ -447,7 +473,7 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.electric_blast_furnace('manasteel_first')
               .itemInputs(['8x gtceu:blue_alloy_ingot', '8x botania:manaweave_cloth'])
               .inputFluids('gtceu:crude_source_oils 250')
-              .itemOutputs('12x botania:manasteel_ingot')
+              .itemOutputs(['12x botania:manasteel_ingot','2x botania:manaweave_cloth'])
               .circuit(1)
               .blastFurnaceTemp(900)
               .duration(2400)

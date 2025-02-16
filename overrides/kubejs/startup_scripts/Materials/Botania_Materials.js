@@ -45,11 +45,64 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x67b9ee)
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
+        .toolStats(new ToolProperty(8, 5, 2048, 4, 
+        [
+            GTToolType.SWORD,
+            GTToolType.PICKAXE,
+            GTToolType.SHOVEL,
+            GTToolType.AXE,
+            GTToolType.HOE,
+            GTToolType.MINING_HAMMER,
+            GTToolType.SPADE,
+            GTToolType.SCYTHE,
+            GTToolType.SAW,
+            GTToolType.HARD_HAMMER,
+            GTToolType.WRENCH,
+            GTToolType.FILE,
+            GTToolType.CROWBAR,
+            GTToolType.SCREWDRIVER,
+            GTToolType.MORTAR,
+            GTToolType.WIRE_CUTTER,
+            GTToolType.KNIFE,
+            GTToolType.DRILL_LV,
+            GTToolType.DRILL_MV,
+            GTToolType.DRILL_HV,
+            GTToolType.DRILL_EV,
+            GTToolType.DRILL_IV,
+            GTToolType.CHAINSAW_LV,
+            GTToolType.WRENCH_LV,
+            GTToolType.WRENCH_HV,
+            GTToolType.WRENCH_IV,
+            GTToolType.WIRE_CUTTER_LV,
+            GTToolType.WIRE_CUTTER_HV,
+            GTToolType.WIRE_CUTTER_IV,
+            GTToolType.BUZZSAW,
+            GTToolType.SCREWDRIVER_LV
+        ]
+    ))
         .iconSet(GTMaterialIconSet.getByName('mana'))
         .flags(
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD)
+    event.create('annealed_manasteel')
+        .ingot()
+        .liquid()
+        .color(0xa8ddff)
+        .element(GTElements.get('manasteel'))
+        .cableProperties(GTValues.V[GTValues.MV], 2, 3, false)
+        .iconSet(GTMaterialIconSet.getByName('mana'))
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING
+        )
+
 
     event.create('elementium')
         .color(0xf472c6)

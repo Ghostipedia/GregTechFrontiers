@@ -1,16 +1,16 @@
 {
-    "name": "The Aether",
+    "name": "§eElectric Blast Furnace",
     "tooltip": [
-        "Welcome to the Aether!"
+        "§aYour New Forge!"
     ],
     "item": {
-        "item": "aether:aether_portal_frame",
+        "item": "gtceu:electric_blast_furnace",
         "count": 1
     },
     "display": {
         "offset": {
             "x": 0,
-            "y": 0,
+            "y": 0.23,
             "z": 0
         },
         "rotation": {
@@ -18,14 +18,14 @@
             "y": 0,
             "z": 0
         },
-        "scale": 1.5
+        "scale": 0.8
     },
     "animation": {
         "type": "spinning",
-        "speed": 0.6
+        "speed": 0.4
     },
     "colors": {
-        "base": "#faf67a",
-        "accent": "#faab7a"
+        "base": "#3d3d3d",
+        "accent": "#d6b572"
     }
 }

@@ -119,6 +119,8 @@
   "block.gtceu.zpm_culinary_assembler": "§cElite Culinary Assembler III§r",
   "block.gtceu.uv_culinary_assembler": "§3Ultimate Culinary Assembler§r",
   "block.gtceu.uhv_culinary_assembler": "§4Epic Culinary Assembler§r",
+  "block.gtceu.uev_culinary_assembler": "§aEpic Culinary Assembler II§r",
+  "block.gtceu.uiv_culinary_assembler": "§2Epic Culinary Assembler III§r",
 
   "gtceu.juicer": "Juicer",
   "block.gtceu.lv_juicer": "Basic Juicer",
@@ -167,6 +169,7 @@
 
   "block.gtceu.basic_alternator": "Basic Alternator",
   "material.gtceu.manasteel": "Manasteel",
+  "material.gtceu.annealed_manasteel": "Annealed Manasteel",
   "material.gtceu.zanite": "Zanite",
   "material.gtceu.ancient_debris": "Ancient Debris",
   "material.gtceu.netherite_scrap": "Netherite Scrap",
@@ -468,6 +471,7 @@
   "material.gtceu.diacetyl": "Diacetyl",
   "material.gtceu.butanediol": "Butanediol",
   "material.gtceu.ethylene_oxide": "Ethylene Oxide",
-  "material.gtceu.pedot_pss": "PEDOT:PSS"
+  "material.gtceu.pedot_pss": "PEDOT:PSS",
+  "material.gtceu.crude_source_oils": "Crude Source Oils"
   
 }

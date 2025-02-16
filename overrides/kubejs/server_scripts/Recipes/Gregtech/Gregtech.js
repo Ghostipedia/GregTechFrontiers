@@ -75,13 +75,6 @@ ServerEvents.recipes(event => {
     'gtceu:steel_brick_casing',
     'gtceu:lp_steam_liquid_boiler'
   )
-  event.replaceInput(
-    { output: 'gtceu:alloy_blast_smelter' },
-    'gtceu:tantalum_carbide_plate',
-    'gtceu:titanium_carbide_plate'
-  )
-
-
   event.recipes.gtceu.alloy_smelter('firebrick_masonry')
     .itemInputs('gtceu:compressed_fireclay')
     .itemInputs('gtceu:coal_dust')
@@ -160,7 +153,17 @@ ServerEvents.recipes(event => {
     H: '#forge:tools/hammers',
     W: '#forge:tools/wrenches'
   })
-
+  event.remove({ id: 'clickmachine:auto_clicker' })
+  event.shaped('clickmachine:auto_clicker', [
+    'PRP',
+    'PCP',
+    'PWP'
+  ], {
+    P: 'gtceu:double_wrought_iron_plate',
+    R: 'ulvcovm:ulv_robot_arm',
+    C: 'gtceu:ulv_machine_hull',
+    W: '#gtceu:circuits/ulv',
+  })
   event.shaped('gtceu:treated_wood_plate', [
     ' S ',
     ' P ',
@@ -323,7 +326,19 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x gtceu:neodymium_praseodymium_rod')
     .duration(200)
     .EUt(GTValues.VA[GTValues.HV]);
-
+  event.recipes.gtceu.arc_furnace('annealed_manasteel')
+    .itemInputs('botania:manasteel_ingot')
+    .inputFluids('gtceu:oxygen 126')
+    .itemOutputs('gtceu:annealed_manasteel_ingot')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.electric_blast_furnace('bad_chrome')
+    .itemInputs('16x gtceu:chromite_dust')
+    .itemOutputs('2x gtceu:chromium_nugget')
+    .duration(600)
+    .circuit(2)
+    .blastFurnaceTemp(1700)
+    .EUt(GTValues.VA[GTValues.MV]);
   event.recipes.gtceu.assembler('alpha_supercon')
     .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:uranium_triplatinum_double_wire', 'gtceu:hv_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_alpha_single_wire')
@@ -511,12 +526,12 @@ ServerEvents.recipes(event => {
   ], {
     P: 'malum:spirit_fabric',
     M: 'gtceu:double_aluminium_plate',
-    W: 'gtceu:manasteel_single_cable',
+    W: 'gtceu:annealed_manasteel_single_cable',
     C: 'gtceu:mv_machine_casing',
     S: 'gtceu:cupronickel_spring'
   })
   event.recipes.gtceu.assembler('gtceu:assembler_hull_mv')
-    .itemInputs(['2x gtceu:manasteel_single_cable', 'gtceu:mv_machine_casing', '2x malum:spirit_fabric'])
+    .itemInputs(['2x gtceu:annealed_manasteel_single_cable', 'gtceu:mv_machine_casing', '2x malum:spirit_fabric'])
     .inputFluids('gtceu:polyethylene 288')
     .itemOutputs('gtceu:mv_machine_hull')
     .duration(50)
@@ -1059,7 +1074,7 @@ ServerEvents.recipes(event => {
     'WFW',
     'PCP'
   ], {
-    P: 'gtceu:tantalum_carbide_plate',
+    P: 'gtceu:titanium_carbide_plate',
     C: '#gtceu:circuits/luv',
     W: 'gtceu:uranium_triplatinum_quadruple_wire',
     F: 'gtceu:ev_alloy_smelter'

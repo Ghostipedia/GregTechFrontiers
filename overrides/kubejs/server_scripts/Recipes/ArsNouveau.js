@@ -103,24 +103,12 @@ ServerEvents.recipes(event => {
     ],
         {
             A: 'ars_nouveau:sourcestone',
-            B: 'gtceu:gold_rod',
+            B: 'gtceu:blue_alloy_rod',
             C: '#gtceu:circuits/mv',
             D: 'ars_nouveau:source_gem',
         }
     )
     event.remove({ id: 'ars_nouveau:wilden_summon_alt' })
-    event.shaped('ars_nouveau:arcane_core', [
-        'ACA',
-        'BDB',
-        'AAA'
-    ],
-        {
-            A: 'ars_nouveau:sourcestone',
-            B: 'gtceu:gold_rod',
-            C: '#gtceu:circuits/mv',
-            D: 'ars_nouveau:source_gem',
-        }
-    )
     event.remove({ id: 'ars_nouveau:enchanting_apparatus' })
     event.shaped('ars_nouveau:enchanting_apparatus', [
         'BAB',
@@ -165,7 +153,7 @@ ServerEvents.recipes(event => {
         'A A'
     ],
         {
-            A: 'gtceu:gold_rod',
+            A: 'gtceu:rose_gold_rod',
             B: 'ars_nouveau:source_gem_block',
         }
     )

@@ -379,7 +379,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.flora_nurturer('amber_aether')
         .notConsumable('1x aether:golden_oak_sapling')
-        .notConsumable('1x deep_aether:golden_heights_grass_block')
+        .notConsumable('aether:aether_dirt')
         .inputFluids('gtceu:aether_augmented_sediment 200')
         .itemOutputs('1x aether:golden_amber')
         .duration(120)

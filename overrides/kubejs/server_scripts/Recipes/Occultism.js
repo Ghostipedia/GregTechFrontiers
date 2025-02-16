@@ -84,15 +84,6 @@ ServerEvents.recipes(event => {
     C: 'gtceu:double_silver_plate'
   })
   event.remove({ id: 'occultism:crafting/storage_controller' })
-  event.shaped('occultism:storage_controller', [
-    ' A ',
-    ' B ',
-    ' C ',
-  ], {
-    A: 'occultism:dimensional_matrix',
-    B: 'toms_storage:ts.crafting_terminal',
-    C: 'occultism:storage_controller_base'
-  })
   //Iesnium Pickaxe
   event.remove({ id: 'occultism:crafting/iesnium_pickaxe' })
   event.shaped('occultism:iesnium_pickaxe', [
@@ -258,19 +249,6 @@ ServerEvents.recipes(event => {
     "gtceu:gold_dust",
     'occultism:basic_fusion'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.gold_glob")
-  event.recipes.occultism.ritual(
-    'toms_storage:ts.crafting_terminal',
-    ['ulvcovm:ulv_robot_arm',
-      'ulvcovm:ulv_robot_arm',
-      'ulvcovm:ulv_robot_arm',
-      'minecraft:crafting_table',
-      'minecraft:crafting_table',
-      'minecraft:crafting_table',
-      'minecraft:crafting_table',
-      'gtceu:steam_machine_casing'],
-    'toms_storage:ts.storage_terminal',
-    'occultism:craft_djinni'
-  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.terminal_crafting")
   event.remove({ id: 'occultism:ritual/craft_storage_controller_base' })
   event.recipes.occultism.ritual(
     'occultism:storage_controller_base',

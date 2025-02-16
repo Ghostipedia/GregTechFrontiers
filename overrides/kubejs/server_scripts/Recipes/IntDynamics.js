@@ -15,8 +15,8 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'integrateddynamics:mechanical_squeezer' })
   event.remove({ type: 'integrateddynamics:squeezer' })
 
-  event.remove({id:'integrateddynamics:crafting/squeezer'})
-  event.remove({id:'integrateddynamics:crafting/mechanical_squeezer'})
+  event.remove({ id: 'integrateddynamics:crafting/squeezer' })
+  event.remove({ id: 'integrateddynamics:crafting/mechanical_squeezer' })
   event.shaped('integrateddynamics:squeezer', [
     'BSB',
     'A A',
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
       }
     })
   }
-  let squeezing = (squeezingInput,squeezingOutput, fluidAmount) => {
+  let squeezing = (squeezingInput, squeezingOutput, fluidAmount) => {
     event.custom({
       "type": "integrateddynamics:squeezer",
       "item": squeezingInput,
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
       }
     })
   }
-  let mech_squeeze = (squeezingInput,squeezingOutput, fluidAmount) => {
+  let mech_squeeze = (squeezingInput, squeezingOutput, fluidAmount) => {
     event.custom({
       "type": "integrateddynamics:mechanical_squeezer",
       "item": squeezingInput,
@@ -92,13 +92,23 @@ ServerEvents.recipes(event => {
   //Disabled because.... it'd cause the dring basin to catch on fire
   // dryingFluid('gtceu:cinderwax_ingot','gtceu:cinderwax', 144 ,40) 
   // dryingFluid('gtceu:soulresin_ingot','gtceu:soulresin', 144 ,40)    
-  squeezing('legendarysurvivaloverhaul:ice_fern_leaf','gtceu:soulresin', 144)
-  mech_squeeze('legendarysurvivaloverhaul:ice_fern_leaf','gtceu:soulresin', 144)
-  squeezing('nethersdelight:propelpearl','gtceu:cinderwax', 144)
-  mech_squeeze('nethersdelight:propelpearl','gtceu:cinderwax', 144)
+  squeezing('legendarysurvivaloverhaul:ice_fern_leaf', 'gtceu:soulresin', 144)
+  mech_squeeze('legendarysurvivaloverhaul:ice_fern_leaf', 'gtceu:soulresin', 144)
+  squeezing('nethersdelight:propelpearl', 'gtceu:cinderwax', 144)
+  mech_squeeze('nethersdelight:propelpearl', 'gtceu:cinderwax', 144)
 
 
+  event.recipes.gtceu.assembler('cinder_wax_extractor')
+    .itemInputs('nethersdelight:propelpearl')
+    .outputFluids('gtceu:cinderwax', 144)
+    .duration(50)
+    .EUt(4);
 
+  event.recipes.gtceu.assembler('soul_resin_extractor')
+    .itemInputs('legendarysurvivaloverhaul:ice_fern_leaf')
+    .outputFluids('gtceu:soulresin', 144)
+    .duration(50)
+    .EUt(4);
 
 
 

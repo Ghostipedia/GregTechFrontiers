@@ -312,14 +312,15 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'botania:runic_altar' })
     event.shaped('botania:runic_altar', [
         'PMP',
-        'LDL',
+        'QDQ',
         'LCL'
     ], {
         C: '#gtceu:circuits/mv',
         P: 'gtceu:livingrock_plate',
         D: 'botania:mana_diamond',
         M: 'gtceu:manasteel_plate',
-        L: 'botania:livingrock'
+        L: 'botania:livingrock',
+        Q: 'botania:blacker_lotus'
     })
     //Botanical Brewery
     event.remove({ output: 'botania:brewery' })
