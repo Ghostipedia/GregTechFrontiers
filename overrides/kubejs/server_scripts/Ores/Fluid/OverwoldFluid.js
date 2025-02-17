@@ -39,7 +39,16 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionChance(1)
         vein.depletedYield(200)
     })
-
+    event.add('gtceu:primordial_oil', vein => {
+        vein.dimensions('aether:the_aether')
+        vein.fluid(() => Fluid.of('gtceu:primordial_oil').fluid)
+        vein.weight(20)
+        vein.minimumYield(250)
+        vein.maximumYield(960)
+        vein.depletionAmount(1)
+        vein.depletionChance(1)
+        vein.depletedYield(200)
+    })
 
     // event.modify('gtceu:light_oil_deposit', vein => {
     //     vein.addSpawnDimension('minecraft:overworld')

@@ -60,7 +60,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hydrazine')
         .liquid()
         .color(0xff2e51)
-
     //Netherite Line Materials
     event.create('ancient_debris')
         .dust()
@@ -554,6 +553,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('graphene_oxide')
         .dust()
         .color(0x292929).secondaryColor(0x353836).iconSet(GTMaterialIconSet.DULL)
+    event.create('primordial_oil')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('star_dew')
+        .liquid()
+        .color(0xa8ddff)
+    event.create('genesis_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('void_tar')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('ourofluid')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 })
 
 GTCEuStartupEvents.materialModification(event => {
@@ -565,5 +575,11 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_plating'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_ingot'))
 })
-
+GTCEuStartupEvents.materialModification(event => {
+    GTMaterials.get('primordial_oil').setFormula('√∞₍Ω₎', true)
+    GTMaterials.get('star_dew').setFormula('(√∞)℧ₓ', true)
+    GTMaterials.get('genesis_resin').setFormula('(√∞)Ɽӎ', true)
+    GTMaterials.get('void_tar').setFormula('(√∞)Ɽₓ', true)
+    GTMaterials.get('ourofluid').setFormula('(√∞)Ӂₜ', true)
+})
 
