@@ -379,7 +379,7 @@ WoodMinecraft.prototype = {
                     P: `minecraft:${woodType}_planks`,
                     S: `minecraft:${woodType}_slab`,
                     K: `#forge:tools/knives`,
-                    W: `#minecraft:tools/shovels`
+                    W: '#forge:tools/shovels'
                 })
         }
         //CHEST-BOAT

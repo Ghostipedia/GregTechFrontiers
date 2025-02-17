@@ -458,7 +458,7 @@ Wood.prototype = {
                     P: `${modID}:${woodType}_planks`,
                     S: `${modID}:${woodType}_slab`,
                     K: `#forge:tools/knives`,
-                    W: `#minecraft:tools/shovels`
+                    W: `#forge:tools/shovels`
                 })
         }
         //CHEST-BOAT
