@@ -23,6 +23,9 @@
 		"minecraft:base_stone_overworld"
 		"c:*_ores"
 		"forge:ores/*"
+		"cosmicfrontiers:soulwood_ultimine_group"
+		"cosmicfrontiers:runewood_ultimine_group"
+		"cosmicfrontiers:menril_ultimine_group"
 	]
 	
 	# These tags will be considered the same block when checking for blocks to Ultimine in shaped mining modes
