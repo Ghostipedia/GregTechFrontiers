@@ -5,7 +5,15 @@ ServerEvents.tags('item', event => {
   event.add('c:hidden_from_recipe_viewers', massHideMalum)
   event.remove('forge:gems/quartz', 'malum:natural_quartz_ore')
   event.remove('forge:gems/quartz', 'malum:deepslate_quartz_ore')
+})
 
+ServerEvents.tags('block', event => {
+  event.add('cosmicfrontiers:soulwood_ultimine_group', 'malum:exposed_soulwood_log')
+  event.add('cosmicfrontiers:soulwood_ultimine_group', 'malum:soulwood_log')
+  event.add('cosmicfrontiers:soulwood_ultimine_group', 'malum:blighted_soulwood')
+
+  event.add('cosmicfrontiers:runewood_ultimine_group', 'malum:exposed_runewood_log')
+  event.add('cosmicfrontiers:runewood_ultimine_group', 'malum:runewood_log')
 })
 
 ServerEvents.recipes(event => {
