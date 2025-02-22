@@ -219,7 +219,7 @@
 	[temperature.advanced]
 		# Maximum influence distance, in blocks, where thermal sources will have an effect on temperature.
 		#Range: 1 ~ 40
-		"Temperature Influence Maximum Distance" = 20
+		"Temperature Influence Maximum Distance" = 10
 		# How strongly influence distance above the player is reduced for thermal sources to have an effect on temperature.
 		# Example max dist is 10, up mult is 0.75 -> max distance is 10 * 0.75 = 7.5 blocks above the player.
 		# Logic is that heat goes up, the strength of the heat source above the player is decreased faster with distance.
@@ -228,7 +228,7 @@
 		# How strongly influence distance outside a structure is reduced for thermal sources to have an effect on temperature.
 		# The outside maximum distance is defined as the maximum distance * this value
 		#Range: 0.0 ~ 1.0
-		"Temperature Influence Outside Distance Multiplier" = 0.5
+		"Temperature Influence Outside Distance Multiplier" = 0.75
 
 		# The player's temperature will be adjusted at each temperature tick time,
 		# by an amount of temperature defined between the minimum and the maximum temperature modification adjusted linearly.
@@ -239,7 +239,7 @@
 			# Maximum amount of temperature the player's temperature can be modified at each temperature tick time.
 			# Correspond to the amount of temperature given when temperature difference is maximum, meaning 40.
 			#Range: 0.1 ~ 2.147483647E9
-			"Maximum Temperature Modification" = 1.5
+			"Maximum Temperature Modification" = 1.2
 			# Minimum amount of temperature the player's temperature can be modified at each temperature tick time.
 			# Correspond to the amount of temperature given when there is no temperature difference
 			#Range: 0.1 ~ 2.147483647E9

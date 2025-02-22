@@ -564,6 +564,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('ourofluid')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('abyss_grease')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('veltharic_slough')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 })
 
 GTCEuStartupEvents.materialModification(event => {
@@ -577,9 +581,12 @@ GTCEuStartupEvents.materialModification(event => {
 })
 GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('primordial_oil').setFormula('√∞₍Ω₎', true)
-    GTMaterials.get('star_dew').setFormula('(√∞)℧ₓ', true)
-    GTMaterials.get('genesis_resin').setFormula('(√∞)Ɽӎ', true)
-    GTMaterials.get('void_tar').setFormula('(√∞)Ɽₓ', true)
-    GTMaterials.get('ourofluid').setFormula('(√∞)Ӂₜ', true)
+    GTMaterials.get('star_dew').setFormula('(℧ₓ∞)', true)
+    GTMaterials.get('ourofluid').setFormula('(Ӂₜ∞)', true)
+    GTMaterials.get('genesis_resin').setFormula('(Ɽӎ∞)', true)
+    GTMaterials.get('void_tar').setFormula('(Ɽ∞)', true)
+    GTMaterials.get('abyss_grease').setFormula('(⟓∞)', true)
+    GTMaterials.get('veltharic_slough').setFormula('(√◉)', true)
+
 })
 

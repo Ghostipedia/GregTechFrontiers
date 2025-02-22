@@ -128,6 +128,7 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'experienceobelisk:metamorpher/netherite_ingot_metamorphosis' })
        event.remove({ id: 'biomeswevegone:golden_apple_from_green_apple' })
        event.remove({ id: 'bhc:god_apple' })
+       event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
 
 
        event.remove({ id: 'paraglider:paraglider' })

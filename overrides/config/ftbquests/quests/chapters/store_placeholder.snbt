@@ -39,10 +39,8 @@
 					type: "item"
 				}
 				{
-					elapsedTime: 4800L
-					gameTime: "game"
 					id: "054DBDAF13C95774"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop : Flask of Gills"
@@ -120,10 +118,8 @@
 					type: "item"
 				}
 				{
-					elapsedTime: 600L
-					gameTime: "game"
 					id: "484BB3622F35D50D"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop : Silk Touch"
@@ -374,10 +370,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 60L
-					gameTime: "game"
 					id: "79A6A3B9A929EF5B"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop : A Box of Bees"
@@ -406,10 +400,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 300L
-					gameTime: "game"
 					id: "602F834C5FF23097"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop Roll : Music Disk"
@@ -438,10 +430,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 3600L
-					gameTime: "game"
 					id: "393F4D90A5D6C7AC"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			x: -2.5d
@@ -481,9 +471,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 300L
 					id: "648E8B4904B9B063"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop Roll : Vanilla Saplings"
@@ -510,9 +499,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 60L
 					id: "208AB4401A4C323A"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shope : Fire Charge"
@@ -539,10 +527,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 300L
-					gameTime: "game"
 					id: "73FEEACCFC891F3B"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shope : Ice Fern Seed"
@@ -568,10 +554,8 @@
 					type: "item"
 				}
 				{
-					elapsedTime: 300L
-					gameTime: "game"
 					id: "758F00919E73C98F"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shope : Fire Charge"
@@ -598,10 +582,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 300L
-					gameTime: "game"
 					id: "51ACC6422F2480D8"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop : Gronglet"
@@ -645,9 +627,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 300L
 					id: "09ECAF6FB8C91626"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop Roll : Botania Cosmetics"
@@ -738,9 +719,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 1200L
 					id: "4FF7CA1184247406"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop Roll : Light Lunch"
@@ -768,9 +748,8 @@
 				}
 				{
 					disable_toast: true
-					elapsedTime: 900L
 					id: "2F11EEC6C80EBC9A"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop : Tin Cable"
@@ -796,9 +775,8 @@
 					type: "item"
 				}
 				{
-					elapsedTime: 6000L
 					id: "5AE789556ED229FA"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop : 15 Levels"
@@ -823,14 +801,55 @@
 					type: "item"
 				}
 				{
-					elapsedTime: 6000L
 					id: "3F0988B611937D47"
-					type: "questsadditions:time"
+					type: "custom"
 				}
 			]
 			title: "Shop : 30 Levels"
 			x: 0.5d
 			y: 3.0d
+		}
+		{
+			can_repeat: false
+			description: [
+				"8 Clusters is no cheap pricetag."
+				""
+				"However a longing feeling of familiarity draws you towards this reward."
+				""
+				"You may only claim it once."
+			]
+			icon: "gtceu:prospector.luv"
+			id: "4E5F99D0B1FEBE23"
+			rewards: [{
+				id: "0E446BE2D23F82EB"
+				item: {
+					Count: 1
+					id: "gtceu:prospector.luv"
+					tag: {
+						Charge: 1000000000L
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "A Major Sacrifice"
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "5F544487EFB42CE6"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "47B4C5BABF190646"
+					type: "custom"
+				}
+			]
+			title: "Shop : LUV Prospector"
+			x: 0.0d
+			y: -3.0d
 		}
 	]
 	title: "Store (placeholder)"

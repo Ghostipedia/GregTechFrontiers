@@ -1493,27 +1493,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["1FCA1401D0AD6DA9"]
-			description: [
-				"For now, you can freely use Sodium Persulfate or Iron III Chloride to make your circuit boards."
-				""
-				"Iron III is useful if you have a surplus of iron and Chlorine."
-				""
-				"Sodium Persulfate is useful if you have a stockpile of sodium hydroxide from industrial processes."
-			]
-			icon: "botania:cosmetic_questgiver_mark"
-			id: "4798D38C16770CC6"
-			shape: "gear"
-			subtitle: "Pick your Etching Poison"
-			tasks: [{
-				id: "051BEB42E31855EF"
-				title: "Persulfate or Iron III"
-				type: "checkmark"
-			}]
-			x: -2.0d
-			y: -1.5d
-		}
-		{
 			dependencies: ["78F9D5E55175D63B"]
 			id: "26E530EE80A932EB"
 			shape: "hexagon"
