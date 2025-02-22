@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         .EUt(recipeEUt);
 
     event.recipes.gtceu.culinary_assembler(`croptopia:fruit_smoothie`)
-        .itemInputs('minecraft:glass_bottle', 'minecraft:ice', '3x #foorge:fruits')
+        .itemInputs('minecraft:glass_bottle', 'minecraft:ice', '3x #forge:fruits')
         .inputFluids('minecraft:milk 100')
         .itemOutputs(`croptopia:fruit_smoothie`)
         .duration(recipeDuration)

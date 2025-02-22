@@ -1,3 +1,8 @@
+ServerEvents.tags('block', event => {
+  event.add('cosmicfrontiers:menril_ultimine_group', 'integrateddynamics:menril_log_filled')
+  event.add('cosmicfrontiers:menril_ultimine_group', 'integrateddynamics:menril_log')
+})
+
 ServerEvents.recipes(event => {
   //Waxed Leather
   event.shaped('cosmiccore:waxed_leather', [
