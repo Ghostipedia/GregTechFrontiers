@@ -1809,5 +1809,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
 
+    event.remove({ id: 'botania:blood_pendant' })
+    event.recipes.gtceu.assembler('tainted_necklace')
+        .itemInputs(['gtceu:ev_field_generator', '4x gtceu:stainless_steel_rod', '4x kubejs:terraweave_cloth'])
+        .itemOutputs('botania:blood_pendant')
+        .duration(480)
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.HV]);
+
 })
 

@@ -793,9 +793,9 @@ ServerEvents.recipes(event => {
     let fluids = lamFluids[index]
     let output = outputAmount[index]
     var polymer;
-    if (index === 1) {
+    if (index === 0) {
       polymer = 'gtceu:rubber_foil'
-    } else if (index < 3) {
+    } else if (index < 3 && index !== 0) {
       polymer = 'gtceu:polyethylene_foil'
     } else if (index < 7) {
       polymer = 'gtceu:polytetrafluoroethylene_foil'

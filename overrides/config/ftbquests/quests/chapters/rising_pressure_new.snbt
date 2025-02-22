@@ -724,7 +724,7 @@
 				"This is the only way you can handle some hotter fluids solidification as well."
 			]
 			hide_dependency_lines: true
-			icon: "gtceu:lp_steam_liquid_boiler"
+			icon: "gtceu:steam_caster"
 			id: "7D085A647AEC2485"
 			shape: "hexagon"
 			size: 1.5d

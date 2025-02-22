@@ -45,41 +45,41 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x67b9ee)
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
-        .toolStats(new ToolProperty(8, 5, 2048, 4, 
-        [
-            GTToolType.SWORD,
-            GTToolType.PICKAXE,
-            GTToolType.SHOVEL,
-            GTToolType.AXE,
-            GTToolType.HOE,
-            GTToolType.MINING_HAMMER,
-            GTToolType.SPADE,
-            GTToolType.SCYTHE,
-            GTToolType.SAW,
-            GTToolType.HARD_HAMMER,
-            GTToolType.WRENCH,
-            GTToolType.FILE,
-            GTToolType.CROWBAR,
-            GTToolType.SCREWDRIVER,
-            GTToolType.MORTAR,
-            GTToolType.WIRE_CUTTER,
-            GTToolType.KNIFE,
-            GTToolType.DRILL_LV,
-            GTToolType.DRILL_MV,
-            GTToolType.DRILL_HV,
-            GTToolType.DRILL_EV,
-            GTToolType.DRILL_IV,
-            GTToolType.CHAINSAW_LV,
-            GTToolType.WRENCH_LV,
-            GTToolType.WRENCH_HV,
-            GTToolType.WRENCH_IV,
-            GTToolType.WIRE_CUTTER_LV,
-            GTToolType.WIRE_CUTTER_HV,
-            GTToolType.WIRE_CUTTER_IV,
-            GTToolType.BUZZSAW,
-            GTToolType.SCREWDRIVER_LV
-        ]
-    ))
+        .toolStats(new ToolProperty(8, 5, 2048, 4,
+            [
+                GTToolType.SWORD,
+                GTToolType.PICKAXE,
+                GTToolType.SHOVEL,
+                GTToolType.AXE,
+                GTToolType.HOE,
+                GTToolType.MINING_HAMMER,
+                GTToolType.SPADE,
+                GTToolType.SCYTHE,
+                GTToolType.SAW,
+                GTToolType.HARD_HAMMER,
+                GTToolType.WRENCH,
+                GTToolType.FILE,
+                GTToolType.CROWBAR,
+                GTToolType.SCREWDRIVER,
+                GTToolType.MORTAR,
+                GTToolType.WIRE_CUTTER,
+                GTToolType.KNIFE,
+                GTToolType.DRILL_LV,
+                GTToolType.DRILL_MV,
+                GTToolType.DRILL_HV,
+                GTToolType.DRILL_EV,
+                GTToolType.DRILL_IV,
+                GTToolType.CHAINSAW_LV,
+                GTToolType.WRENCH_LV,
+                GTToolType.WRENCH_HV,
+                GTToolType.WRENCH_IV,
+                GTToolType.WIRE_CUTTER_LV,
+                GTToolType.WIRE_CUTTER_HV,
+                GTToolType.WIRE_CUTTER_IV,
+                GTToolType.BUZZSAW,
+                GTToolType.SCREWDRIVER_LV
+            ]
+        ))
         .iconSet(GTMaterialIconSet.getByName('mana'))
         .flags(
             GTMaterialFlags.GENERATE_FINE_WIRE,
@@ -123,7 +123,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .element(GTElements.get('ether_steel'))
         .iconSet(GTMaterialIconSet.SHINY)
-        .cableProperties(GTValues.V[GTValues.HV], 2, 0, true)
+        .cableProperties(GTValues.V[GTValues.HV], 4, 4, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -132,8 +132,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.NO_SMELTING
-
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR
         )
 
 

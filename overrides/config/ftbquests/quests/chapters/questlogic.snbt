@@ -142,7 +142,6 @@
 			dependencies: ["5DB465F3C5F5171A"]
 			hide_dependency_lines: true
 			id: "3C9EB6B3762A6573"
-			secret: true
 			tasks: [{
 				id: "7CEDA296C6364128"
 				item: "malum:spirit_altar"
@@ -211,8 +210,60 @@
 				item: { Count: 16, id: "gtceu:chromium_ingot" }
 				type: "item"
 			}]
+			title: "Chain Skip ; Chromium"
 			x: -2.0d
 			y: 0.0d
+		}
+		{
+			id: "2550D9A43A0B259F"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 1C11F4F6BE70E0D8"
+					elevate_perms: true
+					id: "27789ECEE4785A91"
+					silent: true
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @s complete 6BE64F9BD1F1F303"
+					elevate_perms: true
+					id: "1753BB2A4F50B5AD"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 33757BC3FFE5AD18"
+					elevate_perms: true
+					id: "7B170A0861A545C8"
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @s complete 673AB6E8C654D518"
+					elevate_perms: true
+					id: "3A8A2B90D942B62D"
+					silent: true
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @s complete 167D8002070C9B69"
+					elevate_perms: true
+					id: "3712A87B982EC133"
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0A05F38D8620C4B9"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
 		}
 	]
 	title: "&4Dev - QuestLogic"

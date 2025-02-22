@@ -240,7 +240,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 30.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -254,7 +254,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 30.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -268,7 +268,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -282,7 +282,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -296,7 +296,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -310,7 +310,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -324,7 +324,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -338,7 +338,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -352,7 +352,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -366,7 +366,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -380,7 +380,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -394,7 +394,7 @@
       "properties": {
         "server_tick": "true"
       },
-      "temperature": 15.0
+      "temperature": 10.0
     },
     {
       "properties": {
@@ -590,7 +590,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 30.0
+      "temperature": 25.0
     },
     {
       "properties": {
@@ -604,7 +604,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 45.0
+      "temperature": 35.0
     },
     {
       "properties": {
@@ -618,7 +618,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 55.0
+      "temperature": 45.0
     },
     {
       "properties": {
@@ -632,7 +632,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 65.0
+      "temperature": 55.0
     },
     {
       "properties": {
@@ -646,7 +646,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 80.0
+      "temperature": 70.0
     },
     {
       "properties": {
@@ -660,7 +660,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 95.0
+      "temperature": 85.0
     },
     {
       "properties": {

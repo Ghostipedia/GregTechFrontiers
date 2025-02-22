@@ -85,6 +85,19 @@
 				"You probably only need to make one set of coils for now until you have a Vacuum Freezer"
 			]
 			id: "3B327B774ABA8783"
+			rewards: [{
+				id: "17E181E25AB6AD10"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:coils/kanthal"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "Turn the heat up to 12!"
 			tasks: [{
@@ -113,11 +126,11 @@
 			id: "246B6FBFDDAE6748"
 			shape: "hexagon"
 			tasks: [{
-				id: "5FBECF1439FBD506"
-				item: "gtceu:mv_assembler"
+				id: "3F52553DC6A85738"
+				item: "gtceu:mv_spooling_machine"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -205,7 +218,7 @@
 				item: "gtceu:mv_voltage_coil"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 1.5d
 		}
 		{
@@ -250,7 +263,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["44372CC42BD4ABEF"]
+			dependencies: [
+				"44372CC42BD4ABEF"
+				"001967805068521B"
+			]
 			description: [
 				"With Ethersteel and Stainless Steel, you can produce Hulls of expanded Arcane Prowess as well as Voltage."
 				""
@@ -459,8 +475,8 @@
 				item: "gtceu:mv_lathe"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -648,6 +664,7 @@
 				{
 					id: "769F4415F2B3F770"
 					item: "gtceu:sulfur_trioxide_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -664,18 +681,15 @@
 			hide_dependency_lines: true
 			icon: "gtceu:sulfur_dioxide_bucket"
 			id: "4D9425267F0C2AB4"
-			tasks: [
-				{
-					id: "112CFAF0DA51C1C2"
-					item: "gtceu:sulfur_dioxide_bucket"
-					type: "item"
-				}
-				{
-					id: "2941220DC9EBB8F8"
-					title: "Checkmark - SKIP ME!"
-					type: "checkmark"
-				}
-			]
+			optional: true
+			tasks: [{
+				consume_items: false
+				id: "112CFAF0DA51C1C2"
+				item: "gtceu:sulfur_dioxide_bucket"
+				only_from_crafting: false
+				optional_task: true
+				type: "item"
+			}]
 			x: -5.0d
 			y: 3.5d
 		}
@@ -688,6 +702,7 @@
 				{
 					id: "4ADC335F03D8C17C"
 					item: "gtceu:sulfuric_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -976,6 +991,7 @@
 				"167D8002070C9B69"
 				"5284106D3A924B36"
 			]
+			dependency_requirement: "one_completed"
 			id: "7CA92A5D7A2300BC"
 			tasks: [{
 				id: "34013B5E1CF65669"
@@ -1037,19 +1053,11 @@
 			dependencies: ["5B43AF700AA037C4"]
 			icon: "gtceu:raw_mana_crystal_slurry_bucket"
 			id: "437582A970E60E97"
-			tasks: [
-				{
-					id: "223094C8A43FE68B"
-					item: "gtceu:raw_mana_crystal_slurry_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "16E335A4FAC3B319"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "223094C8A43FE68B"
+				item: "gtceu:raw_mana_crystal_slurry_bucket"
+				type: "item"
+			}]
 			x: 7.5d
 			y: 0.0d
 		}
@@ -1057,19 +1065,11 @@
 			dependencies: ["437582A970E60E97"]
 			icon: "gtceu:prepared_terrasteel_bucket"
 			id: "6BE64F9BD1F1F303"
-			tasks: [
-				{
-					id: "366C720AC1665255"
-					item: "gtceu:prepared_terrasteel_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "299A0A9D5C4563B5"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "366C720AC1665255"
+				item: "gtceu:prepared_terrasteel_bucket"
+				type: "item"
+			}]
 			x: 7.5d
 			y: 1.0d
 		}
@@ -1228,24 +1228,37 @@
 				"01923DB115EF2910"
 				"7C9C7718AAC2972E"
 			]
+			dependency_requirement: "one_completed"
 			description: ["&bSource Diesel&r, through combining the &aoil found in Mageblooms&r and &eEthanol&r (or &eMethanol&r), and a tiny amount of &esodium hydroxide&r you can produce a suitable fuel for powering your base."]
-			icon: "gtceu:source_enhanced_bio_fuel_bucket"
+			icon: {
+				Count: 1
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:source_enhanced_bio_fuel"
+					}
+				}
+			}
 			id: "25F3B982600DA479"
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Power of the Oily Flowers!"
-			tasks: [
-				{
-					id: "05D317F7F63537FE"
-					item: "gtceu:source_enhanced_bio_fuel_bucket"
-					type: "item"
+			tasks: [{
+				id: "2E929BB3A7E8DAB4"
+				item: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:source_enhanced_bio_fuel"
+						}
+					}
 				}
-				{
-					id: "787D271EEB4F8E44"
-					title: "Fluid Quest - Checkmark"
-					type: "checkmark"
-				}
-			]
+				match_nbt: true
+				type: "item"
+			}]
 			x: 7.5d
 			y: 8.5d
 		}
@@ -1588,6 +1601,20 @@
 			}]
 			x: 11.0d
 			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7CA92A5D7A2300BC"
+				"5284106D3A924B36"
+			]
+			id: "001967805068521B"
+			tasks: [{
+				id: "6C2DEFAFAF6909B6"
+				item: "kubejs:terraweave_cloth"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
 		}
 	]
 	title: "Forged in Galefury [MV]"

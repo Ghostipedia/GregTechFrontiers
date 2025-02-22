@@ -59,6 +59,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:centrifuge/uranium_hexafluoride_separation' })
   event.remove({ id: 'ae2:network/cables/smart_fluix' })
   event.remove({ output: 'gtceu:firebrick' })
+  event.remove({ output: 'gtceu:flint_knife' })
+  event.remove({ id: 'emi:crafting/repairing/gtceu/flint_knife' })
 
   event.replaceInput(
     { output: 'gtceu:hp_steam_solar_boiler' },
@@ -574,6 +576,8 @@ ServerEvents.recipes(event => {
     M: 'gtceu:mv_electric_motor'
   })
   //ROBOARM (TODO)
+  event.remove({ id: 'gtceu:shaped/robot_arm_mv' })
+  event.remove({ id: 'gtceu:assembler/robot_arm_mv' })
   event.recipes.gtceu.assembler('gtceu:new_mv_robot_arm')
     .itemInputs(['3x gtceu:copper_single_cable', '2x gtceu:soul_stained_steel_rod', '2x gtceu:mv_electric_motor', 'gtceu:mv_electric_piston', '#gtceu:circuits/mv'])
     .itemOutputs('gtceu:mv_robot_arm')
@@ -626,6 +630,63 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:hv_machine_hull')
     .duration(50)
     .EUt(GTValues.VA[GTValues.LV]);
+  //HV MOTOR
+  //MOTOR
+  event.remove({ id: 'gtceu:assembler/electric_motor_hv' })
+  event.remove({ id: 'gtceu:shaped/electric_motor_hv' })
+  event.recipes.gtceu.assembler('gtceu:new_hv_motor')
+    .itemInputs(['2x gtceu:terrasteel_double_cable', '2x gtceu:galvanized_ethersteel_rod', 'gtceu:magnetic_steel_rod', '4x gtceu:kanthal_double_wire'])
+    .itemOutputs('gtceu:hv_electric_motor')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:hv_electric_motor', [
+    'CWR',
+    'WMW',
+    'RWC'
+  ], {
+    C: 'gtceu:terrasteel_double_cable',
+    R: 'gtceu:galvanized_ethersteel_rod',
+    M: 'gtceu:magnetic_steel_rod',
+    W: 'gtceu:kanthal_double_wire'
+  })
+  //PISTON
+  event.remove({ id: 'gtceu:assembler/electric_piston_hv' })
+  event.remove({ id: 'gtceu:shaped/electric_piston_hv' })
+  event.recipes.gtceu.assembler('gtceu:new_hv_piston')
+    .itemInputs(['2x gtceu:terrasteel_single_cable', '2x gtceu:galvanized_ethersteel_rod', '3x gtceu:galvanized_ethersteel_plating', 'gtceu:hv_electric_motor', 'gtceu:small_galvanized_ethersteel_gear'])
+    .itemOutputs('gtceu:hv_electric_piston')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:hv_electric_piston', [
+    'PPP',
+    'CRR',
+    'CMG'
+  ], {
+    P: 'gtceu:galvanized_ethersteel_plate',
+    R: 'gtceu:galvanized_ethersteel_rod',
+    G: 'gtceu:small_galvanized_ethersteel_gear',
+    C: 'gtceu:terrasteel_single_cable',
+    M: 'gtceu:hv_electric_motor'
+  })
+  //ROBOARM (TODO)
+  event.remove({ id: 'gtceu:shaped/robot_arm_hv' })
+  event.remove({ id: 'gtceu:assembler/robot_arm_hv' })
+  event.recipes.gtceu.assembler('gtceu:new_hv_robot_arm')
+    .itemInputs(['3x gtceu:terrasteel_single_cable', '2x gtceu:galvanized_ethersteel_rod', '2x gtceu:hv_electric_motor', 'gtceu:hv_electric_piston', '#gtceu:circuits/hv'])
+    .itemOutputs('gtceu:hv_robot_arm')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:hv_robot_arm', [
+    'CCC',
+    'RGR',
+    'PMG'
+  ], {
+    P: 'gtceu:hv_electric_piston',
+    R: 'gtceu:hv_electric_motor',
+    G: 'gtceu:galvanized_ethersteel_rod',
+    C: 'gtceu:terrasteel_single_cable',
+    M: '#gtceu:circuits/hv'
+  })
   //EV MACHINE HULL AND CASING
   event.remove({ output: 'gtceu:ev_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:ev_machine_casing_assembler')

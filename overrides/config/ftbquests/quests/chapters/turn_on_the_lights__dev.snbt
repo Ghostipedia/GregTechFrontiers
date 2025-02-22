@@ -1758,19 +1758,26 @@
 			description: ["Enther the Aether, a cold paradise in lower earth orbit"]
 			icon: "aether:aether_portal_frame"
 			id: "09A62C4DA9DBF45A"
-			rewards: [{
-				id: "5FC7659377E81E88"
-				item: {
-					Count: 1
-					id: "trofers:small_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "frontiers:misc/aether"
+			rewards: [
+				{
+					id: "5FC7659377E81E88"
+					item: {
+						Count: 1
+						id: "trofers:small_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:misc/aether"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "75A32A6E608B3696"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "To Climb Higher"
