@@ -1,31 +1,60 @@
 ServerEvents.recipes(event => {
     //We'll consider all special blocks to use the default planks, i cbfa to deal with this more rn.
     new WoodMalum('malum', 'soulwood_planks', event).all();
+    new WoodMalum('malum', 'runewood_planks', event).all();
 
+
+    new WoodMalum('malum', 'runewood_panel', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'runewood_beam', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'rustic_runewood_tiles', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'runewood_tiles', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'vertical_runewood_boards', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'runewood_boards', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'vertical_rustic_runewood_planks', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'rustic_runewood_planks', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'vertical_runewood_planks', event)
+        .slab()
+        .stairs();
+    new WoodMalum('malum', 'cut_runewood_planks', event)
+        .slab()
+        .stairs();
+
+
+    //Need precise allocations
     new WoodMalum('malum', 'soulwood_panel', event)
         .slab()
         .stairs();
-
     new WoodMalum('malum', 'soulwood_beam', event)
         .slab()
         .stairs();
-
     new WoodMalum('malum', 'rustic_soulwood_tiles', event)
         .slab()
         .stairs();
-
     new WoodMalum('malum', 'soulwood_tiles', event)
         .slab()
         .stairs();
-
     new WoodMalum('malum', 'vertical_soulwood_boards', event)
         .slab()
         .stairs();
     new WoodMalum('malum', 'soulwood_boards', event)
         .slab()
         .stairs();
-
-    //Need precise allocations
     new WoodMalum('malum', 'vertical_rustic_soulwood_planks', event)
         .slab()
         .stairs();
@@ -57,6 +86,25 @@ ServerEvents.recipes(event => {
         {
             T: '#forge:tools/saws',
             P: '#malum:soulwood_logs'
+        })
+    //Now Runewood
+    event.remove({ output: 'malum:runewood_planks' })
+    event.shapeless(`malum:runewood_planks`, [
+        '#malum:runewood_logs'
+    ])
+    event.recipes.gtceu.cutter(`cosmicfrontiers:malum/stupid_malum_wood_cutting_2`)
+        .itemInputs('#malum:runewood_logs')
+        .itemOutputs([`6x malum:runewood_planks`, '2x gtceu:wood_dust'])
+        .duration(200)
+        .EUt(7);
+    event.shaped(`4x malum:runewood_planks`, [
+        '   ',
+        ' T ',
+        ' P '
+    ],
+        {
+            T: '#forge:tools/saws',
+            P: '#malum:runewood_logs'
         })
 
 })

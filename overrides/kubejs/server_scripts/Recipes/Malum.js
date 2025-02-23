@@ -1,5 +1,5 @@
 console.log('[Malum.js loading]')
-let massHideMalum = ['malum:belt_of_the_prospector','malum:brilliant_stone', 'malum:natural_quartz_ore', 'malum:natural_quartz', 'malum:cthonic_gold_ore', 'malum:deepslate_soulstone_ore', 'malum:soulstone_ore', 'malum:brilliant_deepslate', 'malum:deepslate_quartz_ore', 'malum:blazing_quartz_ore']
+let massHideMalum = ['malum:belt_of_the_prospector', 'malum:brilliant_stone', 'malum:natural_quartz_ore', 'malum:natural_quartz', 'malum:cthonic_gold_ore', 'malum:deepslate_soulstone_ore', 'malum:soulstone_ore', 'malum:brilliant_deepslate', 'malum:deepslate_quartz_ore', 'malum:blazing_quartz_ore']
 
 ServerEvents.tags('item', event => {
   event.add('c:hidden_from_recipe_viewers', massHideMalum)
@@ -24,6 +24,18 @@ ServerEvents.recipes(event => {
     event.remove({ input: `${yeetus}` })
   })
   event.remove({ id: 'malum:void_favor/raw_soulstone' })
+  event.remove({ id: 'malum:arcane_charcoal_from_runewood' })
+  event.remove({ id: 'malum:arcane_charcoal_from_soulwood' })
+  event.recipes.gtceu.coke_oven('arcane_charcoal_coking')
+    .itemInputs('#malum:soulwood_logs')
+    .itemOutputs('malum:arcane_charcoal')
+    .duration(900)
+
+  event.recipes.gtceu.coke_oven('arcane_charcoal_coking2')
+    .itemInputs('#malum:runewood_logs')
+    .itemOutputs('malum:arcane_charcoal')
+    .duration(900)
+
 
   event.remove({ output: 'malum:crude_scythe' })
   event.shaped('malum:crude_scythe', [
