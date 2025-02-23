@@ -59,6 +59,22 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
 
+    event.create('gravity_float_crucible')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(2, 3, 2, 2) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING);
+
+    event.create('sintering_extruder')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(2, 2, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING);
+
     event.create('molten_salt_reactor')
         .category('frontiers')
         .setEUIO('in')
