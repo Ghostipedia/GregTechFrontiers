@@ -567,10 +567,10 @@ ServerEvents.recipes(event => {
     'QHQ',
     'SDR'
   ], {
-    S: 'gtceu:hv_sensor',
-    E: 'gtceu:hv_emitter',
+    S: 'gtceu:luv_sensor',
+    E: 'gtceu:luv_emitter',
     R: 'ae2:wireless_receiver',
-    H: 'gtceu:ev_machine_hull',
+    H: 'gtceu:luv_machine_hull',
     D: 'ae2:fluix_smart_dense_cable',
     Q: 'ae2wtlib:quantum_bridge_card'
   })
@@ -865,15 +865,22 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV])
 
   //merequesters
-  event.recipes.gtceu.assembler(`merequester:requester`)
-    .itemInputs('gtceu:ev_machine_hull')
-    .itemInputs('8x gtceu:platinum_double_wire')
-    .itemInputs('2x #gtceu:circuits/ev')
-    .itemInputs('expatternprovider:threshold_level_emitter')
-    .itemInputs('ae2:level_emitter')
+  event.recipes.gtceu.assembly_line('merequester_block')
+    .itemInputs(['gtceu:uv_hermetic_casing', '16x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '4x gtceu:wetware_processor_mainframe', '4x ae2:cell_component_256k', 'ae2:level_emitter', 'ae2:energy_level_emitter', 'expatternprovider:threshold_level_emitter', 'ae2:crafting_card'])
     .itemOutputs('merequester:requester')
-    .duration(200)
-    .EUt(GTValues.VA[GTValues.EV])
+    .inputFluids(
+      Fluid.of('gtceu:veltharic_slough', 15000),
+      Fluid.of('gtceu:abyss_grease', 9216),
+      Fluid.of('gtceu:void_tar', 1440),
+    )
+    .stationResearch(b => b
+      .researchStack('megacells:cell_component_1m')
+      .CWUt(32)
+      .EUt(GTValues.VA[GTValues.UV]))
+    .duration(3400)
+    .EUt(GTValues.VA[GTValues.UV])
+
+
 
   event.recipes.gtceu.assembler(`merequester:requester_terminal`)
     .itemInputs('merequester:requester')
