@@ -161,7 +161,7 @@ ServerEvents.recipes( e => {
       'BCB', 
       'AAA'  
     ], {
-      A: `gtceu:annealed_copper_plate`, 
+      A: `gtceu:double_copper_plate`, 
       B: '#forge:chests',  
       C: '#functionalstorage:drawer',
       D: '#forge:tools/hammers'
