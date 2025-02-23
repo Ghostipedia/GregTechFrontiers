@@ -8,7 +8,13 @@ ServerEvents.recipes((event) => {
         .duration(100)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.HV]);
-
+    event.recipes.gtceu.aio_lithography_processor('crystal_cpu_mask')
+        .inputFluids('gtceu:epoxy 4000')
+        .itemInputs('8x gtceu:polybenzimidazole_plate')
+        .itemOutputs('8x cosmiccore:crystal_chiplet_mask')
+        .duration(240)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.aio_lithography_processor('quantum_cpu_mask')
         .inputFluids('gtceu:epoxy 2000')
         .itemInputs('4x gtceu:carbon_fiber_plate')
@@ -47,8 +53,8 @@ ServerEvents.recipes((event) => {
         .EUt(GTValues.VA[GTValues.LuV]);
     //Nano Litho    
     event.recipes.gtceu.aio_lithography_processor('prepared_nano_wafer')
-        .inputFluids('gtceu:hydrogensilesquioxane 1000')
-        .inputFluids('gtceu:nitric_acid 1000')
+        .inputFluids('gtceu:hydrogensilesquioxane 500')
+        .inputFluids('gtceu:nitric_acid 500')
         .itemInputs('kubejs:mana_deposited_wafer')
         .itemInputs('kubejs:nano_cpu_mask')
         .itemOutputs('kubejs:prepared_nano_cpu_wafer')
