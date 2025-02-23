@@ -6,7 +6,7 @@ let optical = ['cosmiccore:optical_processor', 'cosmiccore:optical_processor_ass
 let cosmic = ['cosmiccore:cosmic_processor', 'cosmiccore:cosmic_processor_assembly', 'cosmiccore:cosmic_processor_supercomputer', 'cosmiccore:cosmic_processor_mainframe']
 let psionic = ['cosmiccore:psionic_processor', 'cosmiccore:psionic_processor_assembly', 'cosmiccore:psionic_processor_supercomputer', 'cosmiccore:psionic_processor_mainframe']
 let macroverse = ['cosmiccore:macroverse_processor', 'cosmiccore:macroverse_processor_assembly', 'cosmiccore:macroverse_processor_supercomputer', 'cosmiccore:macroverse_processor_mainframe']
-let boilaway = ['gtceu:bronze_large_boiler','gtceu:steel_large_boiler','gtceu:titanium_large_boiler','gtceu:tungstensteel_large_boiler']
+let boilaway = ['gtceu:bronze_large_boiler', 'gtceu:steel_large_boiler', 'gtceu:titanium_large_boiler', 'gtceu:tungstensteel_large_boiler']
 ItemEvents.tooltip(event => {
   // event.add('gtceu:manasteel_single_cable', Text.of('LV Superconductor'))
   event.addAdvanced('forbidden_arcanus:eternal_stella', (item, advanced, text) => {
@@ -165,7 +165,7 @@ ItemEvents.tooltip(event => {
       text.add(16, Text.of('Overclock Type : Exotic'))
     } else {
       text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }    
+    }
   })
   event.addAdvanced('cosmiccore:stellar_iris', (item, advanced, text) => {
     text.add(1, Text.of('Embodiment of the Soul').aqua().bold())
@@ -188,9 +188,9 @@ ItemEvents.tooltip(event => {
       text.add(17, Text.of('Overclock Type : ∞'))
     } else {
       text.add(3, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }    
+    }
   })
- 
+
   //subscript (copy and paste) ₂₃₄₅₆₇₈₉₀
 })
 ItemEvents.tooltip(event => {
@@ -210,7 +210,7 @@ ItemEvents.tooltip(event => {
   //   text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
   //   text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
   // })
-  let quarktech = ['cosmiccore:space_advanced_quarktech_chestplate','gtceu:quarktech_leggings','gtceu:quarktech_boots','gtceu:quarktech_helmet','gtceu:quarktech_chestplate','gtceu:advanced_quarktech_chestplate','cosmiccore:space_quarktech_chestplate']
+  let quarktech = ['cosmiccore:space_advanced_quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:advanced_quarktech_chestplate', 'cosmiccore:space_quarktech_chestplate']
   event.addAdvanced(quarktech, (item, advanced, text) => {
     text.add(1, Text.of('Adaptive Insulation').green())
   })
@@ -229,6 +229,9 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('botania:gaia_ingot', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: T2 Gaia and Ingot Recipe for Summon will be added when it is time to unlock them!').red())
   })
+  event.addAdvanced('kubejs:prismatic_lens', (item, advanced, text) => {
+    text.add(1, Text.of('Creates a laser energetic enough to cut metal').lightPurple())
+  })
   event.addAdvanced('integrateddynamics:mechanical_squeezer', (item, advanced, text) => {
     text.add(1, Text.of('Energy Consumption was set to 0!').green())
     text.add(2, Text.of('Will run without power!').green())
@@ -243,7 +246,7 @@ ItemEvents.tooltip(event => {
     if (event.isShift()) {
       text.add(4, Text.of('------------------------------------------------------------').aqua())
       text.add(5, [Text.of('Supports the use of').white(), Text.of(' Laser Target Hatches.').aqua()])
-      text.add(6, [Text.of('Takes').gray(), Text.of(' Computation').green(),Text.of(' to run, amount of CWU/t is dictated by base recipe tier and amount of energy overclocks.').gray()])
+      text.add(6, [Text.of('Takes').gray(), Text.of(' Computation').green(), Text.of(' to run, amount of CWU/t is dictated by base recipe tier and amount of energy overclocks.').gray()])
       text.add(7, [Text.of('Accepts the use of').white(), Text.of(' Parallel Control Hatches.').gold()])
       text.add(8, Text.of('------------------------------------------------------------').aqua())
       text.add(9, Text.of('Placeholder for Computation Math Formula').gold())
@@ -252,6 +255,6 @@ ItemEvents.tooltip(event => {
       text.add(12, Text.of('Overclock Type : Exotic'))
     } else {
       text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }    
+    }
   })
 })
