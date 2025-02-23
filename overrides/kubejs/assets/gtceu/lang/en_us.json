@@ -472,6 +472,16 @@
   "material.gtceu.butanediol": "Butanediol",
   "material.gtceu.ethylene_oxide": "Ethylene Oxide",
   "material.gtceu.pedot_pss": "PEDOT:PSS",
-  "material.gtceu.crude_source_oils": "Crude Source Oils"
+  "material.gtceu.crude_source_oils": "Crude Source Oils",
+
+  "material.gtceu.impure_silt": "Impure Silt",
+  "material.gtceu.silt_seperation_composite": "Silt Seperation Composite",
+  "material.gtceu.high_grade_silicon": "High Grade Silicon",
+  "material.gtceu.middle_grade_silicon": "Middle Grade Silicon",
+  "material.gtceu.europium_blended_silicon": "Europium Blended Silicon",
+  "material.gtceu.luminent_silicon": "Luminent Silicon",
+  "material.gtceu.naquadah_doped_silicon": "Naquadah Doped Silicon",
+  "material.gtceu.dilumixal_naquadah_doped_silicon": "DiLumixal Naquadah Doped Silicon",
+  "material.gtceu.europium_silicide": "Europium Silicide"
   
 }
