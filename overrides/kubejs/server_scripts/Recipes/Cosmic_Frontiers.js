@@ -267,14 +267,22 @@ ServerEvents.recipes(event => {
               .duration(90)
               .EUt(16);
        //TODO - A Version with Annealed Iesnium
-
-
-       event.recipes.gtceu.macerator('echo_shard_schizm')
+       event.recipes.gtceu.macerator('echo_shard_shrieker')
+              .itemInputs('minecraft:sculk_shrieker')
+              .chancedOutput('minecraft:echo_shard', 2500, 500)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.macerator('echo_shard_sensor')
+              .itemInputs('minecraft:sculk_sensor')
+              .chancedOutput('minecraft:echo_shard', 2500, 500)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.macerator('echo_shard_catalyst')
               .itemInputs('minecraft:sculk_catalyst')
               .chancedOutput('minecraft:echo_shard', 2500, 500)
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV]);
-       event.recipes.gtceu.macerator('echo_shard_schizm_worse')
+       event.recipes.gtceu.macerator('echo_shard_sculk')
               .itemInputs('minecraft:sculk')
               .chancedOutput('minecraft:echo_shard', 250, 500)
               .duration(160)
@@ -474,7 +482,7 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.electric_blast_furnace('manasteel_first')
               .itemInputs(['8x gtceu:blue_alloy_ingot', '8x botania:manaweave_cloth'])
               .inputFluids('gtceu:crude_source_oils 250')
-              .itemOutputs(['12x botania:manasteel_ingot','2x botania:manaweave_cloth'])
+              .itemOutputs(['12x botania:manasteel_ingot', '2x botania:manaweave_cloth'])
               .circuit(1)
               .blastFurnaceTemp(900)
               .duration(2400)
