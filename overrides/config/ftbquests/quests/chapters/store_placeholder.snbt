@@ -30,19 +30,13 @@
 				type: "item"
 			}]
 			subtitle: "&fBreathing Easier"
-			tasks: [
-				{
-					consume_items: true
-					count: 64L
-					id: "606C9F0C2D3B0986"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					id: "054DBDAF13C95774"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "606C9F0C2D3B0986"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop : Flask of Gills"
 			x: -2.5d
 			y: 0.0d
@@ -116,10 +110,6 @@
 					id: "48D4937B7512B6A7"
 					item: { Count: 32, id: "cosmiccore:shard_of_perpetuity" }
 					type: "item"
-				}
-				{
-					id: "484BB3622F35D50D"
-					type: "custom"
 				}
 			]
 			title: "Shop : Silk Touch"
@@ -360,20 +350,13 @@
 				type: "item"
 			}]
 			subtitle: "&fHoney Please!"
-			tasks: [
-				{
-					consume_items: true
-					count: 32L
-					id: "1817049F5E9467ED"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "79A6A3B9A929EF5B"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "1817049F5E9467ED"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop : A Box of Bees"
 			x: -4.0d
 			y: 0.0d
@@ -390,20 +373,13 @@
 				type: "random"
 			}]
 			subtitle: "&fCool Tunes"
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "23554CA7E1D276E3"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "602F834C5FF23097"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "23554CA7E1D276E3"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop Roll : Music Disk"
 			x: -4.0d
 			y: -1.5d
@@ -420,20 +396,13 @@
 				type: "item"
 			}]
 			subtitle: "&fIf you're having trouble!"
-			tasks: [
-				{
-					consume_items: true
-					count: 4L
-					id: "04CA22D5DA13D5D6"
-					item: "cosmiccore:large_shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "393F4D90A5D6C7AC"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "04CA22D5DA13D5D6"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
 			x: -2.5d
 			y: -3.0d
 		}
@@ -461,20 +430,13 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "678F0A4C7C8D4ED6"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "648E8B4904B9B063"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "678F0A4C7C8D4ED6"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop Roll : Vanilla Saplings"
 			x: -2.5d
 			y: 1.5d
@@ -489,21 +451,14 @@
 				type: "item"
 			}]
 			subtitle: "&fA quick ignition"
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "20F47DB04CA74EAA"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "208AB4401A4C323A"
-					type: "custom"
-				}
-			]
-			title: "Shope : Fire Charge"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "20F47DB04CA74EAA"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			title: "Shop : Fire Charge"
 			x: -4.0d
 			y: 1.5d
 		}
@@ -517,21 +472,14 @@
 				type: "item"
 			}]
 			subtitle: "&fCooling you down"
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "4D4623C7570B1822"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "73FEEACCFC891F3B"
-					type: "custom"
-				}
-			]
-			title: "Shope : Ice Fern Seed"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "4D4623C7570B1822"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			title: "Shop : Ice Fern Seed"
 			x: -4.0d
 			y: 3.0d
 		}
@@ -545,20 +493,14 @@
 				type: "item"
 			}]
 			subtitle: "&fA quick ignition"
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "593A5F311E2AEB0B"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					id: "758F00919E73C98F"
-					type: "custom"
-				}
-			]
-			title: "Shope : Fire Charge"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "593A5F311E2AEB0B"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			title: "Shop : Fire Charge"
 			x: -2.5d
 			y: 3.0d
 		}
@@ -572,20 +514,13 @@
 				type: "item"
 			}]
 			subtitle: "A Little Friend :)"
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "40E3AD0B4D694F0F"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "51ACC6422F2480D8"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "40E3AD0B4D694F0F"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop : Gronglet"
 			x: -1.0d
 			y: -3.0d
@@ -617,20 +552,13 @@
 				title: "Random Botania Cosmetic"
 				type: "random"
 			}]
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "1BC5E45CA95D9AD9"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "09ECAF6FB8C91626"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "1BC5E45CA95D9AD9"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop Roll : Botania Cosmetics"
 			x: -1.0d
 			y: 1.5d
@@ -709,20 +637,13 @@
 					type: "loot"
 				}
 			]
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "0CD11472850E231D"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "4FF7CA1184247406"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "0CD11472850E231D"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop Roll : Light Lunch"
 			x: -2.5d
 			y: -1.5d
@@ -738,20 +659,13 @@
 				item: "gtceu:tin_single_cable"
 				type: "item"
 			}]
-			tasks: [
-				{
-					consume_items: true
-					count: 16L
-					id: "56A896F6337A0881"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "2F11EEC6C80EBC9A"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "56A896F6337A0881"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop : Tin Cable"
 			x: -1.0d
 			y: 3.0d
@@ -766,19 +680,13 @@
 				type: "xp_levels"
 				xp_levels: 15
 			}]
-			tasks: [
-				{
-					consume_items: true
-					count: 64L
-					id: "64D6CFFE72734CEC"
-					item: { Count: 64, id: "cosmiccore:shard_of_perpetuity" }
-					type: "item"
-				}
-				{
-					id: "5AE789556ED229FA"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "64D6CFFE72734CEC"
+				item: { Count: 64, id: "cosmiccore:shard_of_perpetuity" }
+				type: "item"
+			}]
 			title: "Shop : 15 Levels"
 			x: 0.5d
 			y: 1.5d
@@ -793,18 +701,12 @@
 				type: "xp_levels"
 				xp_levels: 30
 			}]
-			tasks: [
-				{
-					consume_items: true
-					id: "2C9FFAAE871784DE"
-					item: "cosmiccore:large_shard_of_perpetuity"
-					type: "item"
-				}
-				{
-					id: "3F0988B611937D47"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				id: "2C9FFAAE871784DE"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop : 30 Levels"
 			x: 0.5d
 			y: 3.0d
@@ -812,7 +714,7 @@
 		{
 			can_repeat: false
 			description: [
-				"8 Clusters is no cheap pricetag."
+				"16 Clusters is no cheap pricetag."
 				""
 				"However a longing feeling of familiarity draws you towards this reward."
 				""
@@ -833,22 +735,15 @@
 			}]
 			shape: "hexagon"
 			subtitle: "A Major Sacrifice"
-			tasks: [
-				{
-					consume_items: true
-					count: 8L
-					id: "5F544487EFB42CE6"
-					item: "cosmiccore:cluster_of_perpetuity"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "47B4C5BABF190646"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "5F544487EFB42CE6"
+				item: "cosmiccore:cluster_of_perpetuity"
+				type: "item"
+			}]
 			title: "Shop : LUV Prospector"
-			x: 0.0d
+			x: 0.5d
 			y: -3.0d
 		}
 	]

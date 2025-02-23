@@ -802,7 +802,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["333F819E70468E50"]
+			dependencies: ["44D9A9E10867D1BC"]
 			description: [
 				"Welcome to Crystal CPU's, a much harder CPU core than Nano or Quantum. And require a multi-dimensional setup to fully automate. Some pointers before you start."
 				""
@@ -838,7 +838,7 @@
 			]
 			id: "741EF8867F73802F"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.75d
 			subtitle: "To Orbit!"
 			tasks: [{
 				id: "1B5AE134D80E7986"
@@ -1117,13 +1117,9 @@
 		}
 		{
 			dependencies: [
-				"426B539C6E256B72"
-				"5934EC272F6F0BD8"
 				"45AE9844B1C84454"
-				"2C7F127FE13A307C"
-				"0A2EFEC1F4B31C06"
-				"2B4FCC4B5089A406"
 				"6548740681BDAE49"
+				"0A2EFEC1F4B31C06"
 			]
 			id: "34E7B99E411B3E44"
 			shape: "hexagon"
@@ -1140,6 +1136,7 @@
 			dependencies: [
 				"34E7B99E411B3E44"
 				"6548740681BDAE49"
+				"0A2EFEC1F4B31C06"
 			]
 			id: "688DD6F7473A121E"
 			shape: "hexagon"
@@ -1156,6 +1153,7 @@
 			dependencies: [
 				"688DD6F7473A121E"
 				"6548740681BDAE49"
+				"0A2EFEC1F4B31C06"
 			]
 			id: "0F68C0E627CE724F"
 			shape: "hexagon"
@@ -1172,6 +1170,7 @@
 			dependencies: [
 				"0F68C0E627CE724F"
 				"6548740681BDAE49"
+				"0A2EFEC1F4B31C06"
 			]
 			description: [
 				"&bCrystal Mainframes&r at last! It only took you constructing a thriving &espace industry&r!"
@@ -1221,7 +1220,7 @@
 			icon: "undergarden:goo_ball"
 			id: "14100610FD579908"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.75d
 			subtitle: "Back to the deep!"
 			tasks: [{
 				id: "752BCF58D95740DC"
@@ -1241,7 +1240,7 @@
 				item: "gtceu:silt_slurry_bucket"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: -8.5d
 		}
 		{
@@ -1262,7 +1261,7 @@
 				item: "gtceu:lake_water_bucket"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: -6.5d
 		}
 		{
@@ -1276,7 +1275,7 @@
 				item: "gtceu:impure_silt_dust"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: -10.0d
 		}
 		{
@@ -1288,33 +1287,36 @@
 				item: "gtceu:silt_seperation_composite_dust"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.75d
 			y: -10.0d
 		}
 		{
 			dependencies: ["7D6360542F134FA4"]
 			id: "3CEEF5CCC79772E6"
 			tasks: [{
-				id: "3EB8F57F72CC60B3"
-				item: "gtceu:highest_grade_silica_dust"
+				id: "0A9BF08FAC27266E"
+				item: "gtceu:middle_grade_silicon_dust"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -10.75d
 			y: -11.5d
 		}
 		{
 			dependencies: ["7D6360542F134FA4"]
 			id: "40E01BADF6969CE2"
 			tasks: [{
-				id: "7B68995CB18A2198"
-				item: "gtceu:middle_grade_silica_dust"
+				id: "6D9D3B1A50AED412"
+				item: "gtceu:high_grade_silicon_dust"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: -11.5d
 		}
 		{
-			dependencies: ["40E01BADF6969CE2"]
+			dependencies: [
+				"40E01BADF6969CE2"
+				"3CEEF5CCC79772E6"
+			]
 			id: "753B2A4ED5EED437"
 			shape: "gear"
 			tasks: [{
@@ -1322,8 +1324,8 @@
 				item: "gtceu:naquadah_boule"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -12.5d
+			x: -10.75d
+			y: -13.0d
 		}
 		{
 			dependencies: [
@@ -1332,34 +1334,34 @@
 			]
 			id: "4D2F1EAC9EECE9F2"
 			tasks: [{
-				id: "3CBF42F13F050366"
-				item: "gtceu:europium_blended_silica_dust"
+				id: "2DF16F176B9E4B9B"
+				item: "gtceu:europium_blended_silicon_dust"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -8.5d
 			y: -11.5d
 		}
 		{
-			dependencies: ["635C885360A8A8A9"]
+			dependencies: ["1B3722A82404FB5B"]
 			dependency_requirement: "one_completed"
-			hide_dependency_lines: true
 			id: "54FFC889D4643B1D"
 			tasks: [{
 				id: "39CFC89D04DA7E77"
 				item: "gtceu:graphene_dust"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -8.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["741EF8867F73802F"]
+			icon: "gtceu:gravity_float_crucible"
 			id: "29EDE77208A90B35"
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [{
-				id: "3B61DAAECE5A7535"
-				item: "gtceu:alloy_blast_smelter"
+				id: "5B1871561BA34392"
+				item: "gtceu:gravity_float_crucible"
 				type: "item"
 			}]
 			x: -7.0d
@@ -1377,28 +1379,28 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -12.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["40E01BADF6969CE2"]
-			id: "72A561728692FCB1"
-			tasks: [{
-				id: "6E97D39ED3B37163"
-				item: "gtceu:luminent_silica_dust"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -13.0d
-		}
-		{
-			dependencies: ["72A561728692FCB1"]
 			id: "2706AEF23FE25353"
 			tasks: [{
-				id: "7B453ADBE17B353C"
-				item: "gtceu:raw_crystal_chip_parts"
+				id: "7013FC777D92334F"
+				item: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:molten_luminent_silicon"
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: -14.0d
 		}
 		{
@@ -1409,115 +1411,68 @@
 				item: "cosmiccore:dilumixal_naquadah_doped_silicon_boule"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.75d
 			y: -14.0d
 		}
 		{
 			dependencies: ["457C8C834358A6E7"]
-			id: "1E58E5829FED4085"
-			tasks: [{
-				id: "0A083662E5B7C121"
-				item: "cosmiccore:dilumixal_naquadah_doped_silicon_wafer"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -14.0d
-		}
-		{
-			dependencies: [
-				"1E21874328BDB088"
-				"1E58E5829FED4085"
-			]
 			id: "170D61FE0278C787"
 			tasks: [{
 				id: "7F359122547F4416"
 				item: "cosmiccore:crystal_chiplet_base"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -14.0d
-		}
-		{
-			dependencies: ["170D61FE0278C787"]
-			id: "3CF057E7FD946D3D"
-			tasks: [{
-				id: "69909618E311F569"
-				item: "cosmiccore:engraved_crystal_chiplet"
-				type: "item"
-			}]
-			x: -6.0d
+			x: -9.5d
 			y: -14.0d
 		}
 		{
 			dependencies: ["635C885360A8A8A9"]
 			hide_dependency_lines: true
 			id: "0A2EFEC1F4B31C06"
-			tasks: [{
-				id: "4AEB526D4DBF8C1E"
-				item: "cosmiccore:crystalline_transistor"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -12.5d
-		}
-		{
-			dependencies: ["635C885360A8A8A9"]
-			hide_dependency_lines: true
-			id: "2B4FCC4B5089A406"
-			tasks: [{
-				id: "14A3C12506E3FA5A"
-				item: "cosmiccore:crystalline_resistor"
-				type: "item"
-			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "43048A248DFE3A99"
+					item: "cosmiccore:crystalline_transistor"
+					type: "item"
+				}
+				{
+					id: "101912FF1CF8EAC8"
+					item: "cosmiccore:crystalline_resistor"
+					type: "item"
+				}
+				{
+					id: "4B7D5908674C21A6"
+					item: "cosmiccore:crystalline_capacitor"
+					type: "item"
+				}
+				{
+					id: "417240CD217F2CDE"
+					item: "cosmiccore:crystalline_diode"
+					type: "item"
+				}
+				{
+					id: "47D56A0197304AC1"
+					item: "cosmiccore:crystalline_inductor"
+					type: "item"
+				}
+			]
 			x: -2.5d
-			y: -14.0d
+			y: -11.0d
 		}
 		{
-			dependencies: ["635C885360A8A8A9"]
-			dependency_requirement: "all_started"
-			hide_dependency_lines: true
-			id: "5934EC272F6F0BD8"
-			tasks: [{
-				id: "25162AAE497A2766"
-				item: "cosmiccore:crystalline_capacitor"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -13.0d
-		}
-		{
-			dependencies: ["635C885360A8A8A9"]
-			hide_dependency_lines: true
-			id: "2C7F127FE13A307C"
-			tasks: [{
-				id: "64F48BF60E183C2E"
-				item: "cosmiccore:crystalline_diode"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -12.0d
-		}
-		{
-			dependencies: ["635C885360A8A8A9"]
-			hide_dependency_lines: true
-			id: "426B539C6E256B72"
-			tasks: [{
-				id: "0CCA072509D033BE"
-				item: "cosmiccore:crystalline_inductor"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -13.0d
-		}
-		{
-			dependencies: ["3CF057E7FD946D3D"]
+			dependencies: [
+				"35A2AB65C30E0D61"
+				"1E21874328BDB088"
+			]
 			id: "333F819E70468E50"
 			tasks: [{
 				id: "7A4EF1142B7ED2ED"
 				item: "cosmiccore:unsealed_crystal_cpu"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -7.0d
 			y: -14.0d
 		}
 		{
@@ -1530,7 +1485,7 @@
 				item: "gtceu:assembly_line"
 				type: "item"
 			}]
-			title: "Orbital Assembler"
+			title: "Assembly line, in Space!"
 			x: -6.0d
 			y: -11.0d
 		}
@@ -1588,6 +1543,51 @@
 			}]
 			x: 8.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
+			id: "592DE900A5586BF0"
+			tasks: [{
+				id: "5E6BBE3F0881207A"
+				item: "gtceu:graphite_dust"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -8.75d
+		}
+		{
+			dependencies: ["592DE900A5586BF0"]
+			id: "1B3722A82404FB5B"
+			tasks: [{
+				id: "09A652882F74558B"
+				item: "gtceu:graphene_oxide_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -8.75d
+		}
+		{
+			dependencies: ["170D61FE0278C787"]
+			id: "35A2AB65C30E0D61"
+			tasks: [{
+				id: "3A28962B897337D7"
+				item: "cosmiccore:masked_crystal_chiplet_package"
+				type: "item"
+			}]
+			x: -8.25d
+			y: -14.0d
+		}
+		{
+			dependencies: ["333F819E70468E50"]
+			id: "44D9A9E10867D1BC"
+			tasks: [{
+				id: "0CE41648307A785C"
+				item: "cosmiccore:engraved_crystal_chiplet"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -14.0d
 		}
 	]
 	title: "A Factory Soaked In Blood [&dLuV&r]"

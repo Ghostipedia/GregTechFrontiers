@@ -11,7 +11,7 @@ earlyWindowProvider = "fmlearlywindow"
 #Early window width
 earlyWindowWidth = 854
 #Early window starts maximized
-earlyWindowMaximized = true
+earlyWindowMaximized = false
 #Default config path for servers
 defaultConfigPath = "defaultconfigs"
 #Disables Optimized DFU client-side - already disabled on servers

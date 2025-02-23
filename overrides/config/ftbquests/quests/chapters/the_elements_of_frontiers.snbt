@@ -747,7 +747,8 @@
 			id: "5C4AB6607BF06EB2"
 			subtitle: "351"
 			tasks: [{
-				id: "7FBC88A2D1394C67"
+				id: "3039A753ABB68D9F"
+				item: "minecraft:barrier"
 				type: "item"
 			}]
 			title: "Adamantium"
@@ -758,7 +759,8 @@
 			id: "7B8C8D2633A9EE07"
 			subtitle: "451"
 			tasks: [{
-				id: "76C4EACC2B29CBF3"
+				id: "43207DE1BFFE4E03"
+				item: "minecraft:barrier"
 				type: "item"
 			}]
 			title: "Vibranium"
