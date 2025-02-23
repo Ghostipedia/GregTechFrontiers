@@ -4,6 +4,11 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: 'apotheosis:hellshelf' })
+    event.remove({ output: 'apotheosis:hellshelf' })
+    event.remove({ output: 'apotheosis:seashelf' })
+    event.remove({ output: 'apotheosis:dormant_deepshelf' })
+
+
     event.shaped('apotheosis:hellshelf', [
         'LWL',
         'ABR',
@@ -15,8 +20,27 @@ ServerEvents.recipes(event => {
         A: 'cosmiccore:rune_slate_khoruth',
         R: 'cosmiccore:rune_slate_tylomir'
     })
-
-
+    event.shaped('apotheosis:hellshelf', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'cosmiccore:rune_conjunction_arklythar',
+        L: 'minecraft:deepslate_tiles',
+        B: '#forge:bookshelves',
+        R: 'minecraft:echo_shard'
+    })
+    event.shaped('apotheosis:seashelf', [
+        'LWL',
+        'ABR',
+        'LWL'
+    ], {
+        W: Item.of('minecraft:potion', '{Potion:"minecraft:long_water_breathing"}'),
+        L: 'minecraft:prismarine_bricks',
+        B: '#forge:bookshelves',
+        A: 'cosmiccore:rune_slate_tenura',
+        R: 'cosmiccore:rune_slate_valdris'
+    })
 
 
     event.recipes.occultism.ritual(
