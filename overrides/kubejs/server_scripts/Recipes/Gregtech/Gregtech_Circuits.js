@@ -268,6 +268,7 @@ ServerEvents.recipes(event => {
             .CWUt(32)
             .EUt(GTValues.VA[GTValues.LuV]))
         .duration(1750)
+        .dimension('ad_astra:earth_orbit')
         .EUt(GTValues.VA[GTValues.LuV])
 
 

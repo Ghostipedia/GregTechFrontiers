@@ -16,15 +16,15 @@
 					"boots"
 				]
 			},
-			"attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+			"attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
 			"operation": "ADDITION",
 			"values": {
-				"common": 60,
-				"uncommon": 120,
-				"rare": 150,
-				"epic": 180,
-				"mythic": 210,
-				"ancient": 240
+				"common": 2,
+				"uncommon": 4,
+				"rare": 6,
+				"epic": 8,
+				"mythic": 10,
+				"ancient": 12
 			}
 		}
 	]
