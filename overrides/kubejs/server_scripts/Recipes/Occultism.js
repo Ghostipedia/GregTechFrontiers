@@ -277,4 +277,51 @@ ServerEvents.recipes(event => {
     'occultism:book_of_binding_bound_djinni',
     'occultism:craft_djinni'
   ).dummy('occultism:ritual_dummy/craft_dimensional_mineshaft').id("occultism:frontiers.fusion_ritual.dim_mineshaft")
+
+  //Using Event.custom because i'm too lazy to try and parse this
+  event.custom({
+    "type": "occultism:ritual",
+    "ritual_type": "occultism:summon",
+    "activation_item": {
+      "item": "occultism:book_of_binding_bound_afrit"
+    },
+    "pentacle_id": "occultism:summon_wild_afrit",
+    "duration": 60,
+    "entity_to_sacrifice": {
+      "tag": "forge:cows",
+      "display_name": "ritual.occultism.sacrifice.cows"
+    },
+    "entity_to_summon": "occultism:afrit_wild",
+    "ritual_dummy": {
+      "item": "occultism:ritual_dummy/summon_wild_afrit"
+    },
+    "ingredients": [
+      {
+        "tag": "forge:netherrack"
+      },
+      {
+        "tag": "forge:gems/quartz"
+      },
+      {
+        "item": "minecraft:flint_and_steel"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      },
+      {
+        "item": "legendarysurvivaloverhaul:sun_fern_gold_leaf"
+      }
+    ],
+    "result": {
+      "item": "occultism:afrit_essence",
+      "nbt": {
+        "display": {
+          "Lore": [
+            "[{\"translate\":\"item.occultism.ritual_dummy.summon_wild_afrit.tooltip\"}]"
+          ],
+          "Name": "[{\"translate\":\"item.occultism.ritual_dummy.summon_wild_afrit\"}]"
+        }
+      }
+    }
+  })
 })
