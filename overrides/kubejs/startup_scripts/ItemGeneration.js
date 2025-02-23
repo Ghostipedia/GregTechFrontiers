@@ -29,6 +29,11 @@ StartupEvents.registry('item', event => {
     event.create('prepared_quantum_cpu_wafer').displayName('Prepared Quantum CPU Wafer')
     event.create('seal_shards').displayName('Shards of the Underworld')
     event.create('cosmic_meatballs').displayName('Cosmic Meatballs')
+    event.create('prismatic_lens').displayName('Prismatic Lens')
 
     event.create('reinforced_respirator', 'helmet').displayName('Reinforced Respirator').maxDamage(1024).modifyTier(tier => 'breather')
+
+
+    //Planet and Orbit Icons
+    event.create('undergarden_dim').displayName('Undergarden')
 })
