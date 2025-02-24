@@ -1206,7 +1206,8 @@ ServerEvents.recipes(event => {
         M: 'gtceu:manasteel_plate',
         I: 'botania:rune_water',
         O: 'minecraft:cod',
-        U: 'minecraft:pufferfish'
+        U: 'minecraft:pufferfish',
+        P: 'malum:gilded_ring'
     })
     //Mana Lens
     event.remove({ output: 'botania:lens_normal' })
@@ -1717,7 +1718,8 @@ ServerEvents.recipes(event => {
         T: 'botania:corporea_spark',
         P: 'gtceu:glass_plate',
         E: 'botania:ender_air_bottle',
-        V: 'botania:dragonstone'
+        V: 'botania:dragonstone',
+        C: 'botania:corporea_spark_master'
     })
     //Mana Infusion Recipes
     //Dumping this example here for mana infusions, took me a while to figure it out. Will do the same for all recipe types.

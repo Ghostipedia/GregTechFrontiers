@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
   })
   event.shaped('ae2:chest', [
     'SCS',
-    'SDS',
+    'BDB',
     'SSS'
   ], {
     S: 'gtceu:aluminium_plate',
@@ -929,7 +929,7 @@ ServerEvents.recipes(event => {
     ],
     "result": {
       "count": 2,
-      "item": "gtceu:certus_quartz_flawless_gem"
+      "item": "gtceu:flawless_certus_quartz_gem"
     }
   })
   event.custom({

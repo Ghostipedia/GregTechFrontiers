@@ -105,13 +105,13 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.extractor('cinder_wax_extractor')
     .itemInputs('nethersdelight:propelpearl')
-    .outputFluids('gtceu:cinderwax', 144)
+    .outputFluids('gtceu:cinderwax 144')
     .duration(50)
     .EUt(4);
 
   event.recipes.gtceu.extractor('soul_resin_extractor')
     .itemInputs('legendarysurvivaloverhaul:ice_fern_leaf')
-    .outputFluids('gtceu:soulresin', 144)
+    .outputFluids('gtceu:soulresin 144')
     .duration(50)
     .EUt(4);
 

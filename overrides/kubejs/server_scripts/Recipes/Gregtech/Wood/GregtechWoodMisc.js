@@ -24,6 +24,7 @@ ServerEvents.recipes(event => {
     // event.remove({ id: /^(?!gtceu:)([^:]+):(.*)_boat$/ })
 
     event.remove({ id: 'gtceu:shapeless/rubber_wood_planks' })
+    event.remove({ id: 'ars_nouveau:archwood_planks'})
 
     //Holy Shit Aether piss off already.
 
@@ -133,7 +134,7 @@ ServerEvents.recipes(event => {
                 ' P '
             ],
                 {
-                    P: `ars_nouveau:archwood_log`
+                    P: `{woodType}_log`
                 })
         }
         //Stripped log -> planks
