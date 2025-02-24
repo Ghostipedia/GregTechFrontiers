@@ -109,6 +109,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('create:andesite_alloy')
     .duration(100)
     .EUt(8);
+  event.remove('gtceu:macerator/macerate_nether_bricks')
   event.recipes.gtceu.macerator('gtceu:nether_brick_dust_shred')
     .itemInputs('minecraft:nether_bricks')
     .itemOutputs('gtceu:nether_brick_dust_dust')
@@ -234,13 +235,6 @@ ServerEvents.recipes(event => {
     .circuit(16)
     .duration(416)
     .EUt(GTValues.VA[GTValues.LV]);
-
-  event.recipes.gtceu.wiremill('gtceu:manasteel_fine_wire_recipe')
-    .itemInputs('gtceu:manasteel_single_wire')
-    .itemOutputs('4x gtceu:fine_manasteel_wire')
-    .duration(26)
-    .EUt(GTValues.VA[GTValues.LV]);
-
 
   event.recipes.gtceu.bender('gtceu:manasteel_plate')
     .itemInputs('botania:manasteel_ingot')
@@ -795,11 +789,6 @@ ServerEvents.tags('block', event => {
 // })
 
 ServerEvents.recipes(event => {
-  event.recipes.gtceu.macerator('gtceu:obsidian_dust')
-    .itemInputs('minecraft:obsidian')
-    .itemOutputs('gtceu:obsidian_dust')
-    .duration(600)
-    .EUt(GTValues.VA[GTValues.LV]);
 
 
   event.remove({ id: 'gtceu:mixer/rose_gold' })
