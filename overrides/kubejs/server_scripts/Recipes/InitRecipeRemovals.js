@@ -31,4 +31,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'bloodmagic:smelting/ingot_copper'})
     e.remove({id: 'occultism:smelting/iesnium_ingot_from_dust'})
     e.remove({id: 'occultism:smelting/iesnium_ingot_from_raw'})
+    e.remove({id: 'aether:holystone_stonecutter'})
+    e.remove({id: 'undergarden:stonecutter_from_depthrock'})
+    e.remove({id: 'undergarden:stonecutter_from_shiverstone'})
+    e.remove({id: 'undergarden:stonecutter_from_tremblecrust'})
 })
