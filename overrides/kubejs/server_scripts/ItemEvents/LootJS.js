@@ -23,6 +23,7 @@ LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.CHEST)
         .removeLoot('gtceu:bronze_ingot')
         .removeLoot('gtceu:steel_ingot')
+        .removeLoot('gtceu:platinum_ingot')
         .removeLoot('botania:manasteel_ingot')
 });
 LootJS.modifiers((event) => {
