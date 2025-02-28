@@ -248,8 +248,17 @@ ServerEvents.recipes(event => {
         .itemInputs(['3x botania:mana_string', '3x ars_nouveau:magebloom_fiber', 'cosmiccore:rune_conjunction_arklythar'])
         .inputFluids('gtceu:crude_source_oils 50')
         .itemOutputs('4x botania:manaweave_cloth')
+        .circuit(1)
         .duration(20)
         .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.assembler('manaweave_assemble_improved')
+        .notConsumable('cosmiccore:rune_conjunction_arklythar')
+        .itemInputs(['3x botania:mana_string', '3x ars_nouveau:magebloom_fiber'])
+        .inputFluids('gtceu:potent_mana 250')
+        .itemOutputs('4x botania:manaweave_cloth')
+        .circuit(2)
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.HV]);
     //Petal Apothecary Mossy, leaving the rest as vanilla recipes. They are gated deep into botania anyways.
     event.remove({ output: 'botania:apothecary_mossy' })
     event.shaped('botania:apothecary_mossy', [
@@ -1776,19 +1785,25 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mana_fluidizer('gtceu:mana_pearl')
         .itemInputs('#forge:ender_pearls')
         .itemOutputs('botania:mana_pearl')
-        .inputFluids(Fluid.of('gtceu:potent_mana', 500))
+        .inputFluids(Fluid.of('gtceu:potent_mana', 250))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
     //Mana Diamond
     event.recipes.gtceu.mana_fluidizer('gtceu:mana_diamond')
         .itemInputs('gtceu:flawless_diamond_gem')
         .itemOutputs('botania:mana_diamond')
-        .inputFluids(Fluid.of('gtceu:potent_mana', 1000))
+        .inputFluids(Fluid.of('gtceu:potent_mana', 500))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.mana_fluidizer('gtceu:mana_powder')
         .itemInputs('gtceu:electrotine_dust')
         .itemOutputs('botania:mana_powder')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 50))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.mana_fluidizer('frontiers:mana_string')
+        .itemInputs('minecraft:string')
+        .itemOutputs('botania:mana_string')
         .inputFluids(Fluid.of('gtceu:potent_mana', 50))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
